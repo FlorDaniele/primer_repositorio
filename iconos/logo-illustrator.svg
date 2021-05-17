@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#F47521;}
+	.st2{fill:url(#SVGID_2_);}
+</style>
+<g>
+	
+		<radialGradient id="SVGID_1_" cx="8.8333" cy="19.8333" r="17.5883" gradientTransform="matrix(1 0 0 -1 0 26)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#3C1605;stop-opacity:0.98"/>
+		<stop  offset="1" style="stop-color:#1A1107"/>
+	</radialGradient>
+	<rect x="1.5" y="1.5" class="st0" width="21" height="21"/>
+	<path class="st1" d="M23,23H1V1h22V23z M2,22h20V2H2V22z"/>
+	<rect x="8.5" y="13" class="st1" width="4" height="2"/>
+	<rect x="16.5" y="10.5" class="st1" width="2" height="7.5"/>
+	<circle id="XMLID_1414_" class="st1" cx="17.5" cy="9" r="1"/>
+	<polygon class="st1" points="9.4,6 5.6,18 7.7,18 10.5,9.3 13.3,18 15.4,18 11.6,6 	"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-1.2486" y1="20.1779" x2="25.2486" y2="7.8221" gradientTransform="matrix(1 0 0 -1 0 26)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.2"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	<path class="st2" d="M23,23H1V1h22V23z"/>
+</g>
+</svg>

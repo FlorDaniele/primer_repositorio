@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="These are my professional and personal skills">
+    <meta name="keywords" content="PORTFOLIO, UX UI DESIGNER, DIGITAL MARKETING, WEB DESIGN, PRODUCT DESIGNER">
+    <title>Skills</title>
+    <!-- Fin SEO -->
+    <script src="https://kit.fontawesome.com/ead18f9741.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tvh0wnq.css">
+    <link rel="stylesheet" href="../bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+
+            window.addEventListener('scroll', function () {
+
+                if (window.scrollY > 50) {
+                    document.getElementById('navbar_top').classList.add('fixed-top');
+                    // add padding top to show content behind navbar
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                } else {
+                    document.getElementById('navbar_top').classList.remove('fixed-top');
+                    // remove padding top from body
+                    document.body.style.paddingTop = '0';
+                }
+            });
+        });
+        // DOMContentLoaded  end
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- Top navigation bar -->
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="d-flex flex-grow-1 ms-5">
+                <a class="navbar-brand d-none d-lg-inline-block underline-effect" href="../index.html">Florencia
+                    Daniele</a>
+                <a class="nav-logo-mobile navbar-brand-two mx-auto d-lg-none d-inline-block underline-effect"
+                    href="../index.html">Florencia Daniele</a>
+                <div class="me-4 text-right">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse flex-grow-1 text-right ms-5 me-5" id="main_nav">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item"><a class="nav-link mt-1 ms-2 me-2 menu-item underline-effect"
+                            href="../paginas/aboutme.html">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link mt-1 ms-2 me-2 menu-item underline-effect"
+                            href="../paginas/solutions.html">SOLUTIONS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link mt-1 ms-2 me-2 menu-item underline-effect"
+                            href="../paginas/skills.html">SKILLS</a></li>
+                    <li class="nav-item"><a class="nav-link mt-1 ms-2 me-2 menu-item underline-effect"
+                            href="https://drive.google.com/file/d/1jp3fO5xS3_-Ue-hesy1PHKz2LMWDeTgD/view?usp=sharing">CV</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link mt-1 ms-2 me-2 menu-item underline-effect"
+                            href="../paginas/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Skills -->
+        <section class="bg-lillac-skills">
+            <div class="hr-skills">
+                <hr>
+            </div>
+            <div class="titulo-seccion-izq">
+                <h2>WHAT CAN I BRING TO THE TABLE?</h2>
+                <h1 id="skills">Know my Skills<span class="pink">.</span></h1>
+            </div>
+
+            <div class="titulo-skills-largo">
+                <h4>"Never Stop Learning"</h4>
+            </div>
+
+            <div class="contenedor-card skill-card">
+
+                <div>
+                    <h3 class="titulos-listas">UX/UI</h3><br>
+                    <p>
+                        Design Thinking<br>
+                        User Research & Benchmark <br>
+                        Information Architecture<br>
+                        User Flows<br>
+                        Wireframes & Prototyping<br>
+                        UI Kit & Design System<br>
+                        User Testing<br>
+                    </p>
+                    <ul>
+                        <li>
+                            <img id="iconos-tools" src=../iconos/logo-illustrator.png alt="illustrator logo"></img>
+                            <img id="iconos-tools" src=../iconos/logo-xd.png alt="XD logo"></img>
+                            <img id="iconos-tools" src=../iconos/logo-photoshop.png alt="Photoshop logo"></img>
+                            <img id="iconos-tools" src=../iconos/logo-ow.png alt="OW logo"></img>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="titulos-listas">MARKETING</h3><br>
+                    <p>
+                        SEO<br>
+                        Web Performance & Analytics<br>
+                        Digital Strategy<br>
+                        Paid media<br>
+                        E-mailing<br>
+                        Social Media<br>
+                    </p>
+                    <ul>
+                        <li>
+                            <img id="iconos-tools" src=../iconos/logo-analytics.png alt="Analytics logo"></img>
+                            <img id="iconos-tools" src=../iconos/logo-ads.png alt="Ads logo"></img>
+                            <img id="iconos-tools" src=../iconos/logo-hotjar.png alt="Hotjar logo"></img>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="titulos-listas">FRONT-END</h3><br>
+                    <p>
+                        HTML5<br>
+                        CSS<br>
+                        Bootstrap<br>
+                        SASS<br>
+                        Git<br>
+                    </p>
+                    <ul id="iconos-tools">
+                        <li>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-bootstrap"></i>
+                            <i class="fab fa-sass"></i>
+                            <i class="fab fa-github"></i>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <h3 class="titulos-listas">WHAT'S NEXT?</h3><br>
+                    <p>I want to learn about:<br>
+                        Javascript<br>
+                        React<br>
+                        UX Writing<br>
+                        to build more interactive and intuitive interfaces that people will love to use.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Personality -->
+    <section>
+        <div class="hr-skills">
+            <hr>
+        </div>
+        <div class="titulo-seccion-izq">
+            <h2>HOW IS IT TO WORK WITH ME?</h2>
+            <h1>Personal skills<span class="pink">.</span></h1>
+        </div>
+
+        <div class="titulo-seccion-skills">
+            <h4>"Always Be Kind"</h4>
+        </div>
+
+        <ul class="inline-skills p-0">
+            <li><i class="fas fa-chevron-left pink"></i></li>
+            <li>Ongoing learner</li>
+            <li>Resilient</li>
+            <li>Curious</li>
+            <li>Organized</li>
+            <li>Rigorous</li>
+            <li><i class="fas fa-chevron-right pink"></i></li>
+        </ul>
+    </section>
+    </div>
+
+    <footer>
+        <!-- Contact Resumido -->
+        <div class="bg-white footer-resumido">
+            <p class="texto-footer">Designed and coded by me in 2021 / <span
+                    class="pink">florsoledaddaniele@gmail.com</span> </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

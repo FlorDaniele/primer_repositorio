@@ -1,0 +1,2418 @@
+/* Reseteo CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+html { height: 101%; }
+body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, sans-serif; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+p { font-size: 1.2em; line-height: 1.0em; color: #333; }
+/* FIN Reseteo CSS */
+
+
+/* Referencia */
+
+html {
+    font-size: 16px;
+}
+
+/* TAGS */
+
+h2 {
+    color: #D977C7;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3 {
+    color: #9766CC;
+}
+
+h4 {
+    color: #9766CC;
+    font-family: abril-fatface, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5.3125rem;
+    opacity: 0.2;
+}
+
+h5 {
+    color: #9766CC;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+form h3 {
+    color: #9766CC;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.375rem;
+}
+
+p {
+    color: #654D80;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.65rem;
+    line-height: 3rem;
+    margin: 1rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+ul {
+    list-style-type: none
+}
+
+h1, #titulo-bio {
+    color: #9766CC;
+    font-family: abril-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.75rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    color: #654D80;
+}
+
+a:hover {
+    color: #D977C7;
+    transform-origin: bottom left;
+    transition: transform 0.250s ease-in-out;
+    }
+
+/* Elementos anidados */
+
+section h2 {
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.75rem
+}
+
+ul li {
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.65rem;
+    line-height: 3rem;
+}
+
+/* Colours */
+
+.pink {
+    color: #D977C7;
+}
+
+.purple {
+    color: #9766CC;
+}
+
+.darkest-purple {
+    color: #6866B2;
+}
+
+.dark-purple {
+    color: #896DBF;
+}
+
+.dark-pink {
+    color: #BA71CC;
+}
+
+.medium-pink {
+    color: #D17CD8;
+}
+
+.lighter-pink {
+    color: #E583DC;
+}
+
+.lightest-pink {
+    color: #F288D2;
+}
+/* Backgrounds */
+
+.bg-gradient-hero {
+    background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+}
+
+.bg-white {
+    background-image: #ffffff;
+}
+
+.bg-lillac {
+    background-image: linear-gradient(#F3F0FA, #F2F2F2);
+}
+
+.bg-lillac2, .bg-lillac-solutions, .bg-lillac-skills {
+    background-image: linear-gradient(#f2f2f2, #EEE8FA);
+}
+
+/* Titles and Texts */
+
+.titulo-proyectos {
+    color: #9766CC;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.125rem;
+}
+
+.titulos-listas {
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.1875rem;
+}
+
+.TitulosAreasGrandes {
+    color: #9766CC;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.125rem;
+    line-height: 4.125rem;
+}
+
+.subtitulo-proyectos,
+.subtitulo-footer {
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    opacity: 1.0;
+    margin: 0.5rem 0;
+}
+
+.texto-medio-bio {
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.125rem;
+    line-height: 3.5rem;
+}
+
+.texto-grande {
+    color: #9766CC;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 3.625rem;
+}
+
+.labels {
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    color: #654D80;
+}
+
+.link-in-paragraph {
+    color: #654D80;
+    text-decoration: underline;
+    font-weight: bold
+}
+
+.span-portfolio {
+    color: #9766CC;
+    font-family: abril-fatface, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7.625rem;
+    opacity: 0.2;
+}
+
+.StyledLink {
+    color: #D977C7;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.link-cv {
+    color: #9766CC;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.intro {
+    color: #9766CC;
+    font-family: abril-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5.9375rem;
+}
+
+.professions {
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.125rem;
+    line-height: 5rem;
+}
+
+.NavLogo {
+    color: #9766CC;
+    font-family: abril-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.8125rem;
+    text-decoration: none;
+}
+
+.nav-logo-mobile {
+    color: #9766CC;
+    font-family: abril-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8125rem;
+    text-decoration: none;
+}
+
+.contact {
+    color: #9766CC;
+    font-family: abril-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.75rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.AlignLeft {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/* Fin Titles & Texts */
+
+/* Others */
+
+.RadiusAndShadow {
+    border-radius: 2.1875rem;
+    box-shadow: -0.3125rem 0.625rem 1.5625rem 0.3125rem rgba(230, 230, 230, 0.7);
+}
+/* Box modeling & Flexbox */
+
+.inline-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+}
+
+.inline-list li {
+    padding: 1rem 1rem;
+    margin: 4rem 2rem 8rem 0;
+}
+
+.hr-skills {
+    display: flex;
+    float: left;
+    width: 6.5rem;
+    border-top: 0.125rem solid #D977C7;
+    margin: 5rem 0 0;
+}
+/* Grids */
+
+.grid-solutions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    grid-gap: 2.875rem;
+    align-items: stretch;
+    margin: 6.5rem 6.5rem 0rem;
+    padding: 0rem 0rem 6rem;
+}
+
+.grid-solutions article {
+    display: flex;
+    flex-direction: column;
+}
+
+.solution-text {
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 19.0625rem;
+    height: auto;
+    padding: 0.3rem 0rem 2rem;
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.solution-text h3 {
+    text-align: center;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    font-size: 2.65rem;
+    line-height: 4.125rem;
+    font-style: normal;
+}
+
+.solution-text p {
+    flex-grow: 1;
+}
+
+/* Intro */
+
+#sakura {
+    display: block;
+    float: right;
+    position: relative;
+    padding: 0 0 0 100rem;
+    height: 12.5rem;
+}
+
+.intro-completo {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-intro-izq {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    width: 48.625rem;
+    padding: 1rem 2rem 0 6.5rem;
+    height: 26rem;
+    margin-right: 2rem;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contenedor-intro-der {
+    display: flex;
+    float: right;
+    position: relative;
+    flex-wrap: wrap;
+    width: 63.0625rem;
+    height: 26rem;
+    margin-left: 6.3125rem;
+    margin-top: 1.75rem;
+    padding: 1rem 6.5rem 0rem 4rem;
+    justify-items: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.align-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.75rem 0;
+}
+
+/* Fin Intro */
+
+/* CV */
+
+.box-img-left-cv {
+    width: 23.75rem;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 4.5rem 2rem;
+    position: relative;
+    float: left;
+}
+
+.box-text-right-cv {
+    width: 42.1875rem;
+    min-width: 18.5rem;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 4.5rem 1rem;
+    position: relative;
+    float: right;
+}
+
+/* Fin CV */
+
+/* Footer */
+
+.contenedor-footer {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    line-height: 4rem;
+    width: 100vw;
+    height: 35.5rem;
+    padding: 6.5rem 5.5rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.contenedor-footer p {
+    line-height: 3rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.Inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icons-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icons-footer a {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    color: rgba(101, 77, 128);
+}
+
+.texto-footer {
+    width: 100vw;
+    padding: 1.5rem 0.5rem;
+}
+
+.footer-resumido {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.email {
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.875rem;
+    opacity: 1.0;
+    text-align: center;
+    padding: 0 0rem;
+}
+
+.FooterResumido {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5rem;
+}
+
+/* Los subtítulos del footer están en "Titles and Texts" más arriba */
+
+/* Fin Footer */
+
+/* Skills Page */
+
+.inline-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.inline-skills li {
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 1rem 0.5rem;
+}
+
+/* Cards*/
+
+.skill-card div {
+    text-align: center;
+    background-color: #ffffff;
+    width: 25.9375rem;
+    height: 36.375rem;
+    border-radius: 0.625rem;
+    box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
+    padding: 2.5rem 1rem;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+.contenedor-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 6.5rem 0;
+}
+
+/* Fin Cards*/
+
+/* Titulos Seccion */
+
+.titulo-seccion-izq {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 3rem 1rem 1rem;
+    line-height: 5rem;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.titulo-skills-largo {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 2rem 6.5rem 2rem 23.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.titulo-seccion-skills {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 2rem 6.5rem 2rem 38.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.titulo-seccion-portfolio {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 2rem 6.5rem 2rem 54rem;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.titulo-seccion-solutions {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 2rem 3rem 2rem 37.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.titulo-seccion-method {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 2rem 6.5rem 2rem 4.4rem;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.titulo-seccion-contact {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 3rem 5.5rem 0 68.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Fin de Titulos Seccion */
+
+.inline-list h5 {
+    padding: 1rem 1rem;
+    margin: 2rem 2rem 2rem 0;
+    font-size: 2.5rem;
+}
+
+/* Sección About me */
+
+.firma {
+    color: #D977C7;
+    font-family: pacifico, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 4.375rem;
+    margin: 1rem 5.5rem 6rem 1rem;
+}
+
+.contenedor-about {
+    display: flex;
+}
+
+.about-texto {
+    display: inline-block;
+    margin: 0.5rem 2rem 1rem 6.5rem;
+    width: 62rem;
+    text-align: left;
+}
+
+.about-img {
+    float: right;
+    margin: 1rem 6.5rem 1rem 2rem;
+}
+
+.love-title {
+    color: #9766CC;
+    font-family: abril-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    width: 18.74rem;
+    margin: 0 0 0 52.875rem;
+}
+
+.hr-right-l {
+    display: flex;
+    float: left;
+    width: 48rem;
+    border-top: 0.125rem solid #D977C7;
+    margin-right: 3rem;
+}
+
+.hr-right-r {
+    display: flex;
+    float: right;
+    width: 48rem;
+    border-top: 0.125rem solid #D977C7;
+    margin-left: 3rem;
+}
+
+.inline-about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120rem;
+}
+
+.inline-about li {
+    padding: 1rem 1rem;
+    margin: 3rem 1rem 4rem;
+}
+
+.hr-full {
+    display: flex;
+    width: 100vw;
+    border-top: 0.125rem solid #D977C7;
+    margin-bottom: 8.5rem;
+}
+
+/* Sección Method */
+
+.hr-full-method {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    border-top: 0.125rem solid #D977C7;
+    margin: 7rem 0 1rem;
+}
+
+.hr-full-method {
+    display: flex;
+    flex-direction: column;
+    width: 120rem;
+    border-top: 0.125rem solid #D977C7;
+    margin: 7rem 0 1rem;
+}
+
+.grid-method {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16.875rem, 1fr));
+    grid-gap: 1rem;
+    align-items: stretch;
+    margin: 3rem 6.5rem 0rem;
+    ;
+    padding: 0rem 0rem 8.5rem;
+}
+
+.grid-method article {
+    display: flex;
+    flex-direction: column;
+}
+
+.method-step {
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15.1625rem;
+    height: auto;
+    padding: 0.3rem 0rem 3rem;
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.method-step h3 {
+    text-align: center;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    font-size: 2.1875rem;
+    line-height: 3.125rem;
+    font-style: normal;
+}
+
+.method-step p {
+    flex-grow: 1;
+    line-height: 2.75rem;
+}
+
+/* Sección Contact me */
+
+.contenedor-contact {
+    height: 70rem;
+    width: 100vw;
+}
+
+.short-placeholder {
+    width: 28.6875rem;
+    height: 3.75rem;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #999999;
+}
+
+.text-area-size {
+    width: 56.9375rem;
+    height: 11rem;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #999999;
+}
+
+.button-style {
+    background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
+    margin: 0.625rem;
+    padding: 1.5rem 6rem;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.625rem;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+    border-radius: 0.625rem;
+    display: block;
+}
+
+.contenedor-form {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: auto;
+    margin-left: 33.53125rem;
+}
+
+.contenedor-form-intro {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.contenedor-name-email {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 2rem 0;
+}
+
+/* 
+***************************** 
+********** Motion ***********
+***************************** 
+*/
+
+/* Subrayado en hover */
+
+.underline-effect {
+    display: inline-block;
+    position: relative;
+    color: #9766CC;
+}
+
+.underline-effect:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #D977C7;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.underline-effect:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Typing */
+
+.typing h2 {
+    border-right: .15em solid #D977C7;
+    font-family: omnes-cyrillic, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing h2:nth-child(1) {
+    width: 7.3em;
+    animation: type 2s steps(40, end);
+    animation-fill-mode: forwards;
+}
+
+.typing h2:nth-child(2) {
+    width: 12.5em;
+    opacity: 0;
+    animation: type2 2s steps(40, end);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.typing h2:nth-child(3) {
+    width: 12em;
+    opacity: 0;
+    animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: .15em solid D977C7;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99.9% {
+        border-right: .15em solid D977C7;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* 
+******************************************************************
+**************************** Media Queries ***********************
+******************************************************************
+*/
+/* Mobile -> Wireframes en 390 x 844 (iPhone 12 pro) */
+/* @media only screen and (max-width: 400px) { <- para cuando agregue tablets */
+
+@media only screen and (max-width: 960px) {
+    /* Intro y Nav */
+
+    .FlexContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 0.45rem;
+        margin: 0 0.825rem;
+        height: 1.056rem;
+        width: auto;
+    }
+
+    .BackgroundGradient {
+        background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+        width: 100vw;
+    }
+
+    .btn-primary {
+        font-size: 1.2rem !important;
+    }
+
+    #sakura {
+        display: block;
+        float: right;
+        position: relative;
+        padding: 0 0 0 12.5rem;
+        height: 7rem;
+        width: auto;
+    }
+
+    .intro-completo {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 35rem;
+        width: 100%;
+    }
+
+    .contenedor-intro-izq {
+        display: block;
+        position: absolute;
+        top: 7.625rem;
+        left: 0;
+        flex-wrap: wrap;
+        padding: 1.5rem 2rem;
+        margin: 0;
+        height: 6.9rem;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .contenedor-intro-der {
+        display: block;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 21.25rem;
+        left: 0;
+        height: fit-content;
+        width: 20.1875rem;
+        padding: 2rem 0 2rem;
+        margin: 0 2rem;
+        justify-items: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    #titulo-bio {
+        color: #9766CC;
+        font-family: abril-display, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .texto-medio-bio {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+    .intro {
+        color: #9766CC;
+        font-family: abril-display, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.8125rem;
+        margin-bottom: 1rem;
+    }
+
+    .professions {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.5rem;
+        line-height: 2.34375rem;
+    }
+
+    .align-welcome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 3rem 2rem;
+    }
+
+    .span-portfolio {
+        color: #9766CC;
+        font-family: abril-fatface, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.125rem;
+        line-height: 4rem;
+        opacity: 0.2;
+        text-align: center;
+        margin: 1.5rem 0 2rem;
+    }
+
+    h4 {
+        color: #9766CC;
+        font-family: abril-fatface, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.1875rem;
+        opacity: 0.2;
+    }
+
+    /* Nav bar */
+
+    ul li {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+    }
+
+    /* Fin Intro y Nav */
+
+    /* Titulos sección Proyectos */
+
+    section h2 {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1rem
+    }
+
+    .texto-grande {
+        color: #9766CC;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 0.75rem;
+        line-height: 1.0875rem;
+    }
+
+    .titulo-seccion-izq {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        margin: 2.4rem 2rem 1rem 0.45rem;
+        line-height: 2rem;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .titulo-seccion-izq h1 {
+        color: #9766CC;
+        font-family: abril-display, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.75rem;
+        padding: 0.5rem 0 0;
+    }
+
+    .hr-skills {
+        display: flex;
+        float: left;
+        width: 2rem;
+        border-top: 0.125rem solid #D977C7;
+        margin: 3rem 0 0;
+    }
+
+    h5 {
+        color: #9766CC;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2rem;
+    }
+
+    .inline-list h5 {
+        font-size: 1.3rem;
+        padding: 1rem 0.5rem;
+        margin: 2rem 1rem 2rem 0;
+    }
+
+    /* Fin Titulos sección Proyectos */
+
+    .inline-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+    }
+
+    .inline-project {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo-proyectos {
+        color: #9766CC;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2rem;
+    }
+
+    .titulo-seccion-portfolio {
+        display: none;
+        position: relative;
+        flex-wrap: wrap;
+        margin: 1rem 2rem 1rem 14.7rem;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+    .subtitulo-proyectos,
+    .subtitulo-footer {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5rem;
+        opacity: 1.0;
+    }
+
+    p {
+        color: #654D80;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    .styled-link {
+        color: #D977C7;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.25rem;
+        padding: 0 1rem;
+        text-decoration: none;
+    }
+
+    #cv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Fin Box Proyectos */
+
+    /* CV */
+
+    .box-img-left-cv {
+        width: 10.625rem;
+        height: fit-content;
+        margin: 2.5rem 2rem 1rem;
+    }
+
+    .box-text-right-cv {
+        width: 15rem;
+        height: fit-content;
+        margin: 0rem 2rem 4rem;
+        text-align: center;
+    }
+
+    .texto-grande {
+        color: #9766CC;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+    }
+
+    .contenedor-footer {
+        display: inline-block;
+        justify-content: center;
+        align-content: center;
+        text-align: left;
+        line-height: 3rem;
+        width: 24.375rem;
+        height: 27rem;
+        width: 100vw;
+        padding: 1.5rem 0;
+        margin-bottom: 1rem;
+    }
+
+    .subtitulo-footer {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        opacity: 1.0;
+        margin: 0.5rem 1.5rem;
+    }
+
+    /* Fin CV */
+
+    /* Footer */
+
+    .contenedor-footer {
+        display: inline-block;
+        justify-content: center;
+        align-content: center;
+        text-align: left;
+        line-height: 3rem;
+        width: 24.375rem;
+        height: 27rem;
+        width: 100vw;
+        padding: 1.5rem 0;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+
+    .contenedor-footer p {
+        line-height: 2rem;
+        margin: 0 0 1rem 0;
+        font-size: 1rem;
+        width: 100vw;
+        padding: 0 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-footer h1 {
+        font-size: 2.3rem;
+        margin: 1.5rem 1.5rem 0;
+    }
+
+    .email {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.25rem;
+        opacity: 1.0;
+        text-align: left;
+        padding: 0 0rem;
+    }
+
+    .texto-footer {
+        padding: 0rem 1rem;
+    }
+
+    .Inline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #icons-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        padding-left: 0rem;
+    }
+
+    #icons-footer a {
+        padding: 1rem;
+        margin: 2rem 1rem;
+        color: rgba(101, 77, 128);
+    }
+
+    .FooterResumido {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 5rem;
+    }
+
+    /* Fin Footer */
+
+    /* Sección Solutions */
+
+    .hr-full-method {
+        display: none;
+    }
+
+    .bg-lillac-solutions {
+        width: 100vw;
+    }
+
+    .titulo-seccion-solutions {
+        display: none;
+    }
+
+    .grid-solutions {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-gap: 1rem;
+        align-items: stretch;
+        margin: 3rem 2rem 0rem;
+        padding: 0rem 0rem 3rem;
+    }
+
+    .grid-solutions article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .solution-text h3 {
+        text-align: center;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        font-style: normal;
+    }
+
+    .solution-text p {
+        flex-grow: 1;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .titulo-seccion-method {
+        display: none;
+    }
+
+    .grid-method {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-gap: 1rem;
+        align-items: stretch;
+        margin: 3rem 2rem 0rem;
+        padding: 0rem 0rem 4rem;
+    }
+
+    .grid-method article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .method-step {
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 15.1625rem;
+        height: auto;
+        padding: 0.3rem 0rem 1rem;
+        flex-grow: 1;
+        flex-direction: column;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .method-step h3 {
+        text-align: center;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 3rem;
+        font-style: normal;
+    }
+
+    .method-step p {
+        flex-grow: 1;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    /* Fin Sección Solutions */
+
+    /* Sección About me */
+
+    .bg-gradient-hero-about {
+        background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+        height: 98rem;
+        width: 100vw;
+    }
+
+    .contenedor-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-texto {
+        display: inline-block;
+        margin: 0.5rem 3rem 1rem;
+        width: 80vw;
+        text-align: left;
+    }
+
+    .about-img {
+        width: 65%;
+        float: none;
+        margin: 1rem 0;
+    }
+
+    .firma {
+        color: #D977C7;
+        font-family: pacifico, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 3.5rem;
+        margin: 0.75rem 0 4rem;
+    }
+
+    .love-title {
+        color: #9766CC;
+        font-family: abril-display, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.5rem;
+        width: 18.74rem;
+        margin: 2rem 0 0 5rem;
+    }
+
+    .hr-right-l,
+    .hr-right-r,
+    .hr-full {
+        display: none;
+    }
+
+    .inline-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .inline-about li {
+        padding: 1rem 1rem;
+        margin: 0.5rem 1rem 0.5rem;
+    }
+
+
+    /* Fin sección About Me */
+
+    /* Sección Skills */
+
+    .titulo-skills-largo h4 {
+        display: none;
+    }
+
+    .skill-card div {
+        text-align: center;
+        background-color: #ffffff;
+        width: 80vw;
+        height: 31rem;
+        border-radius: 0.625rem;
+        box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
+        padding: 2.5rem 1rem;
+        margin: 1rem;
+        box-sizing: border-box;
+    }
+
+    .contenedor-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 2rem 0;
+    }
+
+    .titulos-listas {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.9rem;
+    }
+
+    #iconos-tools li {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .bg-lillac-skills {
+        height: 150rem;
+    }
+
+    .titulo-skills-largo,
+    .titulo-seccion-skills {
+        display: none;
+    }
+
+    .contenedor-card p {
+        line-height: 2.5rem;
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+    .inline-skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .inline-skills li {
+        padding: 1rem 1rem;
+        margin: 0.5rem 1rem 0.5rem;
+    }
+/* Fin sección Skills */
+
+/* Sección Contact me */
+
+.contenedor-contact .bg-lillac2 {
+    height: 70rem;
+    width: 100vw;
+}
+
+.titulo-seccion-contact {
+    display: none;
+}
+
+.contact {
+    color: #9766CC;
+    font-family: abril-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+    p {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.contenedor-form {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.contenedor-form-intro {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.contenedor-name-email {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 2rem 0;
+    width: 83vw;
+}
+
+.contenedor-contact {
+    height: 60rem;
+    width: 100vw;
+    }
+
+.short-placeholder {
+    width: 83vw;;
+    height: 3.75rem;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #999999;
+}
+
+.text-area-size {
+    width: 83vw;;
+    height: 11rem;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #999999;
+}
+
+.button-style {
+    background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
+    margin: 0.625rem;
+    padding: 1.5rem 1.75rem;
+    font-family: omnes-cyrillic, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+    border-radius: 0.625rem;
+    display: block;
+    width: 60%;
+}
+/* Fin sección Contact me */
+
+}
+
+    /* 
+************************** Notebook *****************************
+                    Wireframes en 1366 x 768px 
+ */
+@media only screen and (min-width: 961px) and (max-width:1400px) {
+
+    /* Intro y Nav */
+
+    .bg-gradient-hero {
+        background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+        height: 45rem;
+        width: 100vw;
+    }
+
+
+    .bg-gradient-hero-about {
+        background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+        height: 65rem;
+        width: 100vw;
+    }
+
+    #sakura {
+        display: block;
+        float: right;
+        position: relative;
+        padding: 0.25rem 0 0.25rem 1rem;
+        height: 7.5rem;
+    }
+
+    .intro-completo {
+        display: inline-block;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0.5rem 0 0;
+    }
+
+    .contenedor-intro-izq {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        width: 38.25rem;
+        padding: 1rem 2rem 0 5.5rem;
+        height: 19.125rem;
+        margin-right: 1rem;
+        justify-items: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .contenedor-intro-der {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        width: 44.8125rem;
+        height: 19.125rem;
+        padding: 0rem 5.5rem 0rem 1rem;
+        margin-left: 1.0625rem;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
+
+    h3,
+    #titulo-bio {
+        color: #9766CC;
+        font-family: abril-display, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3.125rem;
+    }
+
+    .texto-medio-bio {
+        display: block;
+        text-align: left;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        padding: 1rem 0 0;
+    }
+
+    .intro {
+        color: #9766CC;
+        font-family: abril-display, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 4.3rem;
+    }
+
+    .professions {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2.3rem;
+        line-height: 4.0625rem;
+    }
+
+    .align-welcome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 3rem;
+    }
+
+    .span-portfolio {
+        color: #9766CC;
+        font-family: abril-fatface, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 5.3125rem;
+        line-height: 6rem;
+        opacity: 0.2;
+        text-align: center;
+    }
+
+    h4 {
+        color: #9766CC;
+        font-family: abril-fatface, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4rem;
+        opacity: 0.2;
+    }
+
+    /* Fin Intro y Nav */
+
+    /* Sección About me */
+
+    .about-texto {
+        display: inline-block;
+        margin: 0.5rem 1.5rem 1rem 6.5rem;
+        width: 62rem;
+        text-align: left;
+    }
+
+    .firma {
+        color: #D977C7;
+        font-family: pacifico, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 3.5rem;
+        padding: 1rem 0;
+        margin: 0;
+    }
+
+    .hr-right-l {
+        display: flex;
+        float: left;
+        width: 40%;
+        border-top: 0.125rem solid #D977C7;
+        margin-right: 2rem;
+    }
+
+    .hr-right-r {
+        display: flex;
+        float: right;
+        width: 40%;
+        border-top: 0.125rem solid #D977C7;
+        margin-left: 2rem;
+    }
+
+    .inline-about {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 6rem;
+    }
+
+    .inline-about li {
+        padding: 1rem 0.5rem;
+        margin: 3rem 1rem 4rem;
+    }
+
+    .hr-full {
+        display: flex;
+        width: 100vw;
+        border-top: 0.125rem solid #D977C7;
+        margin-bottom: 8.5rem;
+    }
+
+    ul li {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+
+    .love-title {
+        color: #9766CC;
+        font-family: abril-display, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2rem;
+        width: 24rem;
+        margin: 0 0 0 30rem;
+    }
+
+    .about-img {
+        float: right;
+        margin: 1rem 6.5rem 1rem 2rem;
+        height: fit-content;
+    }
+
+    /* Fin sección About me */
+
+    /* Titulos sección Proyectos */
+
+    section h2 {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.375rem
+    }
+
+    .texto-grande {
+        color: #9766CC;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 0.75rem;
+        line-height: 1.0875rem;
+    }
+
+    .titulo-seccion-izq {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        margin: 4.4rem 2rem 1.5rem 0.45rem;
+        line-height: 2rem;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .titulo-seccion-izq h1 {
+        color: #9766CC;
+        font-family: abril-display, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3.125rem;
+        padding: 1.5rem 0 0;
+    }
+
+    .hr-skills {
+        display: flex;
+        float: left;
+        width: 5.5rem;
+        border-top: 0.125rem solid #D977C7;
+        margin: 5rem 0 0;
+    }
+
+    h5 {
+        color: #9766CC;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2rem;
+    }
+
+    .inline-list h5 {
+        font-size: 1.75rem;
+        padding: 1rem 1rem;
+        margin: 4.5rem 0.5rem;
+    }
+
+    /* Fin Titulos sección Proyectos */
+
+    /* Box Proyectos */
+
+    .titulo-proyectos {
+        color: #9766CC;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.2rem;
+    }
+
+    .titulo-seccion-portfolio {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        margin: 1rem 5.5rem 1rem 31rem;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+    .subtitulo-proyectos,
+    .subtitulo-footer {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.75rem;
+        opacity: 1.0;
+    }
+
+    p {
+        color: #654D80;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .styled-link {
+        color: #D977C7;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.75rem;
+        padding: 0 1rem;
+        text-decoration: none;
+    }
+
+    #cv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Fin Box Proyectos */
+
+    /* CV */
+
+    .box-img-left-cv {
+        width: 17.75rem;
+        height: fit-content;
+        padding: 0.5rem;
+        margin: 3rem 1rem 6rem 18.0625rem;
+        position: relative;
+        float: left;
+    }
+
+    .box-text-right-cv {
+        height: fit-content;
+        padding: 1rem;
+        margin: 3rem 2rem 6rem;
+        position: relative;
+        float: right;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-grande {
+        color: #9766CC;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 3.125rem;
+        float: right;
+        position: relative;
+    }
+
+    /* Fin CV */
+
+    /* Footer */
+
+    .contenedor-footer {
+        display: inline-block;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        line-height: 4rem;
+        height: 30rem;
+        width: 85.373rem;
+        padding: 3rem 0;
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .contenedor-footer p {
+        line-height: 3rem;
+        margin: 0 0 1rem 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-footer h1 {
+        font-size: 3rem;
+        margin: 1.5rem 1rem 0;
+    }
+
+    .email {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.725rem;
+        opacity: 1.0;
+        text-align: center;
+        padding: 0 0rem;
+    }
+
+    .texto-footer {
+        width: 85.373rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .Inline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #icons-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: center;
+    }
+
+    #icons-footer a {
+        padding: 1rem;
+        margin: 2rem 1rem;
+        color: rgba(101, 77, 128);
+    }
+
+    .footer-resumido {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 5rem;
+    }
+
+    /* Fin Footer */
+
+    /* Sección Solutions */
+
+    .titulo-seccion-solutions {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        margin: 2rem 3.5rem 2rem 20rem;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+    .grid-solutions {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr));
+        grid-gap: 1.5rem;
+        align-items: stretch;
+        margin: 3rem 3rem 0rem;
+        padding-bottom: 6rem;
+    }
+
+    .solution-text {
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 15rem;
+        height: auto;
+        padding: 0.3rem 0rem 2rem;
+        flex-grow: 1;
+        flex-direction: column;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .titulo-seccion-method {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        margin: 2rem 3.5rem 2rem 5rem;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+    .titulo-seccion-method h4 {
+        color: #9766CC;
+        font-family: abril-fatface, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.2rem;
+        opacity: 0.2;
+    }
+
+    .solution-text h3 {
+        text-align: center;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 4.125rem;
+        font-style: normal;
+    }
+
+    .bg-lillac-solutions {
+        height: 42rem;
+    }
+
+    .grid-method {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+        grid-gap: 1rem;
+        align-items: stretch;
+        margin: 3rem 2rem;
+        ;
+        padding: 0rem 0rem 5.5rem;
+    }
+
+    .method-step {
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 13rem;
+        height: auto;
+        padding: 0.3rem 0rem 3rem;
+        flex-grow: 1;
+        flex-direction: column;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .method-step h3 {
+        text-align: center;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 3.125rem;
+        font-style: normal;
+    }
+
+    /* Fin sección Solutions */
+
+    /* Sección Skills */
+
+    .titulo-skills-largo {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        margin: 2rem 5.5rem 2rem 10.5rem;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+    .skill-card div {
+        text-align: center;
+        background-color: #ffffff;
+        width: 25.9375rem;
+        height: 27.5rem;
+        border-radius: 0.625rem;
+        box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
+        padding: 2.5rem 1rem;
+        margin: 1rem;
+        box-sizing: border-box;
+    }
+
+    .contenedor-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 5rem 0;
+        margin: 0 2rem;
+    }
+
+    .titulos-listas {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.9rem;
+    }
+
+    #iconos-tools li {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .bg-lillac-skills {
+        height: 50rem;
+    }
+
+    .titulo-skills-largo {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        margin: 2rem 5.5rem 2rem 10rem;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+    .titulo-seccion-skills {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        margin: 2rem 6.5rem 2rem 20rem;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+    .inline-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6rem;
+    }
+
+    .contenedor-card p {
+        margin-top: 0;
+    }
+
+    /* Fin sección Skills */
+
+    /* Sección Contact */
+
+    .contenedor-contact {
+        height: 65rem;
+        width: 100vw;
+    }
+
+    .contenedor-form {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 50rem;
+        height: auto;
+        margin: 1rem 0 0 20rem;
+    }
+
+    .contact {
+        color: #9766CC;
+        font-family: abril-display, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.35rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .contenedor-form p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin-top: 0;
+    }
+
+    .titulo-seccion-contact {
+        display: inline-block;
+        position: relative;
+        flex-wrap: wrap;
+        margin: 3rem 5.5rem 0 46rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .text-area-size {
+        width: 50rem;
+        height: 11rem;
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #999999;
+    }
+}

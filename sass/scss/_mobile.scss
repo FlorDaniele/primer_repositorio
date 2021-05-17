@@ -1,0 +1,614 @@
+/* Vars */
+
+    /* Colors */
+    $pink: #D977C7;
+    $purple: #9766CC;
+    $darkest-purple: #654D80;
+
+    $dark-purple: #896DBF;
+    $dark-pink: #BA71CC;
+    $medium-pink:#D17CD8;
+    $lighter-pink: #E583DC;
+    $lightest-pink: #F288D2;
+
+    /* Typography */
+
+    $section-title-font:'abril-display', serif, normal, 700, $purple;
+
+    $big-title-font: 'abril-fatface', serif, normal, 400, rgb (151,102,204,0.2);
+
+    $paragraph-font: 'omnes-cyrillic', sans-serif, normal, 600, $darkest-purple; 
+
+    $title-omnes700: 'omnes-cyrillic', sans-serif, normal, 700;
+
+    $title-omnes600: 'omnes-cyrillic', sans-serif, normal, 600;
+
+    $title-omnes500: 'omnes-cyrillic', sans-serif, normal, 500;
+
+    $title-omnes400: 'omnes-cyrillic', sans-serif, normal, 400;
+
+    $title-abrildisplay: 'abril-display', serif, normal;
+
+/* Fin Vars */
+
+/* Mixin */
+
+@mixin flexbox ($display: inline-block, $position: relative, $align-items: center, $justify-content: flex-end, $wrap: wrap, $box-sizing: border-box, $text-align: right) {
+    display: $display;
+    position: $position;
+    flex-wrap: $wrap;
+    align-items: $align-items;
+    box-sizing: $box-sizing;
+    justify-content: $justify-content;
+    text-align: $text-align;
+}
+
+@mixin flexcenter ($display: flex, $justify: center, $align: center) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin centrado ($align: center, $justify: center) {
+    align-items: $align;
+    justify-content: $justify;
+}
+
+/* Fin Mixin */
+
+/* Mobile -> Wireframes en 390 x 844 (iPhone 12 pro) */
+
+@media only screen and (max-width: 960px) {
+
+    /* Intro y Nav */
+
+    .btn-primary {
+        font-size: 1.2rem !important;
+    }
+
+    #sakura {
+        display: block;
+        float: right;
+        position: relative;
+        padding: 0 0 0 12.5rem;
+        height: 7rem;
+        width: auto;
+    }
+
+    .intro-completo {
+        @include flexcenter ($display: block);
+        position: relative;
+        height: 35rem;
+        width: 100%;
+        .contenedor-intro-izq {
+            @include centrado;
+            display: block;
+            position: absolute;
+            top: 7.625rem;
+            left: 0;
+            flex-wrap: wrap;
+            padding: 1.5rem 2rem;
+            margin: 0;
+            height: 6.9rem;
+            width: 100%;
+            box-sizing: border-box;
+            .intro {
+                font: $section-title-font;
+                font-size: 2.8125rem;
+                margin-bottom: 1rem;
+                .professions {
+                    font: $title-omnes600;
+                    font-size: 1.5rem;
+                    line-height: 2.34375rem;
+                }
+            }
+        }
+        .contenedor-intro-der {
+            @include centrado;
+            display: block;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 21.25rem;
+            left: 0;
+            height: fit-content;
+            width: 20.1875rem;
+            padding: 2rem 0 2rem;
+            margin: 0 2rem;
+            box-sizing: border-box;
+            #titulo-bio {
+                font: $section-title-font;
+                font-size: 1.75rem;
+                margin-bottom: 0.5rem;
+            }
+            .texto-medio-bio {
+                font: $title-omnes600;
+                font-size: 1rem;
+                line-height: 1.625rem;
+            }
+        }
+    }
+
+    .align-welcome {
+        @include flexcenter;
+        padding: 0;
+        margin: 3rem 2rem;
+        .span-portfolio {
+            font: $big-title-font;
+            font-size: 3.125rem;
+            line-height: 4rem;
+            opacity: 0.2;
+            text-align: center;
+            margin: 1.5rem 0 2rem;
+        }
+    }
+
+    h4 {
+        font: $big-title-font;
+        font-size: 2.1875rem;
+    }
+
+    /* Nav bar */
+
+    ul {
+        li {
+            font: $title-omnes600;
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    /* Fin Intro y Nav */
+
+    /* Titulos sección Proyectos */
+
+    section {
+        h2 {
+            font: $title-omnes600;
+            font-size: 1rem;
+        }
+    }
+
+    .texto-grande {
+        color: $purple;
+        font: $title-omnes700;
+        font-size: 0.75rem;
+        line-height: 1.0875rem;
+    }
+
+    .titulo-seccion-izq {
+        @include flexbox ($text-align: left, $justify-content: flex-start);
+        margin: 2.4rem 2rem 1rem 0.45rem;
+        line-height: 2rem;
+
+        h1 {
+            font: $section-title-font;
+            font-size: 1.75rem;
+            padding: 0.5rem 0 0;
+        }
+    }
+
+    .hr-skills {
+        display: flex;
+        float: left;
+        width: 2rem;
+        border-top: 0.125rem solid $pink;
+        margin: 3rem 0 0;
+    }
+
+    h5 {
+        color: $purple;
+        font: $title-omnes700;
+        font-size: 1.2rem;
+    }
+
+    .inline-list {
+        @include flexcenter;
+        height: 5rem;
+
+        h5 {
+            font-size: 1.3rem;
+            padding: 1rem 0.5rem;
+            margin: 2rem 1rem 2rem 0;
+        }
+    }
+
+    .titulo-proyectos {
+        color: $purple;
+        font: $title-omnes700;
+        font-size: 2rem;
+    }
+
+    .titulo-seccion-portfolio {
+        display: none;
+    }
+
+    .subtitulo-proyectos,
+    .subtitulo-footer {
+        font: $title-omnes700;
+        font-size: 1.5rem;
+        opacity: 1.0;
+    }
+
+    p {
+        font: $paragraph-font;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    .styled-link {
+        color: $pink;
+        font: $title-omnes700;
+        font-size: 1.25rem;
+        padding: 0 1rem;
+        text-decoration: none;
+    }
+
+    /* Fin Proyectos */
+
+    /* CV */
+
+    #cv {
+        @include flexcenter;
+        flex-direction: column;
+
+        .box-img-left-cv {
+            width: 10.625rem;
+            height: fit-content;
+            margin: 2.5rem 2rem 1rem;
+        }
+
+        .box-text-right-cv {
+            width: 15rem;
+            height: fit-content;
+            margin: 0rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .texto-grande {
+            color: $purple;
+            font: $title-omnes600;
+            font-size: 1.25rem;
+            line-height: 1.8rem;
+        }
+    }
+
+    /* Fin CV */
+
+    /* Footer */
+
+    .contenedor-footer {
+        @include centrado;
+        display: inline-block;
+        text-align: left;
+        line-height: 3rem;
+        width: 24.375rem;
+        height: 27rem;
+        width: 100vw;
+        padding: 1.5rem 0;
+        margin-bottom: 1rem;
+        p {
+            line-height: 2rem;
+            margin: 0 0 1rem 0;
+            font-size: 1rem;
+            width: 100vw;
+            padding: 0 1.5rem;
+            flex-wrap: wrap;
+        }
+        h1 {
+            font-size: 2.3rem;
+            margin: 1.5rem 1.5rem 0;
+        }
+        .subtitulo-footer {
+            font: $title-omnes700;
+            opacity: 1.0;
+            margin: 0.5rem 1.5rem;
+        }
+        .email {
+            font: $title-omnes700;
+            font-size: 1.25rem;
+            opacity: 1.0;
+            text-align: left;
+            padding: 0 0rem;
+        }
+    }
+
+    #icons-footer {
+        @include flexcenter;
+        float: left;
+        padding-left: 0rem;
+        a {
+            padding: 1rem;
+            margin: 2rem 1rem;
+            color: $darkest-purple;
+        }
+    }
+
+    /* Fin Footer */
+
+    /* Sección Solutions */
+
+    .hr-full-method {
+        display: none;
+    }
+
+    .bg-lillac-solutions {
+        width: 100vw;
+    }
+
+    .titulo-seccion-solutions {
+        display: none;
+    }
+
+    .grid-solutions {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-gap: 1rem;
+        align-items: stretch;
+        margin: 3rem 2rem 0rem;
+        padding: 0rem 0rem 3rem;
+        article {
+            @include flexcenter;
+            flex-direction: column;
+
+            .solution-text {
+                h3 {
+                    font: $title-omnes700;
+                    text-align: center;
+                    font-size: 2.5rem;
+                    line-height: 4rem;
+                }
+                p {
+                    flex-grow: 1;
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+
+    .titulo-seccion-method {
+        display: none;
+    }
+
+    .grid-method {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-gap: 1rem;
+        align-items: stretch;
+        margin: 3rem 2rem 0rem;
+        padding: 0rem 0rem 4rem;
+        article {
+            @include flexcenter;
+            flex-direction: column;
+            .method-step {
+                text-align: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 15.1625rem;
+                height: auto;
+                padding: 0.3rem 0rem 1rem;
+                flex-grow: 1;
+                flex-direction: column;
+                display: flex;
+                box-sizing: border-box;
+                h3 {
+                    text-align: center;
+                    font: $title-omnes700;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+                p {
+                    flex-grow: 1;
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+
+    /* Fin Sección Solutions */
+
+    /* Sección About me */
+
+    .bg-gradient-hero-about {
+        background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+        height: 98rem;
+        width: 100vw;
+    }
+
+    .contenedor-about {
+        @include flexcenter;
+        flex-direction: column;
+        .about-texto {
+            display: inline-block;
+            margin: 0.5rem 3rem 1rem;
+            width: 80vw;
+            text-align: left;
+        }
+        .about-img {
+            width: 65%;
+            float: none;
+            margin: 1rem 0;
+        }
+    }
+
+    .firma {
+        color: $pink;
+        font-family: pacifico, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 3.5rem;
+        margin: 0.75rem 0 4rem;
+    }
+
+    .love-title {
+        font: $section-title-font;
+        font-size: 2.5rem;
+        width: 18.74rem;
+        margin: 2rem 0 0 5rem;
+    }
+
+    .hr-right-l,
+    .hr-right-r,
+    .hr-full {
+        display: none;
+    }
+
+    .inline-about {
+        @include flexcenter ($justify: space-around);
+        flex-direction: column;
+        width: 100vw;
+        li {
+            padding: 1rem 1rem;
+            margin: 0.5rem 1rem 0.5rem;
+        }
+    }
+
+    /* Fin sección About Me */
+
+    /* Sección Skills */
+
+    .titulo-skills-largo h4 {
+        display: none;
+    }
+
+    .skill-card {
+        div {
+            text-align: center;
+            background-color: #ffffff;
+            width: 80vw;
+            height: 31rem;
+            border-radius: 0.625rem;
+            box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
+            padding: 2.5rem 1rem;
+            margin: 1rem;
+            box-sizing: border-box;
+        }
+    }
+
+    .contenedor-card {
+        @include flexcenter;
+        flex-direction: column;
+        padding: 0 0 2rem 0;
+        .titulos-listas {
+            font: $title-omnes700;
+            font-size: 1.9rem;
+        }
+        p {
+            line-height: 2.5rem;
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        #iconos-tools {
+            li {
+                font: $title-omnes600;
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+    }
+
+    .bg-lillac-skills {
+        height: 150rem;
+    }
+
+    .titulo-skills-largo,
+    .titulo-seccion-skills {
+        display: none;
+    }
+
+    .inline-skills {
+        @include flexcenter ($justify: space-around);
+        flex-direction: column;
+        width: 100vw;
+        li {
+            padding: 1rem 1rem;
+            margin: 0.5rem 1rem 0.5rem;
+        }
+    }
+
+    /* Fin sección Skills */
+
+    /* Sección Contact me */
+
+    .contenedor-contact .bg-lillac2 {
+        height: 70rem;
+        width: 100vw;
+        .titulo-seccion-contact {
+            display: none;
+        }
+    }
+
+    .contenedor-form {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: auto;
+        margin-left: 2rem;
+        .contenedor-form-intro {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            box-sizing: border-box;
+            .contact {
+                color: #9766CC;
+                font-family: abril-display, serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 1.75rem;
+                margin-top: 2rem;
+                margin-bottom: 0;
+            }
+            p {
+                margin: 0 0 1rem 0;
+                font-size: 1.2rem;
+            }
+        }
+
+        .contenedor-name-email {
+            display: block;
+            justify-content: space-around;
+            align-items: center;
+            text-align: left;
+            box-sizing: border-box;
+            margin: 2rem 0;
+            width: 83vw;
+            .short-placeholder {
+                width: 83vw;
+                ;
+                height: 3.75rem;
+                font: $title-omnes400;
+                font-size: 1.5rem;
+                color: #999999;
+            }
+            .text-area-size {
+                width: 83vw;
+                ;
+                height: 11rem;
+                font: $title-omnes400;
+                font-size: 1.5rem;
+                color: #999999;
+            }
+            .button-style {
+                background-image: linear-gradient(to right, $purple 0%, $pink 51%, $purple 100%);
+                margin: 0.625rem;
+                padding: 1.5rem 1.75rem;
+                font: $title-omnes700;
+                text-align: center;
+                font-size: 1.5rem;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;
+                /* offset-x | offset-y | blur-radius | spread-radius | color */
+                box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+                border-radius: 0.625rem;
+                display: block;
+                width: 60%;
+            }
+        }
+    }
+}
+
+/* Fin sección Contact me */

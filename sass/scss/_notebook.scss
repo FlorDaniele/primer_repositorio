@@ -1,0 +1,584 @@
+/* Vars */
+
+    /* Colors */
+    $pink: #D977C7;
+    $purple: #9766CC;
+    $darkest-purple: #654D80;
+
+    $dark-purple: #896DBF;
+    $dark-pink: #BA71CC;
+    $medium-pink:#D17CD8;
+    $lighter-pink: #E583DC;
+    $lightest-pink: #F288D2;
+
+    /* Typography */
+
+    $section-title-font:'abril-display', serif, normal, 700, $purple;
+
+    $big-title-font: 'abril-fatface', serif, normal, 400, rgb (151,102,204,0.2);
+
+    $paragraph-font: 'omnes-cyrillic', sans-serif, normal, 600, $darkest-purple; 
+
+    $title-omnes700: 'omnes-cyrillic', sans-serif, normal, 700;
+
+    $title-omnes600: 'omnes-cyrillic', sans-serif, normal, 600;
+
+    $title-omnes500: 'omnes-cyrillic', sans-serif, normal, 500;
+
+    $title-omnes400: 'omnes-cyrillic', sans-serif, normal, 400;
+
+    $title-abrildisplay: 'abril-display', serif, normal;
+
+/* Fin Vars */
+
+/* Mixin */
+
+@mixin flexbox ($display: inline-block, $position: relative, $align-items: center, $justify-content: flex-end, $wrap: wrap, $box-sizing: border-box, $text-align: right) {
+    display: $display;
+    position: $position;
+    flex-wrap: $wrap;
+    align-items: $align-items;
+    box-sizing: $box-sizing;
+    justify-content: $justify-content;
+    text-align: $text-align;
+}
+
+@mixin flexcenter ($display: flex, $justify: center, $align: center) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin centrado ($align: center, $justify: center) {
+    align-items: $align;
+    justify-content: $justify;
+}
+
+/* Fin Mixin */
+
+/* 
+************************** Notebook *****************************
+            Wireframes en 1366 x 768px 
+*/
+
+@media only screen and (min-width: 961px) and (max-width:1400px) {
+
+    /* Intro y Nav */
+
+    .bg-gradient-hero {
+        background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+        height: 45rem;
+        width: 100vw;
+    }
+
+    #sakura {
+        display: block;
+        float: right;
+        position: relative;
+        padding: 0.25rem 0 0.25rem 1rem;
+        height: 7.5rem;
+    }
+
+    .intro-completo {
+        display: inline-block;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0.5rem 0 0;
+
+        .contenedor-intro-izq {
+            @include centrado;
+            display: inline-block;
+            position: relative;
+            flex-wrap: wrap;
+            width: 38.25rem;
+            padding: 1rem 2rem 0 5.5rem;
+            height: 19.125rem;
+            margin-right: 1rem;
+            box-sizing: border-box;
+
+            .intro {
+                font: $section-title-font;
+                font-size: 4.3rem;
+
+                .professions {
+                    font-family: omnes-cyrillic, sans-serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: 2.3rem;
+                    line-height: 4.0625rem;
+                }
+            }
+        }
+
+        .contenedor-intro-der {
+            display: inline-block;
+            position: relative;
+            flex-wrap: wrap;
+            width: 44.8125rem;
+            height: 19.125rem;
+            padding: 0rem 5.5rem 0rem 1rem;
+            margin-left: 1.0625rem;
+            justify-content: center;
+            align-items: flex-start;
+            box-sizing: border-box;
+
+            #titulo-bio {
+                font: $section-title-font;
+                font-size: 3.125rem;
+            }
+
+            .texto-medio-bio {
+                display: block;
+                text-align: left;
+                font: $title-omnes500;
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+                padding: 1rem 0 0;
+            }
+        }
+    }
+
+    .align-welcome {
+        @include flexcenter;
+        padding: 2rem 0 3rem;
+
+        .span-portfolio {
+            font: $big-title-font;
+            font-size: 5.3125rem;
+            line-height: 6rem;
+            opacity: 0.2;
+            text-align: center;
+        }
+    }
+
+    h4 {
+        font: $big-title-font;
+        font-size: 4rem;
+        opacity: 0.2;
+    }
+
+    /* Fin Intro y Nav */
+
+    /* Proyectos */
+
+    section {
+        h2 {
+            font: $title-omnes600;
+            font-size: 1.375rem
+        }
+    }
+
+    .hr-skills {
+        display: flex;
+        float: left;
+        width: 5.5rem;
+        border-top: 0.125rem solid $pink;
+        margin: 5rem 0 0;
+    }
+
+    .titulo-seccion-izq {
+        @include flexbox ($text-align: left, $justify-content: flex-start);
+        margin: 4.4rem 2rem 1.5rem 0.45rem;
+        line-height: 2rem;
+
+        h1 {
+            font: section-title-font;
+            font-size: 3.125rem;
+            padding: 1.5rem 0 0;
+        }
+    }
+
+    .titulo-seccion-portfolio {
+        @include flexbox;
+        margin: 1rem 5.5rem 1rem 31rem;
+    }
+
+    h5 {
+        color: $purple;
+        font: $title-omnes700;
+        font-style: normal;
+        font-size: 1.2rem;
+    }
+
+    .inline-list {
+        h5 {
+            font-size: 1.75rem;
+            padding: 1rem 1rem;
+            margin: 4.5rem 0.5rem;
+        }
+    }
+
+    .titulo-proyectos {
+        color: $purple;
+        font: $title-omnes700;
+        font-style: normal;
+        font-size: 2.2rem;
+    }
+
+    .subtitulo-proyectos,
+    .subtitulo-footer {
+        font: $title-omnes700;
+        font-size: 1.75rem;
+        opacity: 1.0;
+    }
+
+    p {
+        color: $darkest-purple;
+        font: $title-omnes600;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    /* CV */
+
+    #cv {
+        @include flexcenter;
+        flex-direction: row;
+
+        .box-img-left-cv {
+            width: 17.75rem;
+            height: fit-content;
+            padding: 0.5rem;
+            margin: 3rem 1rem 6rem 18.0625rem;
+            position: relative;
+            float: left;
+        }
+
+        .box-text-right-cv {
+            @include centrado;
+            height: fit-content;
+            padding: 1rem;
+            margin: 3rem 2rem 6rem;
+            position: relative;
+            float: right;
+        }
+
+        .texto-grande {
+            color: $purple;
+            font: $title-omnes700;
+            font-size: 2rem;
+            line-height: 3.125rem;
+            float: right;
+            position: relative;
+        }
+    }
+
+    /* Fin CV */
+
+    /* Footer */
+
+    .contenedor-footer {
+        @include centrado;
+        display: inline-block;
+        text-align: center;
+        line-height: 4rem;
+        height: 30rem;
+        width: 85.373rem;
+        padding: 3rem 0;
+        margin: 1rem 1rem 0 1rem;
+
+        h1 {
+            font-size: 3rem;
+            margin: 1.5rem 1rem 0;
+        }
+
+        p {
+            line-height: 3rem;
+            margin: 0 0 1rem 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            flex-wrap: wrap;
+        }
+
+        .email {
+            font: $title-omnes700;
+            font-size: 1.725rem;
+            opacity: 1.0;
+            text-align: center;
+            padding: 0 0rem;
+        }
+
+        #icons-footer {
+            @include flexcenter;
+            float: center;
+
+            a {
+                padding: 1rem;
+                margin: 2rem 1rem;
+                color: $darkest-purple;
+            }
+        }
+    }
+
+    .footer-resumido {
+        @include centrado;
+        display: inline-block;
+        text-align: center;
+        height: 5rem;
+    }
+
+    /* Fin Footer */
+
+    /* Sección About me */
+
+    .bg-gradient-hero-about {
+        background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+        height: 65rem;
+        width: 100vw;
+    }
+
+    .about-texto {
+        display: inline-block;
+        margin: 0.5rem 1.5rem 1rem 6.5rem;
+        width: 62rem;
+        text-align: left;
+
+        .firma {
+            color: $pink;
+            font-family: pacifico, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 3.5rem;
+            padding: 1rem 0;
+            margin: 0;
+        }
+    }
+
+    .hr-right-l {
+        display: flex;
+        float: left;
+        width: 40%;
+        border-top: 0.125rem solid $pink;
+        margin-right: 2rem;
+    }
+
+    .hr-right-r {
+        display: flex;
+        float: right;
+        width: 40%;
+        border-top: 0.125rem solid $pink;
+        margin-left: 2rem;
+    }
+
+    .inline-about {
+        @include flexcenter ($justify: space-around);
+        width: 100vw;
+        height: 6rem;
+
+        li {
+            padding: 1rem 0.5rem;
+            margin: 3rem 1rem 4rem;
+        }
+    }
+
+    .hr-full {
+        display: flex;
+        width: 100vw;
+        border-top: 0.125rem solid $pink;
+        margin-bottom: 8.5rem;
+    }
+
+    ul {
+        li {
+            font: $title-omnes600;
+            font-size: 1.2rem;
+            line-height: 3rem;
+        }
+    }
+
+    .love-title {
+        font: $section-title-font;
+        font-size: 2rem;
+        width: 24rem;
+        margin: 0 0 0 30rem;
+    }
+
+    .about-img {
+        float: right;
+        margin: 1rem 6.5rem 1rem 2rem;
+        height: fit-content;
+    }
+
+    /* Fin sección About me */
+
+    /* Sección Solutions */
+
+    .titulo-seccion-solutions {
+        @include flexbox;
+        margin: 2rem 3.5rem 2rem 20rem;
+    }
+
+    .grid-solutions {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr));
+        grid-gap: 1.5rem;
+        align-items: stretch;
+        margin: 3rem 3rem 0rem;
+        padding-bottom: 6rem;
+
+        .solution-text {
+            @include flexcenter;
+            flex-wrap: wrap;
+            width: 15rem;
+            height: auto;
+            padding: 0.3rem 0rem 2rem;
+            flex-grow: 1;
+            flex-direction: column;
+            box-sizing: border-box;
+
+            h3 {
+                font: $title-omnes700;
+                font-size: 2.2rem;
+                line-height: 4.125rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .bg-lillac-solutions {
+        height: 42rem;
+    }
+
+    .titulo-seccion-method {
+        @include flexbox;
+        margin: 2rem 3.5rem 2rem 5rem;
+
+        h4 {
+            font: $big-title-font;
+            font-size: 3.2rem;
+            opacity: 0.2;
+        }
+    }
+
+    .grid-method {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+        grid-gap: 1rem;
+        align-items: stretch;
+        margin: 3rem 2rem;
+        padding: 0rem 0rem 5.5rem;
+
+        .method-step {
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 13rem;
+            height: auto;
+            padding: 0.3rem 0rem 3rem;
+            flex-grow: 1;
+            flex-direction: column;
+            display: flex;
+            box-sizing: border-box;
+
+            h3 {
+                text-align: center;
+                font: $title-omnes700;
+                font-size: 1.8rem;
+                line-height: 3.125rem;
+            }
+        }
+    }
+
+    /* Fin sección Solutions */
+
+    /* Sección Skills */
+
+    .titulo-skills-largo {
+        @include flexbox;
+        margin: 2rem 5.5rem 2rem 10.5rem;
+    }
+
+    .contenedor-card {
+        @include flexcenter;
+        padding: 0 0 5rem 0;
+        margin: 0 2rem;
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .skill-card {
+        div {
+            text-align: center;
+            background-color: #ffffff;
+            width: 25.9375rem;
+            height: 27.5rem;
+            border-radius: 0.625rem;
+            box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
+            padding: 2.5rem 1rem;
+            margin: 1rem;
+            box-sizing: border-box;
+
+            .titulos-listas {
+                font: $title-omnes700;
+                font-size: 1.9rem;
+            }
+        }
+
+        #iconos-tools {
+            li {
+                font: $title-omnes600;
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+
+        .bg-lillac-skills {
+            height: 50rem;
+        }
+
+        .titulo-seccion-skills {
+            @include flexbox;
+            margin: 2rem 6.5rem 2rem 20rem;
+        }
+
+        .inline-skills {
+            @include flexcenter;
+            height: 6rem;
+        }
+
+        /* Fin sección Skills */
+
+        /* Sección Contact */
+
+        .contenedor-contact {
+            height: 65rem;
+            width: 100vw;
+
+            .titulo-seccion-contact {
+                @include flexbox ($justify-content: center, $text-align: center);
+                margin: 3rem 5.5rem 0 46rem;
+            }
+
+            .contenedor-form {
+                @include centrado;
+                display: inline-block;
+                width: 50rem;
+                height: auto;
+                margin: 1rem 0 0 20rem;
+
+                p {
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                    margin-top: 0;
+                }
+
+                .contact {
+                    font: $section-title-font;
+                    font-size: 2.35rem;
+                    margin-top: 1.5rem;
+                    margin-bottom: 0;
+                }
+
+                .text-area-size {
+                    width: 50rem;
+                    height: 11rem;
+                    font: $title-omnes400;
+                    font-size: 1.5rem;
+                    color: #999999;
+                }
+            }
+        }
+    }
+}

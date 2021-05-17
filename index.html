@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <meta name="description" content="This is my professional Portfolio where you'll find my best work in the UX/UI Design and Digital Marketing fields">
+  <meta name="keywords" content="PORTFOLIO, UX UI DESIGNER, DIGITAL MARKETING, WEB DESIGN, PRODUCT DESIGNER">
+  <title>Portfolio Florencia Daniele</title>
+  <!-- Fin SEO -->
+  <script src="https://kit.fontawesome.com/ead18f9741.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/tvh0wnq.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+
+      window.addEventListener('scroll', function () {
+
+        if (window.scrollY > 50) {
+          document.getElementById('navbar_top').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+          // remove padding top from body
+          document.body.style.paddingTop = '0';
+        }
+      });
+    });
+    // DOMContentLoaded  end
+  </script>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation bar -->
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="d-flex flex-grow-1 ms-5">
+        <a class="navbar-brand d-none d-lg-inline-block underline-effect" href="#intro">Florencia Daniele</a>
+        <a class="nav-logo-mobile mx-auto d-inline-block d-lg-none underline-effect"
+          href="#intro">Florencia Daniele</a>
+        <div class="me-4">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse flex-grow-1 ms-5 me-5" id="main_nav">
+        <ul class="navbar-nav ms-auto flex-nowrap">
+          <li class="nav-item"><a class="nav-link mt-1 ms-2 me-2 underline-effect"
+              href="paginas/aboutme.html">ABOUT ME</a>
+          </li>
+          <li class="nav-item"><a class="nav-link mt-1 ms-2 me-2 underline-effect"
+              href="paginas/solutions.html">SOLUTIONS</a>
+          </li>
+          <li class="nav-item"><a class="nav-link mt-1 ms-2 me-2 underline-effect"
+              href="paginas/skills.html">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link mt-1 ms-2 me-2 underline-effect"
+              href="https://drive.google.com/file/d/1jp3fO5xS3_-Ue-hesy1PHKz2LMWDeTgD/view?usp=sharing">CV</a></li>
+          <li class="nav-item"><a class="nav-link mt-1 ms-2 me-2 underline-effect"
+              href="paginas/contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Intro -->
+  <section>
+    <div class="bg-gradient-hero">
+      <img id="sakura" src="recursos/sakura.svg" alt="sakura branch">
+
+      <div class="intro-completo">
+        <div class="contenedor-intro-izq">
+          <h1 class="intro">Hello, I'm Flor<span class="pink">.</span></h1>
+          <div class="typing">
+            <h2 class="professions">UX UI Designer</h2>
+            <h2 class="professions">Digital Marketing Specialist</h2>
+            <h2 class="professions">Web Development Student</h2>
+          </div>
+        </div>
+
+        <div class="contenedor-intro-der">
+          <h3 id="titulo-bio">Myself in a nutshell<span class="pink">.</span></h3>
+          <p class="texto-medio-bio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+            maiores minus nesciunt officia soluta corrupti eum dolor debitis sapiente,
+            perspiciatis reprehenderit cum earum consequatur nulla id rerum sunt quo. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. </p>
+        </div>
+      </div>
+
+      <div class="align-welcome">
+        <span class="span-portfolio">Welcome to my Portfolio</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <main>
+    <section>
+      <div class="hr-skills">
+        <hr>
+      </div>
+      <div class="titulo-seccion-izq">
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+        <h1>Selected Work<span class="pink">.</span></h1>
+      </div>
+
+      <div class="titulo-seccion-portfolio">
+        <h4>"Portfolio"</h4>
+      </div>
+
+      <div class="inline-list">
+        <h5>UX UI</h5>
+        <h5><span style="opacity: 0.6; font-weight: 600;">Graphic Design</span></h5>
+      </div>
+
+    </section>
+
+    <div class="d-md-flex flex-md-row w-100 my-md-3 ps-md-5 pe-md-5">
+
+      <div class="bg-light m-md-5 me-md-5 pt-4 px-3 pt-md-3 px-md-5 overflow-hidden">
+
+        <div class="card">
+          <img class="shadow rounded-8" srcset="imagenes/cover-gmail-desktop.jpg 500w,
+          imagenes/cover-printdely-notebook.jpg 400w,
+          imagenes/cover-printdely-mobile.jpg 300w" 
+
+          sizes="(max-width: 960px) 170px,
+          800px" src="imagenes/cover-gmail-mobile.jpg 300w" alt="Gmail cover picture"
+          loading="lazy"
+
+          (max-width: 1400px) 284px,
+          src="imagenes/cover-gmail-notebook.jpg" alt="Gmail cover picture"
+          loading="lazy"
+
+          (min-width: 1401px) 380px,
+          src="imagenes/cover-gmail-desktop.jpg" alt="Gmail cover picture"
+          loading="lazy">
+
+          <div class="card-body">
+            <h5 class="titulo-proyectos">Gmail Redesign</h5>
+            <h6 class="subtitulo-proyectos pink">UX/UI Case Study</h6>
+            <p>I did an analysis of the current Gmail’s desktop version and improved both the UI and
+              the
+              way users can manage their e-mails. I worked on their pain points and discover new functionalities that
+              they
+              would like to have so I added them to the new design.</p>
+            <a href="https://www.behance.net/gallery/114677503/UXUI-Case-Study-Gmail-Redesign"
+              class="btn btn-primary">Check
+              it here</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="bg-light m-md-5 me-md-5 pt-4 px-3 pt-md-3 px-md-5 overflow-hidden">
+        <div class="card">
+          <img class="shadow rounded-8" srcset="imagenes/cover-printdely-desktop.jpg 500w,
+          imagenes/cover-printdely-notebook.jpg 400w,
+          imagenes/cover-printdely-mobile.jpg 300w" 
+
+          sizes="(max-width: 960px) 170px,
+          800px" src="imagenes/cover-printdely-mobile.jpg 300w" alt="Printdely cover picture"
+          loading="lazy"
+
+          (max-width: 1400px) 284px,
+          src="imagenes/cover-printdely-notebook.jpg" alt="Printdely cover picture"
+          loading="lazy"
+
+          (min-width: 1401px) 380px,
+          src="imagenes/cover-printdely-desktop.jpg" alt="Printdely cover picture"
+          loading="lazy">
+
+          <div class="card-body">
+            <h5 class="titulo-proyectos">Printdely App Design</h5>
+            <h6 class="subtitulo-proyectos pink">UX/UI Project</h6>
+            <p>I worked on an end to end design of a mobile solution for people who need to find a
+              convenient place where to
+              print their files. This comes in handy especially for students but also for print stores who want to gain
+              more
+              awareness from their target market.</p>
+            <a href="https://www.behance.net/gallery/110446759/UXUI-Project-Printdely-App-Design" class="btn
+              btn-primary">Check it here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CV -->
+    <section>
+      <div id="cv">
+        <img class="box-img-left-cv" src="recursos/ilustracionCV.svg" alt="CV illustration" loading="lazy">
+        <h3 class="texto-grande box-text-right-cv">Check out my <a class="link-cv"
+          href="https://drive.google.com/file/d/1jp3fO5xS3_-Ue-hesy1PHKz2LMWDeTgD/view?usp=sharing">CV</a> here to know more about my professional experience.</h3>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <div class="contenedor-footer bg-lillac2">
+      <h1>Let's collaborate<span class="pink">.</span></h1>
+      <h4 class="subtitulo-footer pink">Have a project coming up?</h4>
+      <p>Feel free to reach out to see how we can work together or just a friendly hi.</p>
+      <p class="purple">I'm in France but I'm available for remote jobs.</p>
+      <p class="email purple">florsoledaddaniele@gmail.com</p>
+
+      <!-- RRSS -->
+      <ul id="icons-footer">
+        <li><a id="linkedin" href="/http://www.linkedin.com/in/flordaniele/"> <i class="fab fa-linkedin-in"> </i></a></li>
+        <li><a id="behance" href="https://www.behance.net/FlorDaniele"> <i class="fab fa-behance"></i></a></li>
+        <li><a id="instagram" href="/http://www.instagram.com/florenciadaniele.ux/"> <i class="fab fa-instagram"></i> </a></li>
+      </ul>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container text-center">
+        <span class="text-muted">Designed and coded by me in 2021.</span>
+      </div>
+    </footer>
+
+</body>
+
+</html>
