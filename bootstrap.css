@@ -789,6 +789,7 @@ button:not(:disabled),
     background-color: #fff;
     background-clip: border-box;
     border-radius: 0.25rem;
+    margin: 0 0.5rem;
 }
 
 .card-img,
@@ -812,5 +813,5 @@ button:not(:disabled),
 
 .card-body {
     flex: 1 1 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
 }
