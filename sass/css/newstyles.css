@@ -461,7 +461,8 @@ section h2 {
     font-size: 1.875rem;
     opacity: 1.0;
     text-align: center;
-    padding: 0 0rem; }
+    padding: 0 0rem;
+    color: #9766CC; }
 
 #icons-footer {
   display: flex;
@@ -798,12 +799,12 @@ section h2 {
         font: normal 700 1.5rem "abril-display", serif;
         font-size: 2.8125rem;
         margin-bottom: 1rem; }
-        .intro-completo .contenedor-intro-izq .intro .professions {
-          font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-          font-size: 1.5rem;
-          line-height: 2.34375rem; }
         .intro-completo .contenedor-intro-izq .intro .pink {
           color: #D977C7; }
+      .intro-completo .contenedor-intro-izq .professions {
+        font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+        font-size: 1.5rem;
+        line-height: 2.34375rem; }
     .intro-completo .contenedor-intro-der {
       align-items: center;
       justify-content: center;
@@ -964,7 +965,8 @@ section h2 {
       font-size: 1.25rem;
       opacity: 1.0;
       text-align: left;
-      padding: 0 0rem; }
+      padding: 0 1.5rem;
+      color: #9766CC; }
   #icons-footer {
     display: flex;
     justify-content: center;
@@ -1144,14 +1146,14 @@ section h2 {
   /* Fin sección Skills */
   /* Sección Contact me */
   .contenedor-contact .bg-lillac2 {
-    height: 70rem;
+    height: 60rem;
     width: 100vw; }
-    .contenedor-contact .bg-lillac2 .titulo-seccion-contact {
-      display: none; }
+  .titulo-seccion-contact {
+    display: none; }
   .contenedor-form {
     display: inline-block;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 80vw;
     height: auto;
     margin-left: 2rem; }
@@ -1410,7 +1412,8 @@ section h2 {
       font-size: 1.725rem;
       opacity: 1.0;
       text-align: center;
-      padding: 0 0rem; }
+      padding: 0 0rem;
+      color: #9766CC; }
     .contenedor-footer #icons-footer {
       display: flex;
       justify-content: center;
