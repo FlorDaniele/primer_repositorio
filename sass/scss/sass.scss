@@ -42,6 +42,7 @@ p { font-size: 1.2em; line-height: 1.0em; color: #333; }
 
     /* ejemplo 2 $fuentePrincipal: normal 0.5em 'Halant', serif; */
 
+    /* The font CSS property is either a shorthand property for setting font-style, font-variant, font-weight, font-size, line-height and font-family, or a way to set the element's font to a system font, using specific keywords. */
     
     $section-title-font: normal 700 1.5rem 'abril-display', serif;
 
@@ -49,7 +50,7 @@ p { font-size: 1.2em; line-height: 1.0em; color: #333; }
 
     $big-title-font: normal 400 4rem 'abril-fatface', serif;
 
-    $paragraph-font: normal 500 1.5rem 'omnes-cyrillic', sans-serif; 
+    $paragraph-font: normal 600 1.5rem 'omnes-cyrillic', sans-serif; 
 
     $title-omnes700: normal 700 1.5rem 'omnes-cyrillic', sans-serif;
 
@@ -127,6 +128,7 @@ p {
     font-size: 1.65rem;
     line-height: 3rem;
     margin: 1rem 0;
+    color: $darkest-purple;
 }
 
 img {
@@ -170,7 +172,8 @@ a:hover {
 section {
     h2 {
     font: $title-omnes600;
-    font-size: 1.75rem
+    font-size: 1.75rem;
+    margin: 1.5rem 0;
     }
 }
 
@@ -217,14 +220,16 @@ section {
 .subtitulo-footer {
     font: $title-omnes700;
     font-size: 2.5rem;
-    opacity: 1.0;
     margin: 0.5rem 0;
+    color: $pink;
+    margin: 0.5rem 0 1rem;
 }
 
 .texto-medio-bio {
     font: $title-omnes500;
     font-size: 2.125rem;
     line-height: 3.5rem;
+    color: $darkest-purple;
 }
 
 .texto-grande {
@@ -251,7 +256,7 @@ section {
     font: $big-title-font;
     font-size: 7.625rem;
     color: $purple;
-    opacity: 20%;
+    opacity: 30%;
 }
 
 .link-cv {
@@ -263,6 +268,10 @@ section {
 .intro {
     font: $section-title-font;
     font-size: 5.9375rem;
+}
+
+.pink {
+    color: $pink;
 }
 
 .professions {
@@ -306,42 +315,42 @@ section {
         @include flexbox;
         margin: 2rem 6.5rem 2rem 23.5rem;
         color: $purple;
-        opacity: 20%;
+        opacity: 30%;
     }
 
     .titulo-seccion-skills {
         @include flexbox;
         margin: 2rem 6.5rem 2rem 38.5rem;
         color: $purple;
-        opacity: 20%;
+        opacity: 30%;
     }
 
     .titulo-seccion-portfolio {
         @include flexbox;
         margin: 2rem 6.5rem 2rem 54rem;
         color: $purple;
-        opacity: 20%;
+        opacity: 30%;
     }
 
     .titulo-seccion-solutions {
         @include flexbox;
-        margin: 2rem 3rem 2rem 37.5rem;
+        margin: 2rem 3rem 2rem 35rem;
         color: $purple;
-        opacity: 20%;
+        opacity: 30%;
     }
 
     .titulo-seccion-method {
         @include flexbox;
-        margin: 2rem 6.5rem 2rem 5rem;
+        margin: 2rem 6.5rem 2rem 4rem;
         color: $purple;
-        opacity: 20%;
+        opacity: 30%;
     }
 
     .titulo-seccion-contact {
         @include flexbox ($text-align: center, $justify-content: center);
         margin: 3rem 5.5rem 0 68.5rem;
         color: $purple;
-        opacity: 20%;
+        opacity: 30%;
     }
 
     /* Fin de Titulos Seccion */
@@ -395,6 +404,7 @@ section {
             flex-grow: 1;
             flex-direction: column;
             box-sizing: border-box;
+            text-align: center;
 
             h3 {
                 text-align: center;
@@ -510,6 +520,7 @@ section {
         opacity: 1.0;
         text-align: center;
         padding: 0 0rem;
+        color: $purple;
     }
 }
 
@@ -631,6 +642,30 @@ section {
 }
 
 /* Fin seccion About Me */
+
+/* Colores de solution cards */ 
+
+.dark-purple {
+    color: $dark-purple;
+}
+
+.dark-pink {
+    color: $dark-pink;
+}
+
+.medium-pink {
+    color: $medium-pink;
+}
+
+.lighter-pink {
+    color: $lighter-pink;
+}
+
+.lightest-pink {
+    color: $lightest-pink;
+}
+
+/* Fin colores de solution cards */ 
 
 /* Sección Method */
 
