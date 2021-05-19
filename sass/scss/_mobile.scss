@@ -13,21 +13,21 @@
 
     /* Typography */
 
-    $section-title-font:'abril-display', serif, normal, 700, $purple;
+    $section-title-font: normal 700 1.5rem 'abril-display', serif;
 
-    $big-title-font: 'abril-fatface', serif, normal, 400, rgb (151,102,204,0.2);
+    $title-abrildisplay: normal 1.5rem 'abril-display', serif;
 
-    $paragraph-font: 'omnes-cyrillic', sans-serif, normal, 600, $darkest-purple; 
+    $big-title-font: normal 400 4rem 'abril-fatface', serif;
 
-    $title-omnes700: 'omnes-cyrillic', sans-serif, normal, 700;
+    $paragraph-font: normal 600 1.5rem 'omnes-cyrillic', sans-serif; 
 
-    $title-omnes600: 'omnes-cyrillic', sans-serif, normal, 600;
+    $title-omnes700: normal 700 1.5rem 'omnes-cyrillic', sans-serif;
 
-    $title-omnes500: 'omnes-cyrillic', sans-serif, normal, 500;
+    $title-omnes600: normal 600 1.5rem 'omnes-cyrillic', sans-serif;
 
-    $title-omnes400: 'omnes-cyrillic', sans-serif, normal, 400;
+    $title-omnes500: normal 500 1.5rem 'omnes-cyrillic', sans-serif;
 
-    $title-abrildisplay: 'abril-display', serif, normal;
+    $title-omnes400: normal 400 1.5rem 'omnes-cyrillic', sans-serif;
 
 /* Fin Vars */
 
@@ -80,6 +80,7 @@
         position: relative;
         height: 35rem;
         width: 100%;
+
         .contenedor-intro-izq {
             @include centrado;
             display: block;
@@ -92,17 +93,24 @@
             height: 6.9rem;
             width: 100%;
             box-sizing: border-box;
+
             .intro {
                 font: $section-title-font;
                 font-size: 2.8125rem;
                 margin-bottom: 1rem;
-                .professions {
-                    font: $title-omnes600;
-                    font-size: 1.5rem;
-                    line-height: 2.34375rem;
+
+                .pink {
+                    color: $pink;
                 }
             }
+
+            .professions {
+                font: $title-omnes600;
+                font-size: 1.5rem;
+                line-height: 2.34375rem;
+            }
         }
+
         .contenedor-intro-der {
             @include centrado;
             display: block;
@@ -115,11 +123,13 @@
             padding: 2rem 0 2rem;
             margin: 0 2rem;
             box-sizing: border-box;
+
             #titulo-bio {
                 font: $section-title-font;
                 font-size: 1.75rem;
                 margin-bottom: 0.5rem;
             }
+
             .texto-medio-bio {
                 font: $title-omnes600;
                 font-size: 1rem;
@@ -132,11 +142,12 @@
         @include flexcenter;
         padding: 0;
         margin: 3rem 2rem;
+
         .span-portfolio {
             font: $big-title-font;
             font-size: 3.125rem;
             line-height: 4rem;
-            opacity: 0.2;
+            opacity: 0.30;
             text-align: center;
             margin: 1.5rem 0 2rem;
         }
@@ -165,6 +176,7 @@
         h2 {
             font: $title-omnes600;
             font-size: 1rem;
+            margin: 0.5rem 0;
         }
     }
 
@@ -286,6 +298,7 @@
         width: 100vw;
         padding: 1.5rem 0;
         margin-bottom: 1rem;
+
         p {
             line-height: 2rem;
             margin: 0 0 1rem 0;
@@ -294,21 +307,25 @@
             padding: 0 1.5rem;
             flex-wrap: wrap;
         }
+
         h1 {
             font-size: 2.3rem;
             margin: 1.5rem 1.5rem 0;
         }
+
         .subtitulo-footer {
             font: $title-omnes700;
             opacity: 1.0;
             margin: 0.5rem 1.5rem;
         }
+
         .email {
             font: $title-omnes700;
             font-size: 1.25rem;
             opacity: 1.0;
             text-align: left;
-            padding: 0 0rem;
+            padding: 0 1.5rem;
+            color: $purple;
         }
     }
 
@@ -316,6 +333,7 @@
         @include flexcenter;
         float: left;
         padding-left: 0rem;
+
         a {
             padding: 1rem;
             margin: 2rem 1rem;
@@ -346,6 +364,7 @@
         align-items: stretch;
         margin: 3rem 2rem 0rem;
         padding: 0rem 0rem 3rem;
+
         article {
             @include flexcenter;
             flex-direction: column;
@@ -357,10 +376,12 @@
                     font-size: 2.5rem;
                     line-height: 4rem;
                 }
+
                 p {
                     flex-grow: 1;
                     font-size: 1.2rem;
                     line-height: 2rem;
+                    text-align: center;
                 }
             }
         }
@@ -370,6 +391,31 @@
         display: none;
     }
 
+    /* Colores de solution cards */
+
+    .dark-purple {
+        color: $dark-purple;
+    }
+
+    .dark-pink {
+        color: $dark-pink;
+    }
+
+    .medium-pink {
+        color: $medium-pink;
+    }
+
+    .lighter-pink {
+        color: $lighter-pink;
+    }
+
+    .lightest-pink {
+        color: $lightest-pink;
+    }
+
+    /* Fin colores de solution cards */
+
+
     .grid-method {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
@@ -377,9 +423,11 @@
         align-items: stretch;
         margin: 3rem 2rem 0rem;
         padding: 0rem 0rem 4rem;
+
         article {
             @include flexcenter;
             flex-direction: column;
+
             .method-step {
                 text-align: center;
                 align-items: center;
@@ -391,12 +439,14 @@
                 flex-direction: column;
                 display: flex;
                 box-sizing: border-box;
+
                 h3 {
                     text-align: center;
                     font: $title-omnes700;
                     font-size: 2rem;
                     line-height: 3rem;
                 }
+
                 p {
                     flex-grow: 1;
                     font-size: 1.2rem;
@@ -419,12 +469,14 @@
     .contenedor-about {
         @include flexcenter;
         flex-direction: column;
+
         .about-texto {
             display: inline-block;
             margin: 0.5rem 3rem 1rem;
             width: 80vw;
             text-align: left;
         }
+
         .about-img {
             width: 65%;
             float: none;
@@ -458,6 +510,7 @@
         @include flexcenter ($justify: space-around);
         flex-direction: column;
         width: 100vw;
+
         li {
             padding: 1rem 1rem;
             margin: 0.5rem 1rem 0.5rem;
@@ -490,15 +543,18 @@
         @include flexcenter;
         flex-direction: column;
         padding: 0 0 2rem 0;
+
         .titulos-listas {
             font: $title-omnes700;
             font-size: 1.9rem;
         }
+
         p {
             line-height: 2.5rem;
             margin-top: 0;
             font-size: 1.2rem;
         }
+
         #iconos-tools {
             li {
                 font: $title-omnes600;
@@ -521,6 +577,7 @@
         @include flexcenter ($justify: space-around);
         flex-direction: column;
         width: 100vw;
+
         li {
             padding: 1rem 1rem;
             margin: 0.5rem 1rem 0.5rem;
@@ -532,26 +589,28 @@
     /* Sección Contact me */
 
     .contenedor-contact .bg-lillac2 {
-        height: 70rem;
+        height: 60rem;
         width: 100vw;
-        .titulo-seccion-contact {
-            display: none;
-        }
+    }
+
+    .titulo-seccion-contact {
+        display: none;
     }
 
     .contenedor-form {
         display: inline-block;
-        justify-content: center;
-        align-items: center;
+        @include centrado;
         width: 80vw;
         height: auto;
         margin-left: 2rem;
+
         .contenedor-form-intro {
             display: inline-block;
             justify-content: center;
             align-items: center;
             text-align: left;
             box-sizing: border-box;
+
             .contact {
                 color: #9766CC;
                 font-family: abril-display, serif;
@@ -561,6 +620,7 @@
                 margin-top: 2rem;
                 margin-bottom: 0;
             }
+
             p {
                 margin: 0 0 1rem 0;
                 font-size: 1.2rem;
@@ -575,6 +635,7 @@
             box-sizing: border-box;
             margin: 2rem 0;
             width: 83vw;
+
             .short-placeholder {
                 width: 83vw;
                 ;
@@ -583,6 +644,7 @@
                 font-size: 1.5rem;
                 color: #999999;
             }
+
             .text-area-size {
                 width: 83vw;
                 ;
@@ -591,6 +653,7 @@
                 font-size: 1.5rem;
                 color: #999999;
             }
+
             .button-style {
                 background-image: linear-gradient(to right, $purple 0%, $pink 51%, $purple 100%);
                 margin: 0.625rem;
@@ -610,5 +673,7 @@
         }
     }
 }
+
+
 
 /* Fin sección Contact me */
