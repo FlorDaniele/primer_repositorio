@@ -53,433 +53,682 @@ p {
 /* Vars */
 /* Colors */
 /* Typography */
+/* ejemplo $titulo-fuente: normal 28px 'Roboto', sans-serif, 100; */
+/* ejemplo 2 $fuentePrincipal: normal 0.5em 'Halant', serif; */
 /* Fin Vars */
 /* Mixin */
 /* Fin Mixin */
-/* 
-************************** Notebook *****************************
-            Wireframes en 1366 x 768px 
-*/
-@media only screen and (min-width: 961px) and (max-width: 1400px) {
-  /* Intro y Nav */
-  .bg-gradient-hero {
-    background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
-    height: 45rem;
-    width: 100vw; }
-  #sakura {
-    display: block;
-    float: right;
-    position: relative;
-    padding: 0.25rem 0 0.25rem 1rem;
-    height: 7.5rem; }
-  .intro-completo {
-    display: inline-block;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0.5rem 0 0; }
-    .intro-completo .contenedor-intro-izq {
-      align-items: center;
-      justify-content: center;
-      display: inline-block;
-      position: relative;
-      flex-wrap: wrap;
-      width: 38.25rem;
-      padding: 1rem 2rem 0 5.5rem;
-      height: 19.125rem;
-      margin-right: 1rem;
-      box-sizing: border-box; }
-      .intro-completo .contenedor-intro-izq .intro {
-        font: "abril-display", serif, normal, 700, #9766CC;
-        font-size: 4.3rem; }
-        .intro-completo .contenedor-intro-izq .intro .professions {
-          font-family: omnes-cyrillic, sans-serif;
-          font-weight: 600;
-          font-style: normal;
-          font-size: 2.3rem;
-          line-height: 4.0625rem; }
-    .intro-completo .contenedor-intro-der {
-      display: inline-block;
-      position: relative;
-      flex-wrap: wrap;
-      width: 44.8125rem;
-      height: 19.125rem;
-      padding: 0rem 5.5rem 0rem 1rem;
-      margin-left: 1.0625rem;
-      justify-content: center;
-      align-items: flex-start;
-      box-sizing: border-box; }
-      .intro-completo .contenedor-intro-der #titulo-bio {
-        font: "abril-display", serif, normal, 700, #9766CC;
-        font-size: 3.125rem; }
-      .intro-completo .contenedor-intro-der .texto-medio-bio {
-        display: block;
-        text-align: left;
-        font: "omnes-cyrillic", sans-serif, normal, 500;
-        font-size: 1.5rem;
-        line-height: 2.25rem;
-        padding: 1rem 0 0; }
-  .align-welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0 3rem; }
-    .align-welcome .span-portfolio {
-      font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
-      font-size: 5.3125rem;
-      line-height: 6rem;
-      opacity: 0.2;
-      text-align: center; }
-  h4 {
-    font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
-    font-size: 4rem;
-    opacity: 0.2; }
-  /* Fin Intro y Nav */
-  /* Proyectos */
-  section h2 {
-    font: "omnes-cyrillic", sans-serif, normal, 600;
-    font-size: 1.375rem; }
-  .hr-skills {
-    display: flex;
-    float: left;
-    width: 5.5rem;
-    border-top: 0.125rem solid #D977C7;
-    margin: 5rem 0 0; }
-  .titulo-seccion-izq {
-    display: inline-block;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: flex-start;
-    text-align: left;
-    margin: 4.4rem 2rem 1.5rem 0.45rem;
-    line-height: 2rem; }
-    .titulo-seccion-izq h1 {
-      font: section-title-font;
-      font-size: 3.125rem;
-      padding: 1.5rem 0 0; }
-  .titulo-seccion-portfolio {
-    display: inline-block;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: flex-end;
-    text-align: right;
-    margin: 1rem 5.5rem 1rem 31rem; }
-  h5 {
-    color: #9766CC;
-    font: "omnes-cyrillic", sans-serif, normal, 700;
-    font-style: normal;
-    font-size: 1.2rem; }
-  .inline-list h5 {
-    font-size: 1.75rem;
+/* 1920 x 1080 resolution */
+/* Generales */
+html {
+  font-size: 16px; }
+
+body {
+  font-size: 62.5%;
+  line-height: 1;
+  font-family: Arial, Tahoma, sans-serif; }
+
+h1 {
+  font: normal 700 1.5rem "abril-display", serif;
+  font-size: 3.75rem;
+  margin-bottom: 1rem; }
+
+h2 {
+  color: #D977C7;
+  font: normal 600 1.5rem "omnes-cyrillic", sans-serif; }
+
+h3 {
+  color: #9766CC; }
+
+h4 {
+  font: normal 400 4rem "abril-fatface", serif;
+  font-size: 5.3125rem; }
+
+h5 {
+  color: #9766CC;
+  font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 2rem; }
+
+p {
+  font: normal 500 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 1.65rem;
+  line-height: 3rem;
+  margin: 1rem 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; }
+
+form h3 {
+  color: #9766CC;
+  font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 1.375rem; }
+
+ul {
+  list-style-type: none; }
+
+h1, #titulo-bio {
+  color: #9766CC;
+  font: normal 700 1.5rem "abril-display", serif;
+  font-size: 3.75rem;
+  margin-bottom: 1rem; }
+
+ul li {
+  color: #654D80;
+  font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 1.65rem;
+  line-height: 3rem; }
+
+a:hover {
+  color: #D977C7;
+  transform-origin: bottom left;
+  transition: transform 0.250s ease-in-out; }
+
+section h2 {
+  font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 1.75rem; }
+
+/* Fin generales */
+/* Backgrounds */
+.bg-gradient-hero {
+  background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33)); }
+
+.bg-gradient-hero-about {
+  background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33)); }
+
+.bg-white {
+  background-image: #ffffff; }
+
+.bg-lillac {
+  background-image: linear-gradient(#F3F0FA, #F2F2F2); }
+
+.bg-lillac2, .bg-lillac-solutions, .bg-lillac-skills {
+  background-image: linear-gradient(#f2f2f2, #EEE8FA); }
+
+/* Fin backgrounds */
+/* Titles and Texts */
+.titulo-proyectos {
+  color: #9766CC;
+  font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 3.125rem; }
+
+.titulos-listas {
+  font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 2.1875rem; }
+
+.subtitulo-proyectos,
+.subtitulo-footer {
+  font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 2.5rem;
+  opacity: 1.0;
+  margin: 0.5rem 0; }
+
+.texto-medio-bio {
+  font: normal 500 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 2.125rem;
+  line-height: 3.5rem; }
+
+.texto-grande {
+  color: #9766CC;
+  font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3.625rem; }
+
+.labels {
+  color: #654D80;
+  font: normal 500 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2.5rem; }
+
+.link-in-paragraph {
+  color: #654D80;
+  text-decoration: underline;
+  font-weight: bold; }
+
+.span-portfolio {
+  font: normal 400 4rem "abril-fatface", serif;
+  font-size: 7.625rem;
+  color: #9766CC;
+  opacity: 20%; }
+
+.link-cv {
+  color: #9766CC;
+  text-decoration: underline;
+  font-weight: bold; }
+
+.intro {
+  font: normal 700 1.5rem "abril-display", serif;
+  font-size: 5.9375rem; }
+
+.professions {
+  font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+  font-size: 3.125rem;
+  line-height: 5rem; }
+
+.nav-logo-mobile {
+  font: normal 700 1.5rem "abril-display", serif;
+  font-size: 1.8125rem;
+  text-decoration: none; }
+
+.contact {
+  color: #9766CC;
+  font: normal 1.5rem "abril-display", serif;
+  font-size: 2.75rem;
+  margin-top: 2rem;
+  margin-bottom: 0; }
+
+.align-center {
+  text-align: center; }
+
+.texto-footer {
+  width: 100vw;
+  padding: 1.5rem 0.5rem; }
+
+/* Titulos Seccion */
+.titulo-seccion-izq {
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 3rem 1rem 1rem;
+  line-height: 5rem; }
+
+.titulo-skills-largo {
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 2rem 6.5rem 2rem 23.5rem;
+  color: #9766CC;
+  opacity: 20%; }
+
+.titulo-seccion-skills {
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 2rem 6.5rem 2rem 38.5rem;
+  color: #9766CC;
+  opacity: 20%; }
+
+.titulo-seccion-portfolio {
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 2rem 6.5rem 2rem 54rem;
+  color: #9766CC;
+  opacity: 20%; }
+
+.titulo-seccion-solutions {
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 2rem 3rem 2rem 37.5rem;
+  color: #9766CC;
+  opacity: 20%; }
+
+.titulo-seccion-method {
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 2rem 6.5rem 2rem 5rem;
+  color: #9766CC;
+  opacity: 20%; }
+
+.titulo-seccion-contact {
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem 5.5rem 0 68.5rem;
+  color: #9766CC;
+  opacity: 20%; }
+
+/* Fin de Titulos Seccion */
+/* Fin Titles & Texts */
+/* Box modeling & Flexbox */
+.inline-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem; }
+  .inline-list li {
     padding: 1rem 1rem;
-    margin: 4.5rem 0.5rem; }
-  .titulo-proyectos {
-    color: #9766CC;
-    font: "omnes-cyrillic", sans-serif, normal, 700;
-    font-style: normal;
-    font-size: 2.2rem; }
-  .subtitulo-proyectos,
-  .subtitulo-footer {
-    font: "omnes-cyrillic", sans-serif, normal, 700;
-    font-size: 1.75rem;
-    opacity: 1.0; }
-  p {
-    color: #654D80;
-    font: "omnes-cyrillic", sans-serif, normal, 600;
-    font-size: 1.2rem;
-    line-height: 2rem; }
-  /* CV */
-  #cv {
+    margin: 4rem 2rem 8rem 0; }
+  .inline-list h5 {
+    padding: 1rem 1rem;
+    margin: 2rem 2rem 2rem 0;
+    font-size: 2.5rem; }
+
+.hr-skills {
+  display: flex;
+  float: left;
+  width: 6.5rem;
+  border-top: 0.125rem solid #D977C7;
+  margin: 5rem 0 0; }
+
+/* Grids */
+.grid-solutions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  grid-gap: 2.875rem;
+  align-items: stretch;
+  margin: 6.5rem 6.5rem 0rem;
+  padding: 0rem 0rem 6rem; }
+  .grid-solutions article {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row; }
-    #cv .box-img-left-cv {
-      width: 17.75rem;
-      height: fit-content;
-      padding: 0.5rem;
-      margin: 3rem 1rem 6rem 18.0625rem;
-      position: relative;
-      float: left; }
-    #cv .box-text-right-cv {
-      align-items: center;
-      justify-content: center;
-      height: fit-content;
-      padding: 1rem;
-      margin: 3rem 2rem 6rem;
-      position: relative;
-      float: right; }
-    #cv .texto-grande {
-      color: #9766CC;
-      font: "omnes-cyrillic", sans-serif, normal, 700;
-      font-size: 2rem;
-      line-height: 3.125rem;
-      float: right;
-      position: relative; }
-  /* Fin CV */
-  /* Footer */
-  .contenedor-footer {
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-    text-align: center;
-    line-height: 4rem;
-    height: 30rem;
-    width: 85.373rem;
-    padding: 3rem 0;
-    margin: 1rem 1rem 0 1rem; }
-    .contenedor-footer h1 {
-      font-size: 3rem;
-      margin: 1.5rem 1rem 0; }
-    .contenedor-footer p {
-      line-height: 3rem;
-      margin: 0 0 1rem 0;
-      font-size: 1.5rem;
-      font-weight: 600;
-      flex-wrap: wrap; }
-    .contenedor-footer .email {
-      font: "omnes-cyrillic", sans-serif, normal, 700;
-      font-size: 1.725rem;
-      opacity: 1.0;
-      text-align: center;
-      padding: 0 0rem; }
-    .contenedor-footer #icons-footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      float: center; }
-      .contenedor-footer #icons-footer a {
-        padding: 1rem;
-        margin: 2rem 1rem;
-        color: #654D80; }
-  .footer-resumido {
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-    text-align: center;
-    height: 5rem; }
-  /* Fin Footer */
-  /* Sección About me */
-  .bg-gradient-hero-about {
-    background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
-    height: 65rem;
-    width: 100vw; }
-  .about-texto {
-    display: inline-block;
-    margin: 0.5rem 1.5rem 1rem 6.5rem;
-    width: 62rem;
-    text-align: left; }
-    .about-texto .firma {
-      color: #D977C7;
-      font-family: pacifico, sans-serif;
-      font-weight: 300;
-      font-style: normal;
-      font-size: 3.5rem;
-      padding: 1rem 0;
-      margin: 0; }
-  .hr-right-l {
-    display: flex;
-    float: left;
-    width: 40%;
-    border-top: 0.125rem solid #D977C7;
-    margin-right: 2rem; }
-  .hr-right-r {
-    display: flex;
-    float: right;
-    width: 40%;
-    border-top: 0.125rem solid #D977C7;
-    margin-left: 2rem; }
-  .inline-about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    height: 6rem; }
-    .inline-about li {
-      padding: 1rem 0.5rem;
-      margin: 3rem 1rem 4rem; }
-  .hr-full {
-    display: flex;
-    width: 100vw;
-    border-top: 0.125rem solid #D977C7;
-    margin-bottom: 8.5rem; }
-  ul li {
-    font: "omnes-cyrillic", sans-serif, normal, 600;
-    font-size: 1.2rem;
-    line-height: 3rem; }
-  .love-title {
-    font: "abril-display", serif, normal, 700, #9766CC;
-    font-size: 2rem;
-    width: 24rem;
-    margin: 0 0 0 30rem; }
-  .about-img {
-    float: right;
-    margin: 1rem 6.5rem 1rem 2rem;
-    height: fit-content; }
-  /* Fin sección About me */
-  /* Sección Solutions */
-  .titulo-seccion-solutions {
-    display: inline-block;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: flex-end;
-    text-align: right;
-    margin: 2rem 3.5rem 2rem 20rem; }
-  .grid-solutions {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr));
-    grid-gap: 1.5rem;
-    align-items: stretch;
-    margin: 3rem 3rem 0rem;
-    padding-bottom: 6rem; }
-    .grid-solutions .solution-text {
+    flex-direction: column; }
+    .grid-solutions article .solution-text {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      width: 15rem;
+      width: 19.0625rem;
       height: auto;
       padding: 0.3rem 0rem 2rem;
       flex-grow: 1;
       flex-direction: column;
       box-sizing: border-box; }
-      .grid-solutions .solution-text h3 {
-        font: "omnes-cyrillic", sans-serif, normal, 700;
-        font-size: 2.2rem;
-        line-height: 4.125rem;
-        text-align: center; }
-  .bg-lillac-solutions {
-    height: 42rem; }
-  .titulo-seccion-method {
-    display: inline-block;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: flex-end;
-    text-align: right;
-    margin: 2rem 3.5rem 2rem 5rem; }
-    .titulo-seccion-method h4 {
-      font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
-      font-size: 3.2rem;
-      opacity: 0.2; }
-  .grid-method {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
-    grid-gap: 1rem;
-    align-items: stretch;
-    margin: 3rem 2rem;
-    padding: 0rem 0rem 5.5rem; }
-    .grid-method .method-step {
-      text-align: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 13rem;
-      height: auto;
-      padding: 0.3rem 0rem 3rem;
-      flex-grow: 1;
-      flex-direction: column;
-      display: flex;
-      box-sizing: border-box; }
-      .grid-method .method-step h3 {
+      .grid-solutions article .solution-text h3 {
         text-align: center;
-        font: "omnes-cyrillic", sans-serif, normal, 700;
-        font-size: 1.8rem;
-        line-height: 3.125rem; }
-  /* Fin sección Solutions */
-  /* Sección Skills */
-  .titulo-skills-largo {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-size: 2.65rem;
+        line-height: 4.125rem;
+        font-style: normal; }
+      .grid-solutions article .solution-text p {
+        flex-grow: 1; }
+
+/* Fin Grids */
+/* Intro */
+#sakura {
+  display: block;
+  float: right;
+  position: relative;
+  padding: 0 0 0 100rem;
+  height: 12.5rem; }
+
+.intro-completo {
+  align-items: center;
+  justify-content: center;
+  display: inline-block; }
+  .intro-completo .contenedor-intro-izq {
+    align-items: center;
+    justify-content: center;
     display: inline-block;
     position: relative;
     flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: flex-end;
-    text-align: right;
-    margin: 2rem 5.5rem 2rem 10.5rem; }
-  .contenedor-card {
+    width: 48.625rem;
+    padding: 1rem 2rem 0 6.5rem;
+    height: 26rem;
+    margin-right: 2rem;
+    box-sizing: border-box; }
+  .intro-completo .contenedor-intro-der {
     display: flex;
+    float: right;
+    position: relative;
+    flex-wrap: wrap;
+    width: 63.0625rem;
+    height: 26rem;
+    margin-left: 6.3125rem;
+    margin-top: 1.75rem;
+    padding: 1rem 6.5rem 0rem 4rem;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start; }
+
+.align-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.75rem 0; }
+
+/* Fin Intro */
+/* CV */
+#cv {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.box-img-left-cv {
+  width: 23.75rem;
+  height: fit-content;
+  padding: 0.5rem;
+  margin: 4.5rem 2rem;
+  position: relative;
+  float: left; }
+
+.box-text-right-cv {
+  width: 42.1875rem;
+  min-width: 18.5rem;
+  height: fit-content;
+  padding: 0.5rem;
+  margin: 4.5rem 1rem;
+  position: relative;
+  float: right; }
+
+/* Fin CV */
+/* Footer */
+.contenedor-footer {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 4rem;
+  width: 100vw;
+  height: 35.5rem;
+  padding: 6.5rem 5.5rem;
+  margin: 1rem 1rem 0 1rem; }
+  .contenedor-footer p {
+    line-height: 3rem;
+    margin: 1rem 0 1rem 0; }
+  .contenedor-footer .email {
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+    font-size: 1.875rem;
+    opacity: 1.0;
+    text-align: center;
+    padding: 0 0rem; }
+
+#icons-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #icons-footer a {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    color: #654D80; }
+
+.footer-resumido {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+/* Fin Footer */
+/* Skills Section */
+.inline-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw; }
+  .inline-skills li {
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 1rem 0.5rem; }
+
+/* Cards*/
+.contenedor-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 6.5rem 0; }
+
+.skill-card div {
+  text-align: center;
+  background-color: #ffffff;
+  width: 25.9375rem;
+  height: 36.375rem;
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
+  padding: 2.5rem 1rem;
+  margin: 1rem;
+  box-sizing: border-box; }
+
+/* Fin Cards*/
+/* Sección About me */
+.firma {
+  color: #D977C7;
+  font-family: pacifico, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 4.375rem;
+  margin: 1rem 5.5rem 6rem 1rem; }
+
+.contenedor-about {
+  display: flex; }
+  .contenedor-about .about-texto {
+    display: inline-block;
+    margin: 0.5rem 2rem 1rem 6.5rem;
+    width: 62rem;
+    text-align: left; }
+  .contenedor-about .about-img {
+    float: right;
+    margin: 1rem 6.5rem 1rem 2rem; }
+
+.love-title {
+  font: normal 700 1.5rem "abril-display", serif;
+  font-size: 2.5rem;
+  width: 18.74rem;
+  margin: 0 0 0 52.875rem; }
+
+.hr-right-l {
+  display: flex;
+  float: left;
+  width: 48rem;
+  border-top: 0.125rem solid #D977C7;
+  margin-right: 3rem; }
+
+.hr-right-r {
+  display: flex;
+  float: right;
+  width: 48rem;
+  border-top: 0.125rem solid #D977C7;
+  margin-left: 3rem; }
+
+.inline-about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 120rem; }
+  .inline-about li {
+    padding: 1rem 1rem;
+    margin: 3rem 1rem 4rem; }
+
+.hr-full {
+  display: flex;
+  width: 100vw;
+  border-top: 0.125rem solid #D977C7;
+  margin-bottom: 8.5rem; }
+
+/* Fin seccion About Me */
+/* Sección Method */
+.hr-full-method {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  border-top: 0.125rem solid #D977C7;
+  margin: 7rem 0 1rem; }
+
+.grid-method {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16.875rem, 1fr));
+  grid-gap: 1rem;
+  align-items: stretch;
+  margin: 3rem 6.5rem 0rem;
+  padding: 0rem 0rem 8.5rem; }
+  .grid-method article {
+    display: flex;
+    flex-direction: column; }
+  .grid-method .method-step {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15.1625rem;
+    height: auto;
+    padding: 0.3rem 0rem 3rem;
+    flex-grow: 1;
+    flex-direction: column;
+    box-sizing: border-box; }
+    .grid-method .method-step h3 {
+      text-align: center;
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+      font-size: 2.1875rem;
+      line-height: 3.125rem; }
+    .grid-method .method-step p {
+      flex-grow: 1;
+      line-height: 2.75rem; }
+
+/* Fin Sección Method */
+/* Sección Contact me */
+.contenedor-contact {
+  height: 70rem;
+  width: 100vw; }
+  .contenedor-contact .contenedor-form {
+    display: inline-block;
     justify-content: center;
     align-items: center;
-    padding: 0 0 5rem 0;
-    margin: 0 2rem; }
-    .contenedor-card p {
-      margin-top: 0; }
-  .skill-card {
-    /* Fin sección Skills */
-    /* Sección Contact */ }
-    .skill-card div {
-      text-align: center;
-      background-color: #ffffff;
-      width: 25.9375rem;
-      height: 27.5rem;
-      border-radius: 0.625rem;
-      box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
-      padding: 2.5rem 1rem;
-      margin: 1rem;
-      box-sizing: border-box; }
-      .skill-card div .titulos-listas {
-        font: "omnes-cyrillic", sans-serif, normal, 700;
-        font-size: 1.9rem; }
-    .skill-card #iconos-tools li {
-      font: "omnes-cyrillic", sans-serif, normal, 600;
-      font-size: 2rem;
-      line-height: 3rem; }
-    .skill-card .bg-lillac-skills {
-      height: 50rem; }
-    .skill-card .titulo-seccion-skills {
+    width: 60rem;
+    height: auto;
+    margin-left: 33.53125rem; }
+    .contenedor-contact .contenedor-form .contenedor-form-intro {
       display: inline-block;
-      position: relative;
-      flex-wrap: wrap;
-      align-items: center;
-      box-sizing: border-box;
-      justify-content: flex-end;
-      text-align: right;
-      margin: 2rem 6.5rem 2rem 20rem; }
-    .skill-card .inline-skills {
-      display: flex;
       justify-content: center;
       align-items: center;
-      height: 6rem; }
-    .skill-card .contenedor-contact {
-      height: 65rem;
-      width: 100vw; }
-      .skill-card .contenedor-contact .titulo-seccion-contact {
-        display: inline-block;
-        position: relative;
-        flex-wrap: wrap;
-        align-items: center;
-        box-sizing: border-box;
-        justify-content: center;
+      text-align: left;
+      box-sizing: border-box; }
+    .contenedor-contact .contenedor-form .contenedor-name-email {
+      display: inline-block;
+      justify-content: space-around;
+      align-items: center;
+      text-align: left;
+      box-sizing: border-box;
+      margin: 2rem 0; }
+      .contenedor-contact .contenedor-form .contenedor-name-email .short-placeholder {
+        width: 28.6875rem;
+        height: 3.75rem;
+        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+        font-size: 1.5rem;
+        color: #999999; }
+      .contenedor-contact .contenedor-form .contenedor-name-email .text-area-size {
+        width: 56.9375rem;
+        height: 11rem;
+        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+        font-size: 1.5rem;
+        color: #999999; }
+      .contenedor-contact .contenedor-form .contenedor-name-email .button-style {
+        background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
+        margin: 0.625rem;
+        padding: 1.5rem 6rem;
+        font: title-omnes700;
         text-align: center;
-        margin: 3rem 5.5rem 0 46rem; }
-      .skill-card .contenedor-contact .contenedor-form {
-        align-items: center;
-        justify-content: center;
-        display: inline-block;
-        width: 50rem;
-        height: auto;
-        margin: 1rem 0 0 20rem; }
-        .skill-card .contenedor-contact .contenedor-form p {
-          font-size: 1.3rem;
-          line-height: 2rem;
-          margin-top: 0; }
-        .skill-card .contenedor-contact .contenedor-form .contact {
-          font: "abril-display", serif, normal, 700, #9766CC;
-          font-size: 2.35rem;
-          margin-top: 1.5rem;
-          margin-bottom: 0; }
-        .skill-card .contenedor-contact .contenedor-form .text-area-size {
-          width: 50rem;
-          height: 11rem;
-          font: "omnes-cyrillic", sans-serif, normal, 400;
-          font-size: 1.5rem;
-          color: #999999; } }
+        font-size: 1.625rem;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+        border-radius: 0.625rem;
+        display: block; }
+
+/* 
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+/* Subrayado en hover */
+.underline-effect {
+  display: inline-block;
+  position: relative;
+  color: #9766CC; }
+
+.underline-effect:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #D977C7;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out; }
+
+.underline-effect:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+/* Typing */
+.typing h2 {
+  border-right: 0.15em solid #D977C7;
+  font-family: omnes-cyrillic, sans-serif;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.typing h2:nth-child(1) {
+  width: 7.3em;
+  animation: type 2s steps(40, end);
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(2) {
+  width: 12.5em;
+  opacity: 0;
+  animation: type2 2s steps(40, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(3) {
+  width: 12em;
+  opacity: 0;
+  animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
+  animation-delay: 4s;
+  animation-fill-mode: forwards; }
+
+@keyframes type {
+  0% {
+    width: 0; }
+  99.9% {
+    border-right: .15em solid D977C7; }
+  100% {
+    border: none; } }
+
+@keyframes type2 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  99.9% {
+    border-right: .15em solid D977C7; }
+  100% {
+    opacity: 1;
+    border: none; } }
+
+@keyframes type3 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
 
 /* Vars */
 /* Colors */
@@ -924,638 +1173,439 @@ p {
 /* Fin Vars */
 /* Mixin */
 /* Fin Mixin */
-/* 1920 x 1080 resolution */
-/* Generales */
-html {
-  font-size: 16px; }
-
-body {
-  font-size: 62.5%;
-  line-height: 1;
-  font-family: Arial, Tahoma, sans-serif; }
-
-h1 {
-  color: #9766CC;
-  font: "abril-display", serif, normal, 700, #9766CC;
-  font-size: 3.75rem;
-  margin-bottom: 1rem; }
-
-h2 {
-  color: #D977C7;
-  font: "omnes-cyrillic", sans-serif, normal, 600; }
-
-h3 {
-  color: #9766CC; }
-
-h4 {
-  font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
-  font-size: 5.3125rem; }
-
-h5 {
-  color: #9766CC;
-  font: "omnes-cyrillic", sans-serif, normal, 700;
-  font-size: 2rem; }
-
-p {
-  font: "omnes-cyrillic", sans-serif, normal, 600, #654D80;
-  font-size: 1.65rem;
-  line-height: 3rem;
-  margin: 1rem 0; }
-
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain; }
-
-form h3 {
-  color: #9766CC;
-  font: "omnes-cyrillic", sans-serif, normal, 600;
-  font-size: 1.375rem; }
-
-ul {
-  list-style-type: none; }
-
-h1, #titulo-bio {
-  color: #9766CC;
-  font: "abril-display", serif, normal;
-  font-size: 3.75rem;
-  margin-bottom: 1rem; }
-
-ul li {
-  color: #654D80;
-  font: "omnes-cyrillic", sans-serif, normal, 600;
-  font-size: 1.65rem;
-  line-height: 3rem; }
-
-a:hover {
-  color: #D977C7;
-  transform-origin: bottom left;
-  transition: transform 0.250s ease-in-out; }
-
-section h2 {
-  font: "omnes-cyrillic", sans-serif, normal, 600;
-  font-size: 1.75rem; }
-
-/* Fin generales */
-/* Backgrounds */
-.bg-gradient-hero {
-  background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33)); }
-
-.bg-white {
-  background-image: #ffffff; }
-
-.bg-lillac {
-  background-image: linear-gradient(#F3F0FA, #F2F2F2); }
-
-.bg-lillac2, .bg-lillac-solutions, .bg-lillac-skills {
-  background-image: linear-gradient(#f2f2f2, #EEE8FA); }
-
-/* Fin backgrounds */
-/* Titles and Texts */
-.titulo-proyectos {
-  color: #9766CC;
-  font: "omnes-cyrillic", sans-serif, normal, 700;
-  font-size: 3.125rem; }
-
-.titulos-listas {
-  font: "omnes-cyrillic", sans-serif, normal, 700;
-  font-size: 2.1875rem; }
-
-.subtitulo-proyectos,
-.subtitulo-footer {
-  font: "omnes-cyrillic", sans-serif, normal, 700;
-  font-size: 2.5rem;
-  opacity: 1.0;
-  margin: 0.5rem 0; }
-
-.texto-medio-bio {
-  font: "omnes-cyrillic", sans-serif, normal, 500;
-  font-size: 2.125rem;
-  line-height: 3.5rem; }
-
-.texto-grande {
-  color: #9766CC;
-  font: "omnes-cyrillic", sans-serif, normal, 700;
-  font-size: 2.5rem;
-  line-height: 3.625rem; }
-
-.labels {
-  color: #654D80;
-  font: "omnes-cyrillic", sans-serif, normal, 500;
-  font-size: 1.25rem;
-  line-height: 2.5rem; }
-
-.link-in-paragraph {
-  color: #654D80;
-  text-decoration: underline;
-  font-weight: bold; }
-
-.span-portfolio {
-  font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
-  font-size: 7.625rem; }
-
-.link-cv {
-  color: #9766CC;
-  text-decoration: underline;
-  font-weight: bold; }
-
-.intro {
-  font: "abril-display", serif, normal, 700, #9766CC;
-  font-size: 5.9375rem; }
-
-.professions {
-  font: "omnes-cyrillic", sans-serif, normal, 600;
-  font-size: 3.125rem;
-  line-height: 5rem; }
-
-.nav-logo-mobile {
-  font: "abril-display", serif, normal, 700, #9766CC;
-  font-size: 1.8125rem;
-  text-decoration: none; }
-
-.contact {
-  color: #9766CC;
-  font: "abril-display", serif, normal;
-  font-size: 2.75rem;
-  margin-top: 2rem;
-  margin-bottom: 0; }
-
-.align-center {
-  text-align: center; }
-
-/* Titulos Seccion */
-.titulo-seccion-izq {
-  display: inline-block;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: flex-start;
-  text-align: left;
-  margin: 3rem 1rem 1rem;
-  line-height: 5rem; }
-
-.titulo-skills-largo {
-  display: inline-block;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: flex-end;
-  text-align: right;
-  margin: 2rem 6.5rem 2rem 23.5rem; }
-
-.titulo-seccion-skills {
-  display: inline-block;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: flex-end;
-  text-align: right;
-  margin: 2rem 6.5rem 2rem 38.5rem; }
-
-.titulo-seccion-portfolio {
-  display: inline-block;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: flex-end;
-  text-align: right;
-  margin: 2rem 6.5rem 2rem 54rem; }
-
-.titulo-seccion-solutions {
-  display: inline-block;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: flex-end;
-  text-align: right;
-  margin: 2rem 3rem 2rem 37.5rem; }
-
-.titulo-seccion-method {
-  display: inline-block;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: flex-end;
-  text-align: right;
-  margin: 2rem 6.5rem 2rem 4.4rem; }
-
-.titulo-seccion-contact {
-  display: inline-block;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: center;
-  text-align: center;
-  margin: 3rem 5.5rem 0 68.5rem; }
-
-/* Fin de Titulos Seccion */
-/* Fin Titles & Texts */
-/* Box modeling & Flexbox */
-.inline-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15rem; }
-  .inline-list li {
-    padding: 1rem 1rem;
-    margin: 4rem 2rem 8rem 0; }
-  .inline-list h5 {
-    padding: 1rem 1rem;
-    margin: 2rem 2rem 2rem 0;
-    font-size: 2.5rem; }
-
-.hr-skills {
-  display: flex;
-  float: left;
-  width: 6.5rem;
-  border-top: 0.125rem solid #D977C7;
-  margin: 5rem 0 0; }
-
-/* Grids */
-.grid-solutions {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
-  grid-gap: 2.875rem;
-  align-items: stretch;
-  margin: 6.5rem 6.5rem 0rem;
-  padding: 0rem 0rem 6rem; }
-  .grid-solutions article {
-    display: flex;
-    flex-direction: column; }
-    .grid-solutions article .solution-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 19.0625rem;
-      height: auto;
-      padding: 0.3rem 0rem 2rem;
-      flex-grow: 1;
-      flex-direction: column;
-      box-sizing: border-box; }
-      .grid-solutions article .solution-text h3 {
-        text-align: center;
-        font-family: omnes-cyrillic, sans-serif;
-        font-weight: 700;
-        font-size: 2.65rem;
-        line-height: 4.125rem;
-        font-style: normal; }
-      .grid-solutions article .solution-text p {
-        flex-grow: 1; }
-
-/* Fin Grids */
-/* Intro */
-#sakura {
-  display: block;
-  float: right;
-  position: relative;
-  padding: 0 0 0 100rem;
-  height: 12.5rem; }
-
-.intro-completo {
-  align-items: center;
-  justify-content: center;
-  display: inline-block; }
-  .intro-completo .contenedor-intro-izq {
-    align-items: center;
+/* 
+************************** Notebook *****************************
+            Wireframes en 1366 x 768px 
+*/
+@media only screen and (min-width: 961px) and (max-width: 1400px) {
+  /* Intro y Nav */
+  .bg-gradient-hero {
+    background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+    height: 45rem;
+    width: 100vw; }
+  #sakura {
+    display: block;
+    float: right;
+    position: relative;
+    padding: 0.25rem 0 0.25rem 1rem;
+    height: 7.5rem; }
+  .intro-completo {
+    display: inline-block;
+    align-items: flex-start;
     justify-content: center;
+    margin: 0.5rem 0 0; }
+    .intro-completo .contenedor-intro-izq {
+      align-items: center;
+      justify-content: center;
+      display: inline-block;
+      position: relative;
+      flex-wrap: wrap;
+      width: 38.25rem;
+      padding: 1rem 2rem 0 5.5rem;
+      height: 19.125rem;
+      margin-right: 1rem;
+      box-sizing: border-box; }
+      .intro-completo .contenedor-intro-izq .intro {
+        font: "abril-display", serif, normal, 700, #9766CC;
+        font-size: 4.3rem; }
+        .intro-completo .contenedor-intro-izq .intro .professions {
+          font-family: omnes-cyrillic, sans-serif;
+          font-weight: 600;
+          font-style: normal;
+          font-size: 2.3rem;
+          line-height: 4.0625rem; }
+    .intro-completo .contenedor-intro-der {
+      display: inline-block;
+      position: relative;
+      flex-wrap: wrap;
+      width: 44.8125rem;
+      height: 19.125rem;
+      padding: 0rem 5.5rem 0rem 1rem;
+      margin-left: 1.0625rem;
+      justify-content: center;
+      align-items: flex-start;
+      box-sizing: border-box; }
+      .intro-completo .contenedor-intro-der #titulo-bio {
+        font: "abril-display", serif, normal, 700, #9766CC;
+        font-size: 3.125rem; }
+      .intro-completo .contenedor-intro-der .texto-medio-bio {
+        display: block;
+        text-align: left;
+        font: "omnes-cyrillic", sans-serif, normal, 500;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        padding: 1rem 0 0; }
+  .align-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 3rem; }
+    .align-welcome .span-portfolio {
+      font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
+      font-size: 5.3125rem;
+      line-height: 6rem;
+      opacity: 0.2;
+      text-align: center; }
+  h4 {
+    font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
+    font-size: 4rem;
+    opacity: 0.2; }
+  /* Fin Intro y Nav */
+  /* Proyectos */
+  section h2 {
+    font: "omnes-cyrillic", sans-serif, normal, 600;
+    font-size: 1.375rem; }
+  .hr-skills {
+    display: flex;
+    float: left;
+    width: 5.5rem;
+    border-top: 0.125rem solid #D977C7;
+    margin: 5rem 0 0; }
+  .titulo-seccion-izq {
     display: inline-block;
     position: relative;
     flex-wrap: wrap;
-    width: 48.625rem;
-    padding: 1rem 2rem 0 6.5rem;
-    height: 26rem;
-    margin-right: 2rem;
-    box-sizing: border-box; }
-  .intro-completo .contenedor-intro-der {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    float: right;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 4.4rem 2rem 1.5rem 0.45rem;
+    line-height: 2rem; }
+    .titulo-seccion-izq h1 {
+      font: section-title-font;
+      font-size: 3.125rem;
+      padding: 1.5rem 0 0; }
+  .titulo-seccion-portfolio {
+    display: inline-block;
     position: relative;
     flex-wrap: wrap;
-    width: 63.0625rem;
-    height: 26rem;
-    margin-left: 6.3125rem;
-    margin-top: 1.75rem;
-    padding: 1rem 6.5rem 0rem 4rem;
-    box-sizing: border-box; }
-
-.align-welcome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3.75rem 0; }
-
-/* Fin Intro */
-/* CV */
-#cv {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.box-img-left-cv {
-  width: 23.75rem;
-  height: fit-content;
-  padding: 0.5rem;
-  margin: 4.5rem 2rem;
-  position: relative;
-  float: left; }
-
-.box-text-right-cv {
-  width: 42.1875rem;
-  min-width: 18.5rem;
-  height: fit-content;
-  padding: 0.5rem;
-  margin: 4.5rem 1rem;
-  position: relative;
-  float: right; }
-
-/* Fin CV */
-/* Footer */
-.contenedor-footer {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  line-height: 4rem;
-  width: 100vw;
-  height: 35.5rem;
-  padding: 6.5rem 5.5rem;
-  margin: 1rem 1rem 0 1rem; }
-  .contenedor-footer p {
-    line-height: 3rem;
-    margin: 1rem 0 1rem 0; }
-  .contenedor-footer .email {
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 1rem 5.5rem 1rem 31rem;
+    color: #9766CC;
+    opacity: 20%; }
+  h5 {
+    color: #9766CC;
     font: "omnes-cyrillic", sans-serif, normal, 700;
-    font-size: 1.875rem;
-    opacity: 1.0;
+    font-style: normal;
+    font-size: 1.2rem; }
+  .inline-list h5 {
+    font-size: 1.75rem;
+    padding: 1rem 1rem;
+    margin: 4.5rem 0.5rem; }
+  .titulo-proyectos {
+    color: #9766CC;
+    font: "omnes-cyrillic", sans-serif, normal, 700;
+    font-style: normal;
+    font-size: 2.2rem; }
+  .subtitulo-proyectos,
+  .subtitulo-footer {
+    font: "omnes-cyrillic", sans-serif, normal, 700;
+    font-size: 1.75rem;
+    opacity: 1.0; }
+  p {
+    color: #654D80;
+    font: "omnes-cyrillic", sans-serif, normal, 600;
+    font-size: 1.2rem;
+    line-height: 2rem; }
+  /* CV */
+  #cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    #cv .box-img-left-cv {
+      width: 17.75rem;
+      height: fit-content;
+      padding: 0.5rem;
+      margin: 3rem 1rem 6rem 18.0625rem;
+      position: relative;
+      float: left; }
+    #cv .box-text-right-cv {
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      padding: 1rem;
+      margin: 3rem 2rem 6rem;
+      position: relative;
+      float: right; }
+    #cv .texto-grande {
+      color: #9766CC;
+      font: "omnes-cyrillic", sans-serif, normal, 700;
+      font-size: 2rem;
+      line-height: 3.125rem;
+      float: right;
+      position: relative; }
+  /* Fin CV */
+  /* Footer */
+  .contenedor-footer {
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
     text-align: center;
-    padding: 0 0rem; }
-
-#icons-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  #icons-footer a {
-    padding: 1rem;
-    margin: 2rem 1rem;
-    color: #654D80; }
-
-.footer-resumido {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-
-/* Fin Footer */
-/* Skills Section */
-.inline-skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100vw; }
-  .inline-skills li {
-    padding: 1rem 0.5rem;
-    margin: 0.5rem 1rem 0.5rem; }
-
-/* Cards*/
-.skill-card {
-  /* Fin Cards*/
+    line-height: 4rem;
+    height: 30rem;
+    width: 85.373rem;
+    padding: 3rem 0;
+    margin: 1rem 1rem 0 1rem; }
+    .contenedor-footer h1 {
+      font-size: 3rem;
+      margin: 1.5rem 1rem 0; }
+    .contenedor-footer p {
+      line-height: 3rem;
+      margin: 0 0 1rem 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      flex-wrap: wrap; }
+    .contenedor-footer .email {
+      font: "omnes-cyrillic", sans-serif, normal, 700;
+      font-size: 1.725rem;
+      opacity: 1.0;
+      text-align: center;
+      padding: 0 0rem; }
+    .contenedor-footer #icons-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: center; }
+      .contenedor-footer #icons-footer a {
+        padding: 1rem;
+        margin: 2rem 1rem;
+        color: #654D80; }
+  .footer-resumido {
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    height: 5rem; }
+  /* Fin Footer */
   /* Sección About me */
-  /* Fin seccion About Me */
-  /* Sección Method */ }
+  .bg-gradient-hero-about {
+    background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+    height: 65rem;
+    width: 100vw; }
+  .about-texto {
+    display: inline-block;
+    margin: 0.5rem 1.5rem 1rem 6.5rem;
+    width: 62rem;
+    text-align: left; }
+  .firma {
+    color: #D977C7;
+    font-family: pacifico, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3.5rem;
+    padding: 1rem 0;
+    margin: 0; }
+  .hr-right-l {
+    display: flex;
+    float: left;
+    width: 40%;
+    border-top: 0.125rem solid #D977C7;
+    margin-right: 2rem; }
+  .hr-right-r {
+    display: flex;
+    float: right;
+    width: 40%;
+    border-top: 0.125rem solid #D977C7;
+    margin-left: 2rem; }
+  .inline-about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 6rem; }
+    .inline-about li {
+      padding: 1rem 0.5rem;
+      margin: 3rem 1rem 4rem; }
+  .hr-full {
+    display: flex;
+    width: 100vw;
+    border-top: 0.125rem solid #D977C7;
+    margin-bottom: 8.5rem; }
+  ul li {
+    font: "omnes-cyrillic", sans-serif, normal, 600;
+    font-size: 1.2rem;
+    line-height: 3rem; }
+  .love-title {
+    font: "abril-display", serif, normal, 700, #9766CC;
+    font-size: 2rem;
+    width: 24rem;
+    margin: 0 0 0 30rem; }
+  .about-img {
+    float: right;
+    margin: 1rem 6.5rem 1rem 2rem;
+    height: fit-content; }
+  /* Fin sección About me */
+  /* Sección Solutions */
+  .titulo-seccion-solutions {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 2rem 3.5rem 2rem 20rem;
+    color: #9766CC;
+    opacity: 20%; }
+  .grid-solutions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr));
+    grid-gap: 1.5rem;
+    align-items: stretch;
+    margin: 3rem 3rem 0rem;
+    padding-bottom: 6rem; }
+    .grid-solutions article {
+      display: flex;
+      flex-direction: column; }
+      .grid-solutions article .solution-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 15rem;
+        height: auto;
+        padding: 0.3rem 0rem 2rem;
+        flex-grow: 1;
+        flex-direction: column;
+        box-sizing: border-box; }
+        .grid-solutions article .solution-text h3 {
+          font: "omnes-cyrillic", sans-serif, normal, 700;
+          font-size: 2.2rem;
+          line-height: 4.125rem;
+          text-align: center; }
+  .bg-lillac-solutions {
+    height: 42rem; }
+  .titulo-seccion-method {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 2rem 3.5rem 2rem 5rem;
+    color: #9766CC;
+    opacity: 20%; }
+    .titulo-seccion-method h4 {
+      font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
+      font-size: 3.2rem;
+      opacity: 0.2; }
+  .grid-method {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+    grid-gap: 1rem;
+    align-items: stretch;
+    margin: 3rem 2rem;
+    padding: 0rem 0rem 5.5rem; }
+    .grid-method .method-step {
+      text-align: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 13rem;
+      height: auto;
+      padding: 0.3rem 0rem 3rem;
+      flex-grow: 1;
+      flex-direction: column;
+      display: flex;
+      box-sizing: border-box; }
+      .grid-method .method-step h3 {
+        text-align: center;
+        font: "omnes-cyrillic", sans-serif, normal, 700;
+        font-size: 1.8rem;
+        line-height: 3.125rem; }
+  /* Fin sección Solutions */
+  /* Sección Skills */
+  .titulo-skills-largo {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 2rem 5.5rem 2rem 10.5rem; }
+  .contenedor-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 5rem 0;
+    margin: 0 2rem; }
+    .contenedor-card p {
+      margin-top: 0; }
   .skill-card div {
     text-align: center;
     background-color: #ffffff;
     width: 25.9375rem;
-    height: 36.375rem;
+    height: 27.5rem;
     border-radius: 0.625rem;
     box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
     padding: 2.5rem 1rem;
     margin: 1rem;
     box-sizing: border-box; }
-  .skill-card .contenedor-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 6.5rem 0; }
-  .skill-card .firma {
-    color: #D977C7;
-    font-family: pacifico, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 4.375rem;
-    margin: 1rem 5.5rem 6rem 1rem; }
-  .skill-card .contenedor-about {
-    display: flex; }
-    .skill-card .contenedor-about .about-texto {
-      display: inline-block;
-      margin: 0.5rem 2rem 1rem 6.5rem;
-      width: 62rem;
-      text-align: left; }
-    .skill-card .contenedor-about .about-img {
-      float: right;
-      margin: 1rem 6.5rem 1rem 2rem; }
-  .skill-card .love-title {
-    font: "abril-display", serif, normal, 700, #9766CC;
-    font-size: 2.5rem;
-    width: 18.74rem;
-    margin: 0 0 0 52.875rem; }
-  .skill-card .hr-right-l {
-    display: flex;
-    float: left;
-    width: 48rem;
-    border-top: 0.125rem solid #D977C7;
-    margin-right: 3rem; }
-  .skill-card .hr-right-r {
-    display: flex;
-    float: right;
-    width: 48rem;
-    border-top: 0.125rem solid #D977C7;
-    margin-left: 3rem; }
-  .skill-card .inline-about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 120rem; }
-    .skill-card .inline-about li {
-      padding: 1rem 1rem;
-      margin: 3rem 1rem 4rem; }
-  .skill-card .hr-full {
-    display: flex;
-    width: 100vw;
-    border-top: 0.125rem solid #D977C7;
-    margin-bottom: 8.5rem; }
-  .skill-card .hr-full-method {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    border-top: 0.125rem solid #D977C7;
-    margin: 7rem 0 1rem; }
-  .skill-card .grid-method {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16.875rem, 1fr));
-    grid-gap: 1rem;
-    align-items: stretch;
-    margin: 3rem 6.5rem 0rem;
-    padding: 0rem 0rem 8.5rem; }
-    .skill-card .grid-method article {
-      display: flex;
-      flex-direction: column; }
-    .skill-card .grid-method .method-step {
-      display: flex;
-      text-align: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 15.1625rem;
-      height: auto;
-      padding: 0.3rem 0rem 3rem;
-      flex-grow: 1;
-      flex-direction: column;
-      box-sizing: border-box; }
-      .skill-card .grid-method .method-step h3 {
-        text-align: center;
-        font: "omnes-cyrillic", sans-serif, normal, 700;
-        font-size: 2.1875rem;
-        line-height: 3.125rem; }
-      .skill-card .grid-method .method-step p {
-        flex-grow: 1;
-        line-height: 2.75rem; }
-
-/* Fin Sección Method */
-/* Sección Contact me */
-.contenedor-contact {
-  height: 70rem;
-  width: 100vw;
-  /* 
-    ***************************** 
-    ********** Motion ***********
-    ***************************** 
-    */
-  /* Subrayado en hover */
-  /* Typing */ }
-  .contenedor-contact .contenedor-form {
+    .skill-card div .titulos-listas {
+      font: "omnes-cyrillic", sans-serif, normal, 700;
+      font-size: 1.9rem; }
+  #iconos-tools li {
+    font: "omnes-cyrillic", sans-serif, normal, 600;
+    font-size: 2rem;
+    line-height: 3rem; }
+  .bg-lillac-skills {
+    height: 50rem; }
+  .titulo-seccion-skills {
     display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 2rem 6.5rem 2rem 20rem;
+    color: #9766CC;
+    opacity: 20%; }
+  .inline-skills {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 60rem;
-    height: auto;
-    margin-left: 33.53125rem; }
-    .contenedor-contact .contenedor-form .contenedor-form-intro {
+    height: 6rem; }
+  /* Fin sección Skills */
+  /* Sección Contact */
+  .contenedor-contact {
+    height: 65rem;
+    width: 100vw; }
+    .contenedor-contact .titulo-seccion-contact {
       display: inline-block;
-      justify-content: center;
+      position: relative;
+      flex-wrap: wrap;
       align-items: center;
-      text-align: left;
-      box-sizing: border-box; }
-    .contenedor-contact .contenedor-form .contenedor-name-email {
-      display: inline-block;
-      justify-content: space-around;
-      align-items: center;
-      text-align: left;
       box-sizing: border-box;
-      margin: 2rem 0; }
-      .contenedor-contact .contenedor-form .contenedor-name-email .short-placeholder {
-        width: 28.6875rem;
-        height: 3.75rem;
-        font: "omnes-cyrillic", sans-serif, normal, 400;
-        font-size: 1.5rem;
-        color: #999999; }
-      .contenedor-contact .contenedor-form .contenedor-name-email .text-area-size {
-        width: 56.9375rem;
+      justify-content: center;
+      text-align: center;
+      margin: 3rem 5.5rem 0 46rem;
+      color: #9766CC;
+      opacity: 20%; }
+    .contenedor-contact .contenedor-form {
+      align-items: center;
+      justify-content: center;
+      display: inline-block;
+      width: 50rem;
+      height: auto;
+      margin: 1rem 0 0 20rem; }
+      .contenedor-contact .contenedor-form p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin-top: 0; }
+      .contenedor-contact .contenedor-form .contact {
+        font: "abril-display", serif, normal, 700, #9766CC;
+        font-size: 2.35rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0; }
+      .contenedor-contact .contenedor-form .text-area-size {
+        width: 50rem;
         height: 11rem;
         font: "omnes-cyrillic", sans-serif, normal, 400;
         font-size: 1.5rem;
-        color: #999999; }
-      .contenedor-contact .contenedor-form .contenedor-name-email .button-style {
-        background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
-        margin: 0.625rem;
-        padding: 1.5rem 6rem;
-        font: title-omnes700;
-        text-align: center;
-        font-size: 1.625rem;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: white;
-        /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
-        border-radius: 0.625rem;
-        display: block; }
-  .contenedor-contact .underline-effect {
-    display: inline-block;
-    position: relative;
-    color: #9766CC; }
-  .contenedor-contact .underline-effect:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #D977C7;
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out; }
-  .contenedor-contact .underline-effect:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left; }
-  .contenedor-contact .typing h2 {
-    border-right: 0.15em solid #D977C7;
-    font-family: omnes-cyrillic, sans-serif;
-    white-space: nowrap;
-    overflow: hidden; }
-  .contenedor-contact .typing h2:nth-child(1) {
-    width: 7.3em;
-    animation: type 2s steps(40, end);
-    animation-fill-mode: forwards; }
-  .contenedor-contact .typing h2:nth-child(2) {
-    width: 12.5em;
-    opacity: 0;
-    animation: type2 2s steps(40, end);
-    animation-delay: 2s;
-    animation-fill-mode: forwards; }
-  .contenedor-contact .typing h2:nth-child(3) {
-    width: 12em;
-    opacity: 0;
-    animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
-    animation-delay: 4s;
-    animation-fill-mode: forwards; }
-
-@keyframes type {
-  0% {
-    width: 0; }
-  99.9% {
-    border-right: .15em solid D977C7; }
-  100% {
-    border: none; } }
-
-@keyframes type2 {
-  0% {
-    width: 0; }
-  1% {
-    opacity: 1; }
-  99.9% {
-    border-right: .15em solid D977C7; }
-  100% {
-    opacity: 1;
-    border: none; } }
-
-@keyframes type3 {
-  0% {
-    width: 0; }
-  1% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes blink {
-  50% {
-    border-color: transparent; } }
+        color: #999999; } }
