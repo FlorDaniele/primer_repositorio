@@ -55,6 +55,7 @@ p {
 /* Typography */
 /* ejemplo $titulo-fuente: normal 28px 'Roboto', sans-serif, 100; */
 /* ejemplo 2 $fuentePrincipal: normal 0.5em 'Halant', serif; */
+/* The font CSS property is either a shorthand property for setting font-style, font-variant, font-weight, font-size, line-height and font-family, or a way to set the element's font to a system font, using specific keywords. */
 /* Fin Vars */
 /* Mixin */
 /* Fin Mixin */
@@ -90,10 +91,11 @@ h5 {
   font-size: 2rem; }
 
 p {
-  font: normal 500 1.5rem "omnes-cyrillic", sans-serif;
+  font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
   font-size: 1.65rem;
   line-height: 3rem;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  color: #654D80; }
 
 img {
   max-width: 100%;
@@ -127,7 +129,8 @@ a:hover {
 
 section h2 {
   font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  margin: 1.5rem 0; }
 
 /* Fin generales */
 /* Backgrounds */
@@ -161,13 +164,15 @@ section h2 {
 .subtitulo-footer {
   font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
   font-size: 2.5rem;
-  opacity: 1.0;
-  margin: 0.5rem 0; }
+  margin: 0.5rem 0;
+  color: #D977C7;
+  margin: 0.5rem 0 1rem; }
 
 .texto-medio-bio {
   font: normal 500 1.5rem "omnes-cyrillic", sans-serif;
   font-size: 2.125rem;
-  line-height: 3.5rem; }
+  line-height: 3.5rem;
+  color: #654D80; }
 
 .texto-grande {
   color: #9766CC;
@@ -190,7 +195,7 @@ section h2 {
   font: normal 400 4rem "abril-fatface", serif;
   font-size: 7.625rem;
   color: #9766CC;
-  opacity: 20%; }
+  opacity: 30%; }
 
 .link-cv {
   color: #9766CC;
@@ -200,6 +205,9 @@ section h2 {
 .intro {
   font: normal 700 1.5rem "abril-display", serif;
   font-size: 5.9375rem; }
+
+.pink {
+  color: #D977C7; }
 
 .professions {
   font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
@@ -247,7 +255,7 @@ section h2 {
   text-align: right;
   margin: 2rem 6.5rem 2rem 23.5rem;
   color: #9766CC;
-  opacity: 20%; }
+  opacity: 30%; }
 
 .titulo-seccion-skills {
   display: inline-block;
@@ -259,7 +267,7 @@ section h2 {
   text-align: right;
   margin: 2rem 6.5rem 2rem 38.5rem;
   color: #9766CC;
-  opacity: 20%; }
+  opacity: 30%; }
 
 .titulo-seccion-portfolio {
   display: inline-block;
@@ -271,7 +279,7 @@ section h2 {
   text-align: right;
   margin: 2rem 6.5rem 2rem 54rem;
   color: #9766CC;
-  opacity: 20%; }
+  opacity: 30%; }
 
 .titulo-seccion-solutions {
   display: inline-block;
@@ -281,9 +289,9 @@ section h2 {
   box-sizing: border-box;
   justify-content: flex-end;
   text-align: right;
-  margin: 2rem 3rem 2rem 37.5rem;
+  margin: 2rem 3rem 2rem 35rem;
   color: #9766CC;
-  opacity: 20%; }
+  opacity: 30%; }
 
 .titulo-seccion-method {
   display: inline-block;
@@ -293,9 +301,9 @@ section h2 {
   box-sizing: border-box;
   justify-content: flex-end;
   text-align: right;
-  margin: 2rem 6.5rem 2rem 5rem;
+  margin: 2rem 6.5rem 2rem 4rem;
   color: #9766CC;
-  opacity: 20%; }
+  opacity: 30%; }
 
 .titulo-seccion-contact {
   display: inline-block;
@@ -307,7 +315,7 @@ section h2 {
   text-align: center;
   margin: 3rem 5.5rem 0 68.5rem;
   color: #9766CC;
-  opacity: 20%; }
+  opacity: 30%; }
 
 /* Fin de Titulos Seccion */
 /* Fin Titles & Texts */
@@ -353,7 +361,8 @@ section h2 {
       padding: 0.3rem 0rem 2rem;
       flex-grow: 1;
       flex-direction: column;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      text-align: center; }
       .grid-solutions article .solution-text h3 {
         text-align: center;
         font-family: omnes-cyrillic, sans-serif;
@@ -556,6 +565,23 @@ section h2 {
   margin-bottom: 8.5rem; }
 
 /* Fin seccion About Me */
+/* Colores de solution cards */
+.dark-purple {
+  color: #896DBF; }
+
+.dark-pink {
+  color: #BA71CC; }
+
+.medium-pink {
+  color: #D17CD8; }
+
+.lighter-pink {
+  color: #E583DC; }
+
+.lightest-pink {
+  color: #F288D2; }
+
+/* Fin colores de solution cards */
 /* Sección Method */
 .hr-full-method {
   display: flex;
@@ -769,13 +795,15 @@ section h2 {
       width: 100%;
       box-sizing: border-box; }
       .intro-completo .contenedor-intro-izq .intro {
-        font: "abril-display", serif, normal, 700, #9766CC;
+        font: normal 700 1.5rem "abril-display", serif;
         font-size: 2.8125rem;
         margin-bottom: 1rem; }
         .intro-completo .contenedor-intro-izq .intro .professions {
-          font: "omnes-cyrillic", sans-serif, normal, 600;
+          font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
           font-size: 1.5rem;
           line-height: 2.34375rem; }
+        .intro-completo .contenedor-intro-izq .intro .pink {
+          color: #D977C7; }
     .intro-completo .contenedor-intro-der {
       align-items: center;
       justify-content: center;
@@ -790,11 +818,11 @@ section h2 {
       margin: 0 2rem;
       box-sizing: border-box; }
       .intro-completo .contenedor-intro-der #titulo-bio {
-        font: "abril-display", serif, normal, 700, #9766CC;
+        font: normal 700 1.5rem "abril-display", serif;
         font-size: 1.75rem;
         margin-bottom: 0.5rem; }
       .intro-completo .contenedor-intro-der .texto-medio-bio {
-        font: "omnes-cyrillic", sans-serif, normal, 600;
+        font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
         font-size: 1rem;
         line-height: 1.625rem; }
   .align-welcome {
@@ -804,28 +832,29 @@ section h2 {
     padding: 0;
     margin: 3rem 2rem; }
     .align-welcome .span-portfolio {
-      font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
+      font: normal 400 4rem "abril-fatface", serif;
       font-size: 3.125rem;
       line-height: 4rem;
-      opacity: 0.2;
+      opacity: 0.30;
       text-align: center;
       margin: 1.5rem 0 2rem; }
   h4 {
-    font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
+    font: normal 400 4rem "abril-fatface", serif;
     font-size: 2.1875rem; }
   /* Nav bar */
   ul li {
-    font: "omnes-cyrillic", sans-serif, normal, 600;
+    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.3rem;
     line-height: 2.5rem; }
   /* Fin Intro y Nav */
   /* Titulos sección Proyectos */
   section h2 {
-    font: "omnes-cyrillic", sans-serif, normal, 600;
-    font-size: 1rem; }
+    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+    font-size: 1rem;
+    margin: 0.5rem 0; }
   .texto-grande {
     color: #9766CC;
-    font: "omnes-cyrillic", sans-serif, normal, 700;
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 0.75rem;
     line-height: 1.0875rem; }
   .titulo-seccion-izq {
@@ -839,7 +868,7 @@ section h2 {
     margin: 2.4rem 2rem 1rem 0.45rem;
     line-height: 2rem; }
     .titulo-seccion-izq h1 {
-      font: "abril-display", serif, normal, 700, #9766CC;
+      font: normal 700 1.5rem "abril-display", serif;
       font-size: 1.75rem;
       padding: 0.5rem 0 0; }
   .hr-skills {
@@ -850,7 +879,7 @@ section h2 {
     margin: 3rem 0 0; }
   h5 {
     color: #9766CC;
-    font: "omnes-cyrillic", sans-serif, normal, 700;
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.2rem; }
   .inline-list {
     display: flex;
@@ -863,22 +892,22 @@ section h2 {
       margin: 2rem 1rem 2rem 0; }
   .titulo-proyectos {
     color: #9766CC;
-    font: "omnes-cyrillic", sans-serif, normal, 700;
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 2rem; }
   .titulo-seccion-portfolio {
     display: none; }
   .subtitulo-proyectos,
   .subtitulo-footer {
-    font: "omnes-cyrillic", sans-serif, normal, 700;
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.5rem;
     opacity: 1.0; }
   p {
-    font: "omnes-cyrillic", sans-serif, normal, 600, #654D80;
+    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1rem;
     line-height: 1.75rem; }
   .styled-link {
     color: #D977C7;
-    font: "omnes-cyrillic", sans-serif, normal, 700;
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.25rem;
     padding: 0 1rem;
     text-decoration: none; }
@@ -900,7 +929,7 @@ section h2 {
       text-align: center; }
     #cv .texto-grande {
       color: #9766CC;
-      font: "omnes-cyrillic", sans-serif, normal, 600;
+      font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.25rem;
       line-height: 1.8rem; }
   /* Fin CV */
@@ -927,11 +956,11 @@ section h2 {
       font-size: 2.3rem;
       margin: 1.5rem 1.5rem 0; }
     .contenedor-footer .subtitulo-footer {
-      font: "omnes-cyrillic", sans-serif, normal, 700;
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       opacity: 1.0;
       margin: 0.5rem 1.5rem; }
     .contenedor-footer .email {
-      font: "omnes-cyrillic", sans-serif, normal, 700;
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.25rem;
       opacity: 1.0;
       text-align: left;
@@ -967,16 +996,29 @@ section h2 {
       align-items: center;
       flex-direction: column; }
       .grid-solutions article .solution-text h3 {
-        font: "omnes-cyrillic", sans-serif, normal, 700;
+        font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
         text-align: center;
         font-size: 2.5rem;
         line-height: 4rem; }
       .grid-solutions article .solution-text p {
         flex-grow: 1;
         font-size: 1.2rem;
-        line-height: 2rem; }
+        line-height: 2rem;
+        text-align: center; }
   .titulo-seccion-method {
     display: none; }
+  /* Colores de solution cards */
+  .dark-purple {
+    color: #896DBF; }
+  .dark-pink {
+    color: #BA71CC; }
+  .medium-pink {
+    color: #D17CD8; }
+  .lighter-pink {
+    color: #E583DC; }
+  .lightest-pink {
+    color: #F288D2; }
+  /* Fin colores de solution cards */
   .grid-method {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
@@ -1002,7 +1044,7 @@ section h2 {
         box-sizing: border-box; }
         .grid-method article .method-step h3 {
           text-align: center;
-          font: "omnes-cyrillic", sans-serif, normal, 700;
+          font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
           font-size: 2rem;
           line-height: 3rem; }
         .grid-method article .method-step p {
@@ -1037,7 +1079,7 @@ section h2 {
     font-size: 3.5rem;
     margin: 0.75rem 0 4rem; }
   .love-title {
-    font: "abril-display", serif, normal, 700, #9766CC;
+    font: normal 700 1.5rem "abril-display", serif;
     font-size: 2.5rem;
     width: 18.74rem;
     margin: 2rem 0 0 5rem; }
@@ -1075,14 +1117,14 @@ section h2 {
     flex-direction: column;
     padding: 0 0 2rem 0; }
     .contenedor-card .titulos-listas {
-      font: "omnes-cyrillic", sans-serif, normal, 700;
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.9rem; }
     .contenedor-card p {
       line-height: 2.5rem;
       margin-top: 0;
       font-size: 1.2rem; }
     .contenedor-card #iconos-tools li {
-      font: "omnes-cyrillic", sans-serif, normal, 600;
+      font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 2rem;
       line-height: 3rem; }
   .bg-lillac-skills {
@@ -1141,20 +1183,20 @@ section h2 {
       .contenedor-form .contenedor-name-email .short-placeholder {
         width: 83vw;
         height: 3.75rem;
-        font: "omnes-cyrillic", sans-serif, normal, 400;
+        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
         font-size: 1.5rem;
         color: #999999; }
       .contenedor-form .contenedor-name-email .text-area-size {
         width: 83vw;
         height: 11rem;
-        font: "omnes-cyrillic", sans-serif, normal, 400;
+        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
         font-size: 1.5rem;
         color: #999999; }
       .contenedor-form .contenedor-name-email .button-style {
         background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
         margin: 0.625rem;
         padding: 1.5rem 1.75rem;
-        font: "omnes-cyrillic", sans-serif, normal, 700;
+        font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
         text-align: center;
         font-size: 1.5rem;
         transition: 0.5s;
@@ -1206,14 +1248,16 @@ section h2 {
       margin-right: 1rem;
       box-sizing: border-box; }
       .intro-completo .contenedor-intro-izq .intro {
-        font: "abril-display", serif, normal, 700, #9766CC;
+        font: normal 700 1.5rem "abril-display", serif;
         font-size: 4.3rem; }
-        .intro-completo .contenedor-intro-izq .intro .professions {
-          font-family: omnes-cyrillic, sans-serif;
-          font-weight: 600;
-          font-style: normal;
-          font-size: 2.3rem;
-          line-height: 4.0625rem; }
+      .intro-completo .contenedor-intro-izq .pink {
+        color: #D977C7; }
+    .intro-completo .professions {
+      font-family: omnes-cyrillic, sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 2.3rem;
+      line-height: 4.0625rem; }
     .intro-completo .contenedor-intro-der {
       display: inline-block;
       position: relative;
@@ -1226,12 +1270,12 @@ section h2 {
       align-items: flex-start;
       box-sizing: border-box; }
       .intro-completo .contenedor-intro-der #titulo-bio {
-        font: "abril-display", serif, normal, 700, #9766CC;
+        font: normal 700 1.5rem "abril-display", serif;
         font-size: 3.125rem; }
       .intro-completo .contenedor-intro-der .texto-medio-bio {
         display: block;
         text-align: left;
-        font: "omnes-cyrillic", sans-serif, normal, 500;
+        font: normal 500 1.5rem "omnes-cyrillic", sans-serif;
         font-size: 1.5rem;
         line-height: 2.25rem;
         padding: 1rem 0 0; }
@@ -1241,20 +1285,20 @@ section h2 {
     align-items: center;
     padding: 2rem 0 3rem; }
     .align-welcome .span-portfolio {
-      font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
+      font: normal 400 4rem "abril-fatface", serif;
       font-size: 5.3125rem;
       line-height: 6rem;
-      opacity: 0.2;
+      opacity: 0.3;
       text-align: center; }
   h4 {
-    font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
-    font-size: 4rem;
-    opacity: 0.2; }
+    font: normal 400 4rem "abril-fatface", serif;
+    font-size: 4rem; }
   /* Fin Intro y Nav */
   /* Proyectos */
   section h2 {
-    font: "omnes-cyrillic", sans-serif, normal, 600;
-    font-size: 1.375rem; }
+    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+    font-size: 1.375rem;
+    margin: 0.5rem 0; }
   .hr-skills {
     display: flex;
     float: left;
@@ -1269,7 +1313,7 @@ section h2 {
     box-sizing: border-box;
     justify-content: flex-start;
     text-align: left;
-    margin: 4.4rem 2rem 1.5rem 0.45rem;
+    margin: 4.4rem 2rem 1.5rem 1.5rem;
     line-height: 2rem; }
     .titulo-seccion-izq h1 {
       font: section-title-font;
@@ -1283,31 +1327,33 @@ section h2 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 1rem 5.5rem 1rem 31rem;
+    margin: 1rem 5.5rem 1rem 30rem;
     color: #9766CC;
     opacity: 20%; }
   h5 {
     color: #9766CC;
-    font: "omnes-cyrillic", sans-serif, normal, 700;
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-style: normal;
     font-size: 1.2rem; }
-  .inline-list h5 {
-    font-size: 1.75rem;
-    padding: 1rem 1rem;
-    margin: 4.5rem 0.5rem; }
+  .inline-list {
+    height: 5rem; }
+    .inline-list h5 {
+      font-size: 1.75rem;
+      padding: 1rem 1rem;
+      margin: 4.5rem 0.5rem; }
   .titulo-proyectos {
     color: #9766CC;
-    font: "omnes-cyrillic", sans-serif, normal, 700;
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-style: normal;
     font-size: 2.2rem; }
   .subtitulo-proyectos,
   .subtitulo-footer {
-    font: "omnes-cyrillic", sans-serif, normal, 700;
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.75rem;
     opacity: 1.0; }
   p {
     color: #654D80;
-    font: "omnes-cyrillic", sans-serif, normal, 600;
+    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.2rem;
     line-height: 2rem; }
   /* CV */
@@ -1333,7 +1379,7 @@ section h2 {
       float: right; }
     #cv .texto-grande {
       color: #9766CC;
-      font: "omnes-cyrillic", sans-serif, normal, 700;
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 2rem;
       line-height: 3.125rem;
       float: right;
@@ -1360,7 +1406,7 @@ section h2 {
       font-weight: 600;
       flex-wrap: wrap; }
     .contenedor-footer .email {
-      font: "omnes-cyrillic", sans-serif, normal, 700;
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.725rem;
       opacity: 1.0;
       text-align: center;
@@ -1426,11 +1472,11 @@ section h2 {
     border-top: 0.125rem solid #D977C7;
     margin-bottom: 8.5rem; }
   ul li {
-    font: "omnes-cyrillic", sans-serif, normal, 600;
+    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.2rem;
     line-height: 3rem; }
   .love-title {
-    font: "abril-display", serif, normal, 700, #9766CC;
+    font: normal 700 1.5rem "abril-display", serif;
     font-size: 2rem;
     width: 24rem;
     margin: 0 0 0 30rem; }
@@ -1448,7 +1494,7 @@ section h2 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 3.5rem 2rem 20rem;
+    margin: 2rem 3.5rem 2rem 19rem;
     color: #9766CC;
     opacity: 20%; }
   .grid-solutions {
@@ -1471,12 +1517,25 @@ section h2 {
         padding: 0.3rem 0rem 2rem;
         flex-grow: 1;
         flex-direction: column;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        text-align: center; }
         .grid-solutions article .solution-text h3 {
-          font: "omnes-cyrillic", sans-serif, normal, 700;
+          font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
           font-size: 2.2rem;
           line-height: 4.125rem;
           text-align: center; }
+  /* Colores de solution cards */
+  .dark-purple {
+    color: #896DBF; }
+  .dark-pink {
+    color: #BA71CC; }
+  .medium-pink {
+    color: #D17CD8; }
+  .lighter-pink {
+    color: #E583DC; }
+  .lightest-pink {
+    color: #F288D2; }
+  /* Fin colores de solution cards */
   .bg-lillac-solutions {
     height: 42rem; }
   .titulo-seccion-method {
@@ -1487,13 +1546,12 @@ section h2 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 3.5rem 2rem 5rem;
+    margin: 2rem 3.5rem 2rem 4rem;
     color: #9766CC;
-    opacity: 20%; }
+    opacity: 25%; }
     .titulo-seccion-method h4 {
-      font: "abril-fatface", serif, normal, 400, rgb 151, 102, 204, 0.2;
-      font-size: 3.2rem;
-      opacity: 0.2; }
+      font: normal 400 4rem "abril-fatface", serif;
+      font-size: 3.2rem; }
   .grid-method {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
@@ -1514,7 +1572,7 @@ section h2 {
       box-sizing: border-box; }
       .grid-method .method-step h3 {
         text-align: center;
-        font: "omnes-cyrillic", sans-serif, normal, 700;
+        font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
         font-size: 1.8rem;
         line-height: 3.125rem; }
   /* Fin sección Solutions */
@@ -1527,7 +1585,7 @@ section h2 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 5.5rem 2rem 10.5rem; }
+    margin: 2rem 5.5rem 2rem 8rem; }
   .contenedor-card {
     display: flex;
     justify-content: center;
@@ -1547,10 +1605,10 @@ section h2 {
     margin: 1rem;
     box-sizing: border-box; }
     .skill-card div .titulos-listas {
-      font: "omnes-cyrillic", sans-serif, normal, 700;
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.9rem; }
   #iconos-tools li {
-    font: "omnes-cyrillic", sans-serif, normal, 600;
+    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 2rem;
     line-height: 3rem; }
   .bg-lillac-skills {
@@ -1563,7 +1621,7 @@ section h2 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 6.5rem 2rem 20rem;
+    margin: 2rem 6.5rem 2rem 17.5rem;
     color: #9766CC;
     opacity: 20%; }
   .inline-skills {
@@ -1584,9 +1642,9 @@ section h2 {
       box-sizing: border-box;
       justify-content: center;
       text-align: center;
-      margin: 3rem 5.5rem 0 46rem;
+      margin: 3rem 5.5rem 0 45rem;
       color: #9766CC;
-      opacity: 20%; }
+      opacity: 25%; }
     .contenedor-contact .contenedor-form {
       align-items: center;
       justify-content: center;
@@ -1599,13 +1657,13 @@ section h2 {
         line-height: 2rem;
         margin-top: 0; }
       .contenedor-contact .contenedor-form .contact {
-        font: "abril-display", serif, normal, 700, #9766CC;
+        font: normal 700 1.5rem "abril-display", serif;
         font-size: 2.35rem;
         margin-top: 1.5rem;
         margin-bottom: 0; }
       .contenedor-contact .contenedor-form .text-area-size {
         width: 50rem;
         height: 11rem;
-        font: "omnes-cyrillic", sans-serif, normal, 400;
+        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
         font-size: 1.5rem;
         color: #999999; } }
