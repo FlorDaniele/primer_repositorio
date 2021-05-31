@@ -56,9 +56,11 @@
 
 /* Fin Mixin */
 
+@import "generales";
+
 /* Mobile -> Wireframes en 390 x 844 (iPhone 12 pro) */
 
-@media only screen and (max-width: 960px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
     /* Intro y Nav */
 
@@ -144,10 +146,8 @@
         margin: 3rem 2rem;
 
         .span-portfolio {
-            font: $big-title-font;
             font-size: 3.125rem;
             line-height: 4rem;
-            opacity: 0.30;
             text-align: center;
             margin: 1.5rem 0 2rem;
         }
@@ -672,8 +672,6 @@
             }
         }
     }
+/* Fin sección Contact */
+
 }
-
-
-
-/* Fin sección Contact me */
