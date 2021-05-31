@@ -1,0 +1,149 @@
+/* Vars */
+
+    /* Colors */
+    $pink: #D977C7;
+    $purple: #9766CC;
+    $darkest-purple: #654D80;
+
+    $dark-purple: #896DBF;
+    $dark-pink: #BA71CC;
+    $medium-pink:#D17CD8;
+    $lighter-pink: #E583DC;
+    $lightest-pink: #F288D2;
+
+    /* Typography */
+
+    $section-title-font: normal 700 1.5rem 'abril-display', serif;
+
+    $title-abrildisplay: normal 1.5rem 'abril-display', serif;
+
+    $big-title-font: normal 400 4rem 'abril-fatface', serif;
+
+    $paragraph-font: normal 600 1.5rem 'omnes-cyrillic', sans-serif; 
+
+    $title-omnes700: normal 700 1.5rem 'omnes-cyrillic', sans-serif;
+
+    $title-omnes600: normal 600 1.5rem 'omnes-cyrillic', sans-serif;
+
+    $title-omnes500: normal 500 1.5rem 'omnes-cyrillic', sans-serif;
+
+    $title-omnes400: normal 400 1.5rem 'omnes-cyrillic', sans-serif;
+
+/* Fin Vars */
+
+/* Mixin */
+
+@mixin flexbox ($display: inline-block, $position: relative, $align-items: center, $justify-content: flex-end, $wrap: wrap, $box-sizing: border-box, $text-align: right) {
+    display: $display;
+    position: $position;
+    flex-wrap: $wrap;
+    align-items: $align-items;
+    box-sizing: $box-sizing;
+    justify-content: $justify-content;
+    text-align: $text-align;
+}
+
+@mixin flexcenter ($display: flex, $justify: center, $align: center) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin centrado ($align: center, $justify: center) {
+    align-items: $align;
+    justify-content: $justify;
+}
+
+/* Fin Mixin */
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 62.5%;
+    line-height: 1;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+h1, #titulo-bio {
+    font: $section-title-font;
+    color: $purple;
+}
+
+h2 {
+    color: $pink;
+    font: $title-omnes600;
+}
+
+h3 {
+    color: $purple;
+}
+
+h4, .span-portfolio {
+    font: $big-title-font;
+    color: $purple;
+    opacity: 0.3;
+}
+
+h5 {
+    color: $purple;
+    font: $title-omnes700;
+}
+
+ul {
+    list-style-type: none
+}
+
+ul {
+    li {
+    color: $darkest-purple;
+    font: $title-omnes600;
+}
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+p {
+    font: $paragraph-font;
+    color: $darkest-purple;
+}
+
+form {
+    h3 {
+        color: $purple;
+        font: $title-omnes600;
+        font-size: 1.375rem;
+    }
+}
+
+    /* Backgrounds */
+
+    .bg-gradient-hero {
+        background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+    }
+
+    .bg-gradient-hero-about {
+        background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+    }
+
+    .bg-white {
+        background-image: #ffffff;
+    }
+
+    .bg-lillac {
+        background-image: linear-gradient(#F3F0FA, #F2F2F2);
+    }
+
+    .bg-lillac2,
+    .bg-lillac-solutions,
+    .bg-lillac-skills {
+        background-image: linear-gradient(#f2f2f2, #EEE8FA);
+    }
+
+    /* Fin backgrounds */
