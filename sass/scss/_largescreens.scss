@@ -118,13 +118,13 @@
         font: $title-omnes700;
         font-size: 2.25rem;
         color: $pink;
-        margin: 1rem 0 1rem;
+        margin: 1rem 0 1.5rem;
     }
 
     .card-body {
         p {
-        font-size: 1.6rem;
-        line-height: 3rem;
+        font-size: 2rem;
+        line-height: 3.5rem;
         margin: 1rem 0;
         }
     }
@@ -147,12 +147,6 @@
         color: $darkest-purple;
         text-decoration: underline;
         font-weight: bold
-    }
-
-    .link-cv {
-        color: $purple;
-        text-decoration: underline;
-        font-weight: bold;
     }
 
     .nav-logo-mobile {
@@ -217,9 +211,17 @@
 
     .titulo-seccion-portfolio {
         @include flexbox;
-        margin: 2rem 6.5rem 2rem 54rem;
+        margin: 5rem;
+        float: right;
         color: $purple;
-        opacity: 30%;
+    }
+
+    .titulo-seccion-portfolio {
+        h4 {
+        font: $big-title-font;
+        font-size: 6rem;
+        opacity: 0.3;
+        }
     }
 
     .titulo-seccion-solutions {
@@ -251,7 +253,8 @@
 
     .inline-list {
         @include flexcenter;
-        height: 10rem;
+        height: 3rem;
+        width: 100vw;
 
         li {
             padding: 1rem 1rem;
@@ -260,8 +263,8 @@
 
         h5 {
             padding: 1rem 1rem;
-            margin: 2rem 2rem 2rem 0;
-            font-size: 2.5rem;
+            margin: 0.5rem 0 0.5rem;
+            font-size: 3rem;
         }
     }
 
@@ -391,10 +394,10 @@
 
             .span-portfolio {
                 font: $big-title-font;
-                font-size: 7.625rem;
+                font-size: 7.5rem;
                 line-height: 6rem;
-                opacity: 0.3;
                 text-align: center;
+                opacity: 0.3;
             }
         }
     
@@ -443,9 +446,15 @@
             padding: 6.5rem 5.5rem;
             margin: 1rem 1rem 0 1rem;
 
+            h1 {
+                font-size: 3.5rem;
+                margin: 1.5rem 1rem 0;
+            }
+    
             p {
+                font-size: 1.75rem;
                 line-height: 3rem;
-                margin: 1rem 0 1rem 0;
+                margin: 0.75rem 0 0.75rem 0;
             }
 
             .email {
@@ -460,6 +469,7 @@
 
         #icons-footer {
             @include flexcenter;
+            margin-top: 2rem;
 
             a {
                 padding: 1rem;
@@ -725,32 +735,6 @@
     ***************************** 
     */
 
-        /* Subrayado en hover */
-
-        .underline-effect {
-            display: inline-block;
-            position: relative;
-            color: $purple;
-        }
-
-        .underline-effect:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: $pink;
-            transform-origin: bottom right;
-            transition: transform 0.3s ease-out;
-        }
-
-        .underline-effect:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-
         /* Typing */
 
         .typing h2 {
@@ -788,7 +772,7 @@
             }
 
             99.9% {
-                border-right: .15em solid D977C7;
+                border-right: .15em solid $pink;
             }
 
             100% {
@@ -806,7 +790,7 @@
             }
 
             99.9% {
-                border-right: .15em solid D977C7;
+                border-right: .15em solid $pink;
             }
 
             100% {
