@@ -83,8 +83,7 @@ h3 {
 
 h4, .span-portfolio {
   font: normal 400 4rem "abril-fatface", serif;
-  color: #9766CC;
-  opacity: 0.3; }
+  color: #9766CC; }
 
 h5 {
   color: #9766CC;
@@ -130,6 +129,43 @@ form h3 {
   background-image: linear-gradient(#f2f2f2, #EEE8FA); }
 
 /* Fin backgrounds */
+/* Colors */
+.pink {
+  color: #D977C7; }
+
+/*
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+/* Subrayado en hover */
+.underline-effect {
+  display: inline-block;
+  position: relative;
+  color: #9766CC; }
+
+.underline-effect:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #D977C7;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out; }
+
+.underline-effect:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+/* Fin subrayado en hover */
+.link-cv {
+  color: #9766CC;
+  text-decoration: underline;
+  font-weight: bold; }
+
 /* 
 ************************** Large screens *****************************
                     Wireframes en 1920 x 1080px 
@@ -167,10 +203,10 @@ form h3 {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 2.25rem;
     color: #D977C7;
-    margin: 1rem 0 1rem; }
+    margin: 1rem 0 1.5rem; }
   .card-body p {
-    font-size: 1.6rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 3.5rem;
     margin: 1rem 0; }
   .texto-grande {
     color: #9766CC;
@@ -184,10 +220,6 @@ form h3 {
     line-height: 2.5rem; }
   .link-in-paragraph {
     color: #654D80;
-    text-decoration: underline;
-    font-weight: bold; }
-  .link-cv {
-    color: #9766CC;
     text-decoration: underline;
     font-weight: bold; }
   .nav-logo-mobile {
@@ -255,9 +287,13 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 6.5rem 2rem 54rem;
-    color: #9766CC;
-    opacity: 30%; }
+    margin: 5rem;
+    float: right;
+    color: #9766CC; }
+  .titulo-seccion-portfolio h4 {
+    font: normal 400 4rem "abril-fatface", serif;
+    font-size: 6rem;
+    opacity: 0.3; }
   .titulo-seccion-solutions {
     display: inline-block;
     position: relative;
@@ -298,14 +334,15 @@ form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10rem; }
+    height: 3rem;
+    width: 100vw; }
     .inline-list li {
       padding: 1rem 1rem;
       margin: 4rem 2rem 8rem 0; }
     .inline-list h5 {
       padding: 1rem 1rem;
-      margin: 2rem 2rem 2rem 0;
-      font-size: 2.5rem; }
+      margin: 0.5rem 0 0.5rem;
+      font-size: 3rem; }
   .hr-skills {
     display: flex;
     float: left;
@@ -405,10 +442,10 @@ form h3 {
     padding: 3.75rem 0; }
     .align-welcome .span-portfolio {
       font: normal 400 4rem "abril-fatface", serif;
-      font-size: 7.625rem;
+      font-size: 7.5rem;
       line-height: 6rem;
-      opacity: 0.3;
-      text-align: center; }
+      text-align: center;
+      opacity: 0.3; }
   h4 {
     font: normal 400 4rem "abril-fatface", serif;
     font-size: 4rem; }
@@ -445,9 +482,13 @@ form h3 {
     height: 35.5rem;
     padding: 6.5rem 5.5rem;
     margin: 1rem 1rem 0 1rem; }
+    .contenedor-footer h1 {
+      font-size: 3.5rem;
+      margin: 1.5rem 1rem 0; }
     .contenedor-footer p {
+      font-size: 1.75rem;
       line-height: 3rem;
-      margin: 1rem 0 1rem 0; }
+      margin: 0.75rem 0 0.75rem 0; }
     .contenedor-footer .email {
       font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.875rem;
@@ -458,7 +499,8 @@ form h3 {
   #icons-footer {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: 2rem; }
     #icons-footer a {
       padding: 1rem;
       margin: 2rem 1rem;
@@ -649,25 +691,6 @@ form h3 {
     ********** Motion ***********
     ***************************** 
     */
-  /* Subrayado en hover */
-  .underline-effect {
-    display: inline-block;
-    position: relative;
-    color: #9766CC; }
-  .underline-effect:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #D977C7;
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out; }
-  .underline-effect:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left; }
   /* Typing */
   .typing h2 {
     border-right: 0.15em solid #D977C7;
@@ -694,7 +717,7 @@ form h3 {
     0% {
       width: 0; }
     99.9% {
-      border-right: .15em solid D977C7; }
+      border-right: 0.15em solid #D977C7; }
     100% {
       border: none; } }
   @keyframes type2 {
@@ -703,7 +726,7 @@ form h3 {
     1% {
       opacity: 1; }
     99.9% {
-      border-right: .15em solid D977C7; }
+      border-right: 0.15em solid #D977C7; }
     100% {
       opacity: 1;
       border: none; } }
@@ -1211,8 +1234,7 @@ h3 {
 
 h4, .span-portfolio {
   font: normal 400 4rem "abril-fatface", serif;
-  color: #9766CC;
-  opacity: 0.3; }
+  color: #9766CC; }
 
 h5 {
   color: #9766CC;
@@ -1258,15 +1280,53 @@ form h3 {
   background-image: linear-gradient(#f2f2f2, #EEE8FA); }
 
 /* Fin backgrounds */
+/* Colors */
+.pink {
+  color: #D977C7; }
+
+/*
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+/* Subrayado en hover */
+.underline-effect {
+  display: inline-block;
+  position: relative;
+  color: #9766CC; }
+
+.underline-effect:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #D977C7;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out; }
+
+.underline-effect:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+/* Fin subrayado en hover */
+.link-cv {
+  color: #9766CC;
+  text-decoration: underline;
+  font-weight: bold; }
+
 /* 
 ************************** Notebook *****************************
                     Wireframes en 1366 x 768px 
 */
 @media only screen and (min-width: 1200px) and (max-device-width: 1599px) {
   /* Intro y Nav */
+  .nav-item a {
+    font-size: 1.25rem; }
   .bg-gradient-hero {
     background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
-    height: 45rem;
     width: 100vw; }
   #sakura {
     display: block;
@@ -1292,7 +1352,7 @@ form h3 {
       box-sizing: border-box; }
       .intro-completo .contenedor-intro-izq .intro {
         font: normal 700 1.5rem "abril-display", serif;
-        font-size: 4.3rem; }
+        font-size: 4rem; }
       .intro-completo .contenedor-intro-izq .pink {
         color: #D977C7; }
     .intro-completo .professions {
@@ -1330,7 +1390,8 @@ form h3 {
     .align-welcome .span-portfolio {
       font-size: 5.3125rem;
       line-height: 6rem;
-      text-align: center; }
+      text-align: center;
+      opacity: 0.3; }
   h4 {
     font: normal 400 4rem "abril-fatface", serif;
     font-size: 4rem; }
@@ -1357,8 +1418,8 @@ form h3 {
     margin: 4.4rem 2rem 1.5rem 1.5rem;
     line-height: 2rem; }
     .titulo-seccion-izq h1 {
-      font: section-title-font;
-      font-size: 3.125rem;
+      font: normal 700 1.5rem "abril-display", serif;
+      font-size: 3rem;
       padding: 1.5rem 0 0; }
   .titulo-seccion-portfolio {
     display: inline-block;
@@ -1368,30 +1429,43 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 1rem 5.5rem 1rem 30rem;
-    color: #9766CC;
-    opacity: 20%; }
+    float: right;
+    margin: 5rem;
+    color: #9766CC; }
+  .titulo-seccion-portfolio h4 {
+    font: normal 400 4rem "abril-fatface", serif;
+    font-size: 5rem;
+    opacity: 0.3; }
   h5 {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-style: normal;
     font-size: 1.2rem; }
   .inline-list {
-    height: 5rem; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    width: 100vw; }
     .inline-list h5 {
-      font-size: 1.75rem;
+      font-size: 2rem;
       padding: 1rem 1rem;
-      margin: 4.5rem 0.5rem; }
+      margin: 2rem 0 2rem; }
   .titulo-proyectos {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-style: normal;
-    font-size: 2.2rem; }
+    font-size: 2.5rem; }
   .subtitulo-proyectos,
   .subtitulo-footer {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1.75rem;
-    opacity: 1.0; }
+    font-size: 1.85rem;
+    opacity: 1.0;
+    margin: 1rem 0 1.25rem; }
+  .card-body p {
+    font-size: 1.6rem;
+    line-height: 2.75rem;
+    margin: 1rem 0; }
   p {
     color: #654D80;
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
@@ -1441,7 +1515,7 @@ form h3 {
       font-size: 3rem;
       margin: 1.5rem 1rem 0; }
     .contenedor-footer p {
-      line-height: 3rem;
+      line-height: 2.25rem;
       margin: 0 0 1rem 0;
       font-size: 1.5rem;
       font-weight: 600;
@@ -1457,7 +1531,7 @@ form h3 {
       display: flex;
       justify-content: center;
       align-items: center;
-      float: center; }
+      margin-top: 1.75rem; }
       .contenedor-footer #icons-footer a {
         padding: 1rem;
         margin: 2rem 1rem;
@@ -1744,8 +1818,7 @@ h3 {
 
 h4, .span-portfolio {
   font: normal 400 4rem "abril-fatface", serif;
-  color: #9766CC;
-  opacity: 0.3; }
+  color: #9766CC; }
 
 h5 {
   color: #9766CC;
@@ -1791,6 +1864,43 @@ form h3 {
   background-image: linear-gradient(#f2f2f2, #EEE8FA); }
 
 /* Fin backgrounds */
+/* Colors */
+.pink {
+  color: #D977C7; }
+
+/*
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+/* Subrayado en hover */
+.underline-effect {
+  display: inline-block;
+  position: relative;
+  color: #9766CC; }
+
+.underline-effect:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #D977C7;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out; }
+
+.underline-effect:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+/* Fin subrayado en hover */
+.link-cv {
+  color: #9766CC;
+  text-decoration: underline;
+  font-weight: bold; }
+
 /* Tablet */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Intro y Nav */
@@ -2270,8 +2380,7 @@ h3 {
 
 h4, .span-portfolio {
   font: normal 400 4rem "abril-fatface", serif;
-  color: #9766CC;
-  opacity: 0.3; }
+  color: #9766CC; }
 
 h5 {
   color: #9766CC;
@@ -2317,6 +2426,43 @@ form h3 {
   background-image: linear-gradient(#f2f2f2, #EEE8FA); }
 
 /* Fin backgrounds */
+/* Colors */
+.pink {
+  color: #D977C7; }
+
+/*
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+/* Subrayado en hover */
+.underline-effect {
+  display: inline-block;
+  position: relative;
+  color: #9766CC; }
+
+.underline-effect:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #D977C7;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out; }
+
+.underline-effect:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+/* Fin subrayado en hover */
+.link-cv {
+  color: #9766CC;
+  text-decoration: underline;
+  font-weight: bold; }
+
 /* Mobile -> Wireframes en 390 x 844 (iPhone 12 pro) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Intro y Nav */
