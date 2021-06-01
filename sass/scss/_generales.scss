@@ -84,7 +84,6 @@ h3 {
 h4, .span-portfolio {
     font: $big-title-font;
     color: $purple;
-    opacity: 0.3;
 }
 
 h5 {
@@ -147,3 +146,49 @@ form {
     }
 
     /* Fin backgrounds */
+
+    /* Colors */
+    .pink {
+        color: $pink;
+    }
+
+    /*
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+
+        /* Subrayado en hover */
+
+        .underline-effect {
+            display: inline-block;
+            position: relative;
+            color: $purple;
+        }
+
+        .underline-effect:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $pink;
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .underline-effect:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Fin subrayado en hover */
+
+        .link-cv {
+            color: $purple;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    
