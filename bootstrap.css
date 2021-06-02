@@ -30,10 +30,12 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/*
 ol,
 ul {
     padding-left: 1.5rem;
 }
+*/
 
 ol,
 ul,
@@ -424,14 +426,17 @@ fieldset:disabled .btn {
         padding-right: 3rem !important;
     }
 
-
+    /*
     .m-md-5 {
         margin: 3rem !important;
     }
+    */
 
+    /*
     .me-md-5 {
         margin-right: 3rem !important;
     }
+    */
 
     .pt-md-3 {
         padding-top: 1rem !important;
