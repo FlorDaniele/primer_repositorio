@@ -63,6 +63,12 @@
 @media only screen and (min-width : 1600px) and (max-device-width : 1919px) {
     /* Intro y Nav */
 
+    .nav-item {
+        a {
+            font-size: 1.35rem;
+        }
+    }
+
     .bg-gradient-hero {
         background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
         height: 45rem;
@@ -73,25 +79,24 @@
         display: block;
         float: right;
         position: relative;
-        padding: 0.25rem 0 0.25rem 1rem;
-        height: 7.5rem;
+        padding: 0.25rem 0 0 90rem;
+        height: 10.5rem;
     }
 
     .intro-completo {
+        @include centrado;
         display: inline-block;
-        align-items: flex-start;
-        justify-content: center;
-        margin: 0.5rem 0 0;
+        margin: 1rem 0 0;
 
         .contenedor-intro-izq {
             @include centrado;
             display: inline-block;
             position: relative;
             flex-wrap: wrap;
-            width: 38.25rem;
-            padding: 1rem 2rem 0 5.5rem;
+            width: 40rem;
+            padding: 1rem 2rem 0 9rem;
             height: 19.125rem;
-            margin-right: 1rem;
+            margin-right: 2rem;
             box-sizing: border-box;
 
             .intro {
@@ -111,14 +116,16 @@
         }
 
         .contenedor-intro-der {
-            display: inline-block;
+            display: flex;
+            float: right;
             position: relative;
             flex-wrap: wrap;
-            width: 44.8125rem;
+            width: 47rem;
             height: 19.125rem;
-            padding: 0rem 5.5rem 0rem 1rem;
-            margin-left: 1.0625rem;
-            justify-content: center;
+            padding: 1rem 5.5rem 0rem 3rem;
+            margin-left: 4.5rem;
+            margin-top: 1.25rem;
+            justify-content: flex-start;
             align-items: flex-start;
             box-sizing: border-box;
 
@@ -140,7 +147,7 @@
 
     .align-welcome {
         @include flexcenter;
-        padding: 2rem 0 3rem;
+        padding: 2.5rem 0;
 
         .span-portfolio {
             font: $big-title-font;
@@ -190,9 +197,17 @@
 
     .titulo-seccion-portfolio {
         @include flexbox;
-        margin: 1rem 5.5rem 1rem 30rem;
+        float: right;
+        margin: 5rem;
         color: $purple;
-        opacity: 20%;
+    }
+
+    .titulo-seccion-portfolio {
+        h4 {
+        font: $big-title-font;
+        font-size: 5rem;
+        opacity: 0.3;
+        }
     }
 
     h5 {
@@ -203,11 +218,19 @@
     }
 
     .inline-list {
-        height: 5rem;
-        h5 {
-            font-size: 1.75rem;
+        @include flexcenter;
+        height: 3rem;
+        width: 100vw;
+
+        li {
             padding: 1rem 1rem;
-            margin: 4.5rem 0.5rem;
+            margin: 4rem 2rem 8rem 0;
+        }
+
+        h5 {
+            padding: 1rem 1rem;
+            margin: 0.5rem 0 0.5rem;
+            font-size: 2.5rem;
         }
     }
 
@@ -223,6 +246,16 @@
         font: $title-omnes700;
         font-size: 1.75rem;
         opacity: 1.0;
+        color: $pink;
+        margin: 1rem 0 1.5rem;
+    }
+
+    .card-body {
+        p {
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        margin: 1rem 0;
+        }
     }
 
     p {
@@ -236,7 +269,6 @@
 
     #cv {
         @include flexcenter;
-        flex-direction: row;
 
         .box-img-left-cv {
             width: 17.75rem;
@@ -248,10 +280,11 @@
         }
 
         .box-text-right-cv {
-            @include centrado;
+            width: 35rem;
+            min-width: 18.5rem;
             height: fit-content;
-            padding: 1rem;
-            margin: 3rem 2rem 6rem;
+            padding: 0.5rem;
+            margin: 4.5rem 1rem;
             position: relative;
             float: right;
         }
@@ -271,26 +304,23 @@
     /* Footer */
 
     .contenedor-footer {
-        @include centrado;
-        display: inline-block;
+        @include flexcenter ($display: inline-block);
         text-align: center;
         line-height: 4rem;
-        height: 30rem;
-        width: 85.373rem;
-        padding: 3rem 0;
-        margin: 1rem 1rem 0 1rem;
+        width: 100vw;
+        height: 34rem;
+        padding: 6rem 5.5rem;
+        margin-top: 1rem;
 
         h1 {
-            font-size: 3rem;
+            font-size: 3.125rem;
             margin: 1.5rem 1rem 0;
         }
 
         p {
-            line-height: 3rem;
-            margin: 0 0 1rem 0;
-            font-size: 1.5rem;
-            font-weight: 600;
-            flex-wrap: wrap;
+            font-size: 1.55rem;
+            line-height: 2.75rem;
+            margin: 0.75rem 0 0.75rem 0;
         }
 
         .email {
@@ -304,7 +334,7 @@
 
         #icons-footer {
             @include flexcenter;
-            float: center;
+            margin-top: 2rem;
 
             a {
                 padding: 1rem;
@@ -318,7 +348,8 @@
         @include centrado;
         display: inline-block;
         text-align: center;
-        height: 5rem;
+        height: 3rem;
+        width: 100vw;
     }
 
 

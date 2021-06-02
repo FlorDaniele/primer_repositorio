@@ -205,8 +205,8 @@ form h3 {
     color: #D977C7;
     margin: 1rem 0 1.5rem; }
   .card-body p {
-    font-size: 2rem;
-    line-height: 3.5rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
     margin: 1rem 0; }
   .texto-grande {
     color: #9766CC;
@@ -442,7 +442,7 @@ form h3 {
     padding: 3.75rem 0; }
     .align-welcome .span-portfolio {
       font: normal 400 4rem "abril-fatface", serif;
-      font-size: 7.5rem;
+      font-size: 7rem;
       line-height: 6rem;
       text-align: center;
       opacity: 0.3; }
@@ -479,9 +479,9 @@ form h3 {
     text-align: center;
     line-height: 4rem;
     width: 100vw;
-    height: 35.5rem;
+    height: 37rem;
     padding: 6.5rem 5.5rem;
-    margin: 1rem 1rem 0 1rem; }
+    margin-top: 1rem; }
     .contenedor-footer h1 {
       font-size: 3.5rem;
       margin: 1.5rem 1rem 0; }
@@ -509,7 +509,9 @@ form h3 {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    width: 100vw;
+    height: 3rem; }
   /* Fin Footer */
   /* Skills Section */
   .inline-skills {
@@ -752,6 +754,8 @@ form h3 {
 */
 @media only screen and (min-width: 1600px) and (max-device-width: 1919px) {
   /* Intro y Nav */
+  .nav-item a {
+    font-size: 1.35rem; }
   .bg-gradient-hero {
     background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
     height: 45rem;
@@ -760,23 +764,23 @@ form h3 {
     display: block;
     float: right;
     position: relative;
-    padding: 0.25rem 0 0.25rem 1rem;
-    height: 7.5rem; }
+    padding: 0.25rem 0 0 90rem;
+    height: 10.5rem; }
   .intro-completo {
-    display: inline-block;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    margin: 0.5rem 0 0; }
+    display: inline-block;
+    margin: 1rem 0 0; }
     .intro-completo .contenedor-intro-izq {
       align-items: center;
       justify-content: center;
       display: inline-block;
       position: relative;
       flex-wrap: wrap;
-      width: 38.25rem;
-      padding: 1rem 2rem 0 5.5rem;
+      width: 40rem;
+      padding: 1rem 2rem 0 9rem;
       height: 19.125rem;
-      margin-right: 1rem;
+      margin-right: 2rem;
       box-sizing: border-box; }
       .intro-completo .contenedor-intro-izq .intro {
         font: normal 700 1.5rem "abril-display", serif;
@@ -790,14 +794,16 @@ form h3 {
       font-size: 2.3rem;
       line-height: 4.0625rem; }
     .intro-completo .contenedor-intro-der {
-      display: inline-block;
+      display: flex;
+      float: right;
       position: relative;
       flex-wrap: wrap;
-      width: 44.8125rem;
+      width: 47rem;
       height: 19.125rem;
-      padding: 0rem 5.5rem 0rem 1rem;
-      margin-left: 1.0625rem;
-      justify-content: center;
+      padding: 1rem 5.5rem 0rem 3rem;
+      margin-left: 4.5rem;
+      margin-top: 1.25rem;
+      justify-content: flex-start;
       align-items: flex-start;
       box-sizing: border-box; }
       .intro-completo .contenedor-intro-der #titulo-bio {
@@ -814,7 +820,7 @@ form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0 3rem; }
+    padding: 2.5rem 0; }
     .align-welcome .span-portfolio {
       font: normal 400 4rem "abril-fatface", serif;
       font-size: 5.3125rem;
@@ -858,20 +864,31 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 1rem 5.5rem 1rem 30rem;
-    color: #9766CC;
-    opacity: 20%; }
+    float: right;
+    margin: 5rem;
+    color: #9766CC; }
+  .titulo-seccion-portfolio h4 {
+    font: normal 400 4rem "abril-fatface", serif;
+    font-size: 5rem;
+    opacity: 0.3; }
   h5 {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-style: normal;
     font-size: 1.2rem; }
   .inline-list {
-    height: 5rem; }
-    .inline-list h5 {
-      font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 100vw; }
+    .inline-list li {
       padding: 1rem 1rem;
-      margin: 4.5rem 0.5rem; }
+      margin: 4rem 2rem 8rem 0; }
+    .inline-list h5 {
+      padding: 1rem 1rem;
+      margin: 0.5rem 0 0.5rem;
+      font-size: 2.5rem; }
   .titulo-proyectos {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
@@ -881,7 +898,13 @@ form h3 {
   .subtitulo-footer {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.75rem;
-    opacity: 1.0; }
+    opacity: 1.0;
+    color: #D977C7;
+    margin: 1rem 0 1.5rem; }
+  .card-body p {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    margin: 1rem 0; }
   p {
     color: #654D80;
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
@@ -891,8 +914,7 @@ form h3 {
   #cv {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row; }
+    align-items: center; }
     #cv .box-img-left-cv {
       width: 17.75rem;
       height: fit-content;
@@ -901,11 +923,11 @@ form h3 {
       position: relative;
       float: left; }
     #cv .box-text-right-cv {
-      align-items: center;
-      justify-content: center;
+      width: 35rem;
+      min-width: 18.5rem;
       height: fit-content;
-      padding: 1rem;
-      margin: 3rem 2rem 6rem;
+      padding: 0.5rem;
+      margin: 4.5rem 1rem;
       position: relative;
       float: right; }
     #cv .texto-grande {
@@ -918,24 +940,22 @@ form h3 {
   /* Fin CV */
   /* Footer */
   .contenedor-footer {
-    align-items: center;
-    justify-content: center;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     line-height: 4rem;
-    height: 30rem;
-    width: 85.373rem;
-    padding: 3rem 0;
-    margin: 1rem 1rem 0 1rem; }
+    width: 100vw;
+    height: 34rem;
+    padding: 6rem 5.5rem;
+    margin-top: 1rem; }
     .contenedor-footer h1 {
-      font-size: 3rem;
+      font-size: 3.125rem;
       margin: 1.5rem 1rem 0; }
     .contenedor-footer p {
-      line-height: 3rem;
-      margin: 0 0 1rem 0;
-      font-size: 1.5rem;
-      font-weight: 600;
-      flex-wrap: wrap; }
+      font-size: 1.55rem;
+      line-height: 2.75rem;
+      margin: 0.75rem 0 0.75rem 0; }
     .contenedor-footer .email {
       font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.725rem;
@@ -947,7 +967,7 @@ form h3 {
       display: flex;
       justify-content: center;
       align-items: center;
-      float: center; }
+      margin-top: 2rem; }
       .contenedor-footer #icons-footer a {
         padding: 1rem;
         margin: 2rem 1rem;
@@ -957,7 +977,8 @@ form h3 {
     justify-content: center;
     display: inline-block;
     text-align: center;
-    height: 5rem; }
+    height: 3rem;
+    width: 100vw; }
   /* Fin Footer */
   /* Sección About me */
   .bg-gradient-hero-about {
@@ -1459,11 +1480,11 @@ form h3 {
   .subtitulo-proyectos,
   .subtitulo-footer {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1.85rem;
+    font-size: 1.45rem;
     opacity: 1.0;
     margin: 1rem 0 1.25rem; }
   .card-body p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 2.75rem;
     margin: 1rem 0; }
   p {
@@ -1541,7 +1562,8 @@ form h3 {
     justify-content: center;
     display: inline-block;
     text-align: center;
-    height: 5rem; }
+    height: 2.5rem;
+    width: 100vw; }
   /* Fin Footer */
   /* Sección About me */
   .bg-gradient-hero-about {
@@ -1904,6 +1926,10 @@ form h3 {
 /* Tablet */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Intro y Nav */
+  .nav-logo-mobile {
+    font: normal 700 1.5rem "abril-display", serif;
+    font-size: 2rem;
+    text-decoration: none; }
   .btn-primary {
     font-size: 1.2rem !important; }
   #sakura {
@@ -1917,8 +1943,7 @@ form h3 {
     display: block;
     justify-content: center;
     align-items: center;
-    position: relative;
-    height: 35rem;
+    height: 30rem;
     width: 100%; }
     .intro-completo .contenedor-intro-izq {
       align-items: center;
@@ -1928,9 +1953,9 @@ form h3 {
       top: 7.625rem;
       left: 0;
       flex-wrap: wrap;
-      padding: 1.5rem 2rem;
+      padding: 1.5rem 13rem;
       margin: 0;
-      height: 6.9rem;
+      height: 15rem;
       width: 100%;
       box-sizing: border-box; }
       .intro-completo .contenedor-intro-izq .intro {
@@ -1952,8 +1977,8 @@ form h3 {
       top: 21.25rem;
       left: 0;
       height: fit-content;
-      width: 20.1875rem;
-      padding: 2rem 0 2rem;
+      width: 100%;
+      padding: 2rem 11rem 2rem 11rem;
       margin: 0 2rem;
       box-sizing: border-box; }
       .intro-completo .contenedor-intro-der #titulo-bio {
@@ -1962,7 +1987,7 @@ form h3 {
         margin-bottom: 0.5rem; }
       .intro-completo .contenedor-intro-der .texto-medio-bio {
         font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.625rem; }
   .align-welcome {
     display: flex;
@@ -1974,7 +1999,8 @@ form h3 {
       font-size: 3.125rem;
       line-height: 4rem;
       text-align: center;
-      margin: 1.5rem 0 2rem; }
+      margin: 1.5rem 0 2rem;
+      opacity: 0.3; }
   h4 {
     font: normal 400 4rem "abril-fatface", serif;
     font-size: 2.1875rem; }
@@ -2011,7 +2037,7 @@ form h3 {
   .hr-skills {
     display: flex;
     float: left;
-    width: 2rem;
+    width: 3rem;
     border-top: 0.125rem solid #D977C7;
     margin: 3rem 0 0; }
   h5 {
@@ -2022,22 +2048,32 @@ form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem; }
+    height: 1rem;
+    width: 100vw; }
     .inline-list h5 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       padding: 1rem 0.5rem;
-      margin: 2rem 1rem 2rem 0; }
+      margin: 1rem 0 1rem; }
   .titulo-proyectos {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 2rem; }
+    font-size: 1.65rem; }
   .titulo-seccion-portfolio {
     display: none; }
-  .subtitulo-proyectos,
+  .subtitulo-proyectos {
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+    font-size: 1.45rem;
+    margin: 1rem 0 1.25rem; }
   .subtitulo-footer {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.5rem;
     opacity: 1.0; }
+  .card-body {
+    padding: 0.25rem; }
+  .card-body p {
+    font-size: 1.25rem;
+    line-height: 1.85rem;
+    margin: 1rem 0; }
   p {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1rem;
@@ -2054,21 +2090,29 @@ form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: row;
+    margin-bottom: 1rem; }
     #cv .box-img-left-cv {
       width: 10.625rem;
       height: fit-content;
-      margin: 2.5rem 2rem 1rem; }
+      padding: 0.5rem;
+      margin: 1.5rem 1rem 2rem;
+      position: relative;
+      float: left; }
     #cv .box-text-right-cv {
-      width: 15rem;
+      align-items: center;
+      justify-content: center;
       height: fit-content;
-      margin: 0rem 2rem 4rem;
-      text-align: center; }
+      width: 18rem;
+      margin: 2rem 1rem 2rem;
+      text-align: center;
+      position: relative;
+      float: right; }
     #cv .texto-grande {
       color: #9766CC;
-      font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-      font-size: 1.25rem;
-      line-height: 1.8rem; }
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+      font-size: 1.5rem;
+      line-height: 2.25rem; }
   /* Fin CV */
   /* Footer */
   .contenedor-footer {
@@ -2080,12 +2124,12 @@ form h3 {
     width: 24.375rem;
     height: 27rem;
     width: 100vw;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 0 2rem;
     margin-bottom: 1rem; }
     .contenedor-footer p {
       line-height: 2rem;
-      margin: 0 0 1rem 0;
-      font-size: 1rem;
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
       width: 100vw;
       padding: 0 1.5rem;
       flex-wrap: wrap; }
@@ -2095,13 +2139,14 @@ form h3 {
     .contenedor-footer .subtitulo-footer {
       font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       opacity: 1.0;
-      margin: 0.5rem 1.5rem; }
+      margin: 0.75rem 1.5rem; }
     .contenedor-footer .email {
       font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.25rem;
       opacity: 1.0;
       text-align: left;
-      padding: 0 1.5rem;
+      padding-right: 1.5rem;
+      margin-bottom: 2rem;
       color: #9766CC; }
   #icons-footer {
     display: flex;
@@ -2113,6 +2158,13 @@ form h3 {
       padding: 1rem;
       margin: 2rem 1rem;
       color: #654D80; }
+  .footer-resumido {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 2rem; }
   /* Fin Footer */
   /* Sección Solutions */
   .hr-full-method {
@@ -2466,6 +2518,10 @@ form h3 {
 /* Mobile -> Wireframes en 390 x 844 (iPhone 12 pro) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Intro y Nav */
+  .nav-logo-mobile {
+    font: normal 700 1.5rem "abril-display", serif;
+    font-size: 1.65rem;
+    text-decoration: none; }
   .btn-primary {
     font-size: 1.2rem !important; }
   #sakura {
@@ -2481,18 +2537,18 @@ form h3 {
     align-items: center;
     position: relative;
     height: 35rem;
-    width: 100%; }
+    width: 100vw; }
     .intro-completo .contenedor-intro-izq {
       align-items: center;
       justify-content: center;
       display: block;
       position: absolute;
-      top: 7.625rem;
+      top: 6.5rem;
       left: 0;
       flex-wrap: wrap;
       padding: 1.5rem 2rem;
       margin: 0;
-      height: 6.9rem;
+      height: 15rem;
       width: 100%;
       box-sizing: border-box; }
       .intro-completo .contenedor-intro-izq .intro {
@@ -2531,12 +2587,13 @@ form h3 {
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 3rem 2rem; }
+    margin: 3rem 1rem; }
     .align-welcome .span-portfolio {
-      font-size: 3.125rem;
+      font-size: 2.8rem;
       line-height: 4rem;
       text-align: center;
-      margin: 1.5rem 0 2rem; }
+      margin: 1.5rem 0 1rem;
+      opacity: 0.3; }
   h4 {
     font: normal 400 4rem "abril-fatface", serif;
     font-size: 2.1875rem; }
@@ -2546,7 +2603,7 @@ form h3 {
     font-size: 1.3rem;
     line-height: 2.5rem; }
   /* Fin Intro y Nav */
-  /* Titulos sección Proyectos */
+  /* Proyectos */
   section h2 {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1rem;
@@ -2573,7 +2630,7 @@ form h3 {
   .hr-skills {
     display: flex;
     float: left;
-    width: 2rem;
+    width: 2.5rem;
     border-top: 0.125rem solid #D977C7;
     margin: 3rem 0 0; }
   h5 {
@@ -2592,24 +2649,30 @@ form h3 {
   .titulo-proyectos {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 2rem; }
+    font-size: 1.75rem; }
   .titulo-seccion-portfolio {
     display: none; }
-  .subtitulo-proyectos,
-  .subtitulo-footer {
+  .subtitulo-proyectos {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1.5rem;
-    opacity: 1.0; }
+    font-size: 1.35rem;
+    opacity: 1.0;
+    margin: 1rem 0 1.25rem; }
+  .card-body p {
+    font-size: 1rem;
+    line-height: 1.65rem;
+    margin: 1rem 0; }
   p {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1rem;
-    line-height: 1.75rem; }
+    line-height: 1.5rem; }
   .styled-link {
     color: #D977C7;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.25rem;
     padding: 0 1rem;
     text-decoration: none; }
+  .card {
+    width: 80vw; }
   /* Fin Proyectos */
   /* CV */
   #cv {
@@ -2640,7 +2703,7 @@ form h3 {
     text-align: left;
     line-height: 3rem;
     width: 24.375rem;
-    height: 27rem;
+    height: 23rem;
     width: 100vw;
     padding: 1.5rem 0;
     margin-bottom: 1rem; }
@@ -2657,6 +2720,7 @@ form h3 {
     .contenedor-footer .subtitulo-footer {
       font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       opacity: 1.0;
+      font-size: 1.25rem;
       margin: 0.5rem 1.5rem; }
     .contenedor-footer .email {
       font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
@@ -2675,6 +2739,13 @@ form h3 {
       padding: 1rem;
       margin: 2rem 1rem;
       color: #654D80; }
+  .footer-resumido {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 3rem; }
   /* Fin Footer */
   /* Sección Solutions */
   .hr-full-method {
