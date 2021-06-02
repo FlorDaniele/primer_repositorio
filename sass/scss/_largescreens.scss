@@ -123,8 +123,8 @@
 
     .card-body {
         p {
-        font-size: 2rem;
-        line-height: 3.5rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
         margin: 1rem 0;
         }
     }
@@ -394,7 +394,7 @@
 
             .span-portfolio {
                 font: $big-title-font;
-                font-size: 7.5rem;
+                font-size: 7rem;
                 line-height: 6rem;
                 text-align: center;
                 opacity: 0.3;
@@ -442,9 +442,9 @@
             text-align: center;
             line-height: 4rem;
             width: 100vw;
-            height: 35.5rem;
+            height: 37rem;
             padding: 6.5rem 5.5rem;
-            margin: 1rem 1rem 0 1rem;
+            margin-top: 1rem;
 
             h1 {
                 font-size: 3.5rem;
@@ -481,6 +481,8 @@
         .footer-resumido {
             @include flexcenter ($display: inline-block);
             text-align: center;
+            width: 100vw;
+            height: 3rem;
         }
 
         /* Fin Footer */
