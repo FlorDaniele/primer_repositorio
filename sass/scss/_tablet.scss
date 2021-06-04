@@ -85,7 +85,8 @@
     
         .intro-completo {
             @include flexcenter ($display: block);
-            height: 30rem;
+            position: relative;
+            height: 34.5rem;
             width: 100%;
     
             .contenedor-intro-izq {
@@ -326,8 +327,7 @@
             display: inline-block;
             text-align: left;
             line-height: 3rem;
-            width: 24.375rem;
-            height: 27rem;
+            height: 21.5rem;
             width: 100vw;
             padding: 1.5rem 0 0 2rem;
             margin-bottom: 1rem;

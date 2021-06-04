@@ -681,6 +681,40 @@ fieldset:disabled .btn {
     width: 100% !important;
 }
 
+@media only screen and (min-width: 1200px) and (max-device-width : 1599px) {
+    .w-100 {
+        width: 85% !important;
+    }
+
+    .d-md-flex {
+        display: flex !important;
+        margin-left: 7.5rem;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-device-width : 1919px) {
+    .w-100 {
+        width: 85% !important;
+    }
+
+    .d-md-flex {
+        display: flex !important;
+        margin-left: 6.5rem;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .w-100 {
+        width: 85% !important;
+    }
+
+    .d-md-flex {
+        display: flex !important;
+        margin-left: 5.5rem;
+    }
+}
+
+
 .pt-4 {
     padding-top: 1.5rem !important;
 }

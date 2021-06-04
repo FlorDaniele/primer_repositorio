@@ -280,7 +280,6 @@ form h3 {
     color: #9766CC;
     opacity: 30%; }
   .titulo-seccion-portfolio {
-    display: inline-block;
     position: relative;
     flex-wrap: wrap;
     align-items: center;
@@ -334,7 +333,7 @@ form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
+    height: 8rem;
     width: 100vw; }
     .inline-list li {
       padding: 1rem 1rem;
@@ -857,7 +856,6 @@ form h3 {
       font-size: 3.125rem;
       padding: 1.5rem 0 0; }
   .titulo-seccion-portfolio {
-    display: inline-block;
     position: relative;
     flex-wrap: wrap;
     align-items: center;
@@ -880,7 +878,7 @@ form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
+    height: 3.5rem;
     width: 100vw; }
     .inline-list li {
       padding: 1rem 1rem;
@@ -1443,7 +1441,6 @@ form h3 {
       font-size: 3rem;
       padding: 1.5rem 0 0; }
   .titulo-seccion-portfolio {
-    display: inline-block;
     position: relative;
     flex-wrap: wrap;
     align-items: center;
@@ -1455,7 +1452,7 @@ form h3 {
     color: #9766CC; }
   .titulo-seccion-portfolio h4 {
     font: normal 400 4rem "abril-fatface", serif;
-    font-size: 5rem;
+    font-size: 4rem;
     opacity: 0.3; }
   h5 {
     color: #9766CC;
@@ -1466,7 +1463,7 @@ form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1rem;
+    height: 3rem;
     width: 100vw; }
     .inline-list h5 {
       font-size: 2rem;
@@ -1529,7 +1526,7 @@ form h3 {
     text-align: center;
     line-height: 4rem;
     height: 30rem;
-    width: 85.373rem;
+    width: 100vw;
     padding: 3rem 0;
     margin: 1rem 1rem 0 1rem; }
     .contenedor-footer h1 {
@@ -1943,7 +1940,8 @@ form h3 {
     display: block;
     justify-content: center;
     align-items: center;
-    height: 30rem;
+    position: relative;
+    height: 34.5rem;
     width: 100%; }
     .intro-completo .contenedor-intro-izq {
       align-items: center;
@@ -2121,8 +2119,7 @@ form h3 {
     display: inline-block;
     text-align: left;
     line-height: 3rem;
-    width: 24.375rem;
-    height: 27rem;
+    height: 21.5rem;
     width: 100vw;
     padding: 1.5rem 0 0 2rem;
     margin-bottom: 1rem; }
@@ -2691,7 +2688,7 @@ form h3 {
       text-align: center; }
     #cv .texto-grande {
       color: #9766CC;
-      font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.25rem;
       line-height: 1.8rem; }
   /* Fin CV */
