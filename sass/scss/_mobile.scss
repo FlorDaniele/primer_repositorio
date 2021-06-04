@@ -502,22 +502,24 @@
             margin: 0.5rem 3rem 1rem;
             width: 80vw;
             text-align: left;
+            p {
+                font-size: 1.2rem;
+                line-height: 2.3rem;
+            }      
+            .firma {
+                color: $pink;
+                font-family: pacifico, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 3.5rem;
+                margin: 0.75rem 0 4rem;
+            }
         }
-
         .about-img {
-            width: 65%;
+            width: 75%;
             float: none;
             margin: 1rem 0;
         }
-    }
-
-    .firma {
-        color: $pink;
-        font-family: pacifico, sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 3.5rem;
-        margin: 0.75rem 0 4rem;
     }
 
     .love-title {
@@ -525,6 +527,7 @@
         font-size: 2.5rem;
         width: 18.74rem;
         margin: 2rem 0 0 5rem;
+        margin-top: 2rem;
     }
 
     .hr-right-l,
@@ -540,7 +543,8 @@
 
         li {
             padding: 1rem 1rem;
-            margin: 0.5rem 1rem 0.5rem;
+            margin: 0.35rem 1rem 0.35rem;
+            font-size: 1.5rem;
         }
     }
 

@@ -540,20 +540,24 @@ form h3 {
     box-sizing: border-box; }
   /* Fin Cards*/
   /* Sección About me */
-  .firma {
-    color: #D977C7;
-    font-family: pacifico, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 4.375rem;
-    margin: 1rem 5.5rem 6rem 1rem; }
   .contenedor-about {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     .contenedor-about .about-texto {
       display: inline-block;
       margin: 0.5rem 2rem 1rem 6.5rem;
       width: 62rem;
       text-align: left; }
+      .contenedor-about .about-texto p {
+        font-size: 1.65rem;
+        line-height: 2.5rem; }
+      .contenedor-about .about-texto .firma {
+        color: #D977C7;
+        font-family: pacifico, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 4.375rem;
+        margin: 1rem 5.5rem 6rem 1rem; }
     .contenedor-about .about-img {
       float: right;
       margin: 1rem 6.5rem 1rem 2rem; }
@@ -586,7 +590,13 @@ form h3 {
     display: flex;
     width: 100vw;
     border-top: 0.125rem solid #D977C7;
-    margin-bottom: 8.5rem; }
+    margin-bottom: 5rem; }
+  .contenedor-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    margin-left: 42rem; }
   /* Fin seccion About Me */
   /* Colores de solution cards */
   .dark-purple {
@@ -833,7 +843,7 @@ form h3 {
   /* Proyectos */
   section h2 {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1.375rem;
+    font-size: 1.6rem;
     margin: 0.5rem 0; }
   .hr-skills {
     display: flex;
@@ -983,11 +993,27 @@ form h3 {
     background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
     height: 65rem;
     width: 100vw; }
-  .about-texto {
-    display: inline-block;
-    margin: 0.5rem 1.5rem 1rem 6.5rem;
-    width: 62rem;
-    text-align: left; }
+  .contenedor-about {
+    display: flex;
+    align-items: center; }
+    .contenedor-about .about-texto {
+      display: inline-block;
+      margin: 0.5rem 1.5rem 1rem 6.5rem;
+      width: 50rem;
+      text-align: left; }
+      .contenedor-about .about-texto p {
+        font-size: 1.5rem;
+        line-height: 2.3rem; }
+      .contenedor-about .about-texto .firma {
+        color: #D977C7;
+        font-family: pacifico, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 4.375rem;
+        margin: 1rem 5.5rem 6rem 1rem; }
+    .contenedor-about .about-img {
+      float: right;
+      margin: 1rem 6rem 1rem 2rem; }
   .firma {
     color: #D977C7;
     font-family: pacifico, sans-serif;
@@ -1021,7 +1047,7 @@ form h3 {
     display: flex;
     width: 100vw;
     border-top: 0.125rem solid #D977C7;
-    margin-bottom: 8.5rem; }
+    margin-bottom: 6rem; }
   ul li {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.2rem;
@@ -1030,11 +1056,18 @@ form h3 {
     font: normal 700 1.5rem "abril-display", serif;
     font-size: 2rem;
     width: 24rem;
-    margin: 0 0 0 30rem; }
+    margin: 0 0 0 40rem; }
   .about-img {
     float: right;
     margin: 1rem 6.5rem 1rem 2rem;
     height: fit-content; }
+  .contenedor-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 25rem;
+    margin-left: 35rem; }
   /* Fin sección About me */
   /* Sección Solutions */
   .titulo-seccion-solutions {
@@ -1418,7 +1451,7 @@ form h3 {
   /* Proyectos */
   section h2 {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1.375rem;
+    font-size: 1.45rem;
     margin: 0.5rem 0; }
   .hr-skills {
     display: flex;
@@ -1567,19 +1600,34 @@ form h3 {
     background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
     height: 65rem;
     width: 100vw; }
-  .about-texto {
-    display: inline-block;
-    margin: 0.5rem 1.5rem 1rem 6.5rem;
-    width: 62rem;
-    text-align: left; }
-  .firma {
-    color: #D977C7;
-    font-family: pacifico, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 3.5rem;
-    padding: 1rem 0;
-    margin: 0; }
+  .contenedor-about {
+    display: flex;
+    align-items: center; }
+    .contenedor-about .about-texto {
+      display: inline-block;
+      margin: 0.5rem 1.5rem 1rem 6.5rem;
+      width: 50rem;
+      text-align: left; }
+      .contenedor-about .about-texto p {
+        font-size: 1.4rem;
+        line-height: 2rem; }
+      .contenedor-about .about-texto .firma {
+        color: #D977C7;
+        font-family: pacifico, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 3.5rem;
+        padding: 1rem 0;
+        margin: 0; }
+    .contenedor-about .about-img {
+      float: right;
+      margin: 1rem 6.5rem 1rem 2rem;
+      height: fit-content; }
+  .love-title {
+    font: normal 700 1.5rem "abril-display", serif;
+    font-size: 2rem;
+    width: 24rem;
+    margin: 0 0 0 30rem; }
   .hr-right-l {
     display: flex;
     float: left;
@@ -1600,25 +1648,24 @@ form h3 {
     height: 6rem; }
     .inline-about li {
       padding: 1rem 0.5rem;
-      margin: 3rem 1rem 4rem; }
+      margin: 3rem 1rem 4rem;
+      font-size: 1.3rem; }
   .hr-full {
     display: flex;
     width: 100vw;
     border-top: 0.125rem solid #D977C7;
-    margin-bottom: 8.5rem; }
+    margin-bottom: 3.5rem; }
   ul li {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.2rem;
     line-height: 3rem; }
-  .love-title {
-    font: normal 700 1.5rem "abril-display", serif;
-    font-size: 2rem;
-    width: 24rem;
-    margin: 0 0 0 30rem; }
-  .about-img {
-    float: right;
-    margin: 1rem 6.5rem 1rem 2rem;
-    height: fit-content; }
+  .contenedor-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 25rem;
+    margin-left: 33rem; }
   /* Fin sección About me */
   /* Sección Solutions */
   .titulo-seccion-solutions {
@@ -2030,7 +2077,7 @@ form h3 {
     line-height: 2rem; }
     .titulo-seccion-izq h1 {
       font: normal 700 1.5rem "abril-display", serif;
-      font-size: 1.75rem;
+      font-size: 2.3rem;
       padding: 0.5rem 0 0; }
   .hr-skills {
     display: flex;
@@ -2242,7 +2289,7 @@ form h3 {
   /* Sección About me */
   .bg-gradient-hero-about {
     background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
-    height: 98rem;
+    height: 95rem;
     width: 100vw; }
   .contenedor-about {
     display: flex;
@@ -2251,25 +2298,30 @@ form h3 {
     flex-direction: column; }
     .contenedor-about .about-texto {
       display: inline-block;
-      margin: 0.5rem 3rem 1rem;
-      width: 80vw;
+      margin: 0.5rem 0rem 1rem;
+      width: 85vw;
       text-align: left; }
+      .contenedor-about .about-texto p {
+        font-size: 1.3rem;
+        line-height: 2.3rem; }
+      .contenedor-about .about-texto .firma {
+        color: #D977C7;
+        font-family: pacifico, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 3.5rem;
+        margin: 0.75rem 0 4rem; }
     .contenedor-about .about-img {
       width: 65%;
       float: none;
       margin: 1rem 0; }
-  .firma {
-    color: #D977C7;
-    font-family: pacifico, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 3.5rem;
-    margin: 0.75rem 0 4rem; }
   .love-title {
     font: normal 700 1.5rem "abril-display", serif;
     font-size: 2.5rem;
-    width: 18.74rem;
-    margin: 2rem 0 0 5rem; }
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 2rem; }
   .hr-right-l,
   .hr-right-r,
   .hr-full {
@@ -2283,6 +2335,17 @@ form h3 {
     .inline-about li {
       padding: 1rem 1rem;
       margin: 0.5rem 1rem 0.5rem; }
+  section h2 {
+    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+    font-size: 1.35rem;
+    margin: 0.5rem 0; }
+  .contenedor-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    width: 25rem;
+    margin-left: 12rem; }
   /* Fin sección About Me */
   /* Sección Skills */
   .titulo-skills-largo h4 {
@@ -2835,22 +2898,26 @@ form h3 {
       margin: 0.5rem 3rem 1rem;
       width: 80vw;
       text-align: left; }
+      .contenedor-about .about-texto p {
+        font-size: 1.2rem;
+        line-height: 2.3rem; }
+      .contenedor-about .about-texto .firma {
+        color: #D977C7;
+        font-family: pacifico, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 3.5rem;
+        margin: 0.75rem 0 4rem; }
     .contenedor-about .about-img {
-      width: 65%;
+      width: 75%;
       float: none;
       margin: 1rem 0; }
-  .firma {
-    color: #D977C7;
-    font-family: pacifico, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 3.5rem;
-    margin: 0.75rem 0 4rem; }
   .love-title {
     font: normal 700 1.5rem "abril-display", serif;
     font-size: 2.5rem;
     width: 18.74rem;
-    margin: 2rem 0 0 5rem; }
+    margin: 2rem 0 0 5rem;
+    margin-top: 2rem; }
   .hr-right-l,
   .hr-right-r,
   .hr-full {
@@ -2863,7 +2930,8 @@ form h3 {
     width: 100vw; }
     .inline-about li {
       padding: 1rem 1rem;
-      margin: 0.5rem 1rem 0.5rem; }
+      margin: 0.35rem 1rem 0.35rem;
+      font-size: 1.5rem; }
   /* Fin sección About Me */
   /* Sección Skills */
   .titulo-skills-largo h4 {

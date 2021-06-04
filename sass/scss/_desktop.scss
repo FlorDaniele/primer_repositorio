@@ -170,7 +170,7 @@
     section {
         h2 {
             font: $title-omnes600;
-            font-size: 1.375rem;
+            font-size: 1.6rem;
             margin: 0.5rem 0;
         }
     }
@@ -363,12 +363,35 @@
         width: 100vw;
     }
 
-    .about-texto {
-        display: inline-block;
-        margin: 0.5rem 1.5rem 1rem 6.5rem;
-        width: 62rem;
-        text-align: left;
+    .contenedor-about {
+        display: flex;
+        align-items: center;
+
+        .about-texto {
+            display: inline-block;
+            margin: 0.5rem 1.5rem 1rem 6.5rem;
+            width: 50rem;
+            text-align: left;
+            p {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
+            .firma {
+                    color: $pink;
+                    font-family: pacifico, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 4.375rem;
+                    margin: 1rem 5.5rem 6rem 1rem;
+            }
+        }
+
+        .about-img {
+            float: right;
+            margin: 1rem 6rem 1rem 2rem;
+        }
     }
+
 
     .firma {
         color: $pink;
@@ -410,7 +433,7 @@
         display: flex;
         width: 100vw;
         border-top: 0.125rem solid $pink;
-        margin-bottom: 8.5rem;
+        margin-bottom: 6rem;
     }
 
     ul {
@@ -425,7 +448,7 @@
         font: $section-title-font;
         font-size: 2rem;
         width: 24rem;
-        margin: 0 0 0 30rem;
+        margin: 0 0 0 40rem;
     }
 
     .about-img {
@@ -433,6 +456,16 @@
         margin: 1rem 6.5rem 1rem 2rem;
         height: fit-content;
     }
+
+    .contenedor-illustration {         
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        width: 25rem;
+        margin-left: 35rem;
+    }
+
 
     /* Fin sección About me */
 
@@ -656,4 +689,4 @@
             }
         }
         /* Fin sección Contact */
-}
+    }

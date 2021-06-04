@@ -524,23 +524,27 @@
 
         /* Sección About me */
 
-        .firma {
-            color: $pink;
-            font-family: pacifico, sans-serif;
-            font-weight: 300;
-            font-style: normal;
-            font-size: 4.375rem;
-            margin: 1rem 5.5rem 6rem 1rem;
-        }
-
         .contenedor-about {
             display: flex;
+            align-items: center;
 
             .about-texto {
                 display: inline-block;
                 margin: 0.5rem 2rem 1rem 6.5rem;
                 width: 62rem;
                 text-align: left;
+                p {
+                    font-size: 1.65rem;
+                    line-height: 2.5rem;
+                }
+                .firma {
+                        color: $pink;
+                        font-family: pacifico, sans-serif;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-size: 4.375rem;
+                        margin: 1rem 5.5rem 6rem 1rem;
+                }
             }
 
             .about-img {
@@ -588,7 +592,15 @@
             display: flex;
             width: 100vw;
             border-top: 0.125rem solid #D977C7;
-            margin-bottom: 8.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .contenedor-illustration {         
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30rem;
+            margin-left: 42rem;
         }
 
         /* Fin seccion About Me */
