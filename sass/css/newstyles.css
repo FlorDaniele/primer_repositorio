@@ -194,19 +194,19 @@ form h3 {
   .titulo-proyectos {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 3rem; }
+    font-size: 2.8rem; }
   .titulos-listas {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 2.1875rem; }
   .subtitulo-proyectos,
   .subtitulo-footer {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 2.25rem;
+    font-size: 2.2rem;
     color: #D977C7;
     margin: 1rem 0 1.5rem; }
   .card-body p {
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
     margin: 1rem 0; }
   .texto-grande {
     color: #9766CC;
@@ -226,12 +226,6 @@ form h3 {
     font: normal 700 1.5rem "abril-display", serif;
     font-size: 1.8125rem;
     text-decoration: none; }
-  .contact {
-    color: #9766CC;
-    font: normal 1.5rem "abril-display", serif;
-    font-size: 2.75rem;
-    margin-top: 2rem;
-    margin-bottom: 0; }
   .align-center {
     text-align: center; }
   .texto-footer {
@@ -265,9 +259,13 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 6.5rem 2rem 23.5rem;
-    color: #9766CC;
-    opacity: 30%; }
+    float: right;
+    margin: 7rem 5.5rem 1rem;
+    line-height: 5rem; }
+    .titulo-skills-largo h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      font-size: 6rem;
+      opacity: 0.3; }
   .titulo-seccion-skills {
     display: inline-block;
     position: relative;
@@ -276,481 +274,564 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 6.5rem 2rem 38.5rem;
-    color: #9766CC;
-    opacity: 30%; }
-  .titulo-seccion-portfolio {
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: flex-end;
-    text-align: right;
-    margin: 5rem;
-    float: right;
-    color: #9766CC; }
+    margin: 5.5rem;
+    float: right; }
+    .titulo-seccion-skills h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      color: #9766CC;
+      font-size: 6rem;
+      opacity: 0.3; } }
+
+.titulo-seccion-portfolio {
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 5.5rem;
+  float: right;
+  color: #9766CC; }
   .titulo-seccion-portfolio h4 {
     font: normal 400 4rem "abril-fatface", serif;
     font-size: 6rem;
     opacity: 0.3; }
-  .titulo-seccion-solutions {
-    display: inline-block;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: flex-end;
-    text-align: right;
-    margin: 2rem 3rem 2rem 35rem;
-    color: #9766CC;
-    opacity: 30%; }
-  .titulo-seccion-method {
-    display: inline-block;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: flex-end;
-    text-align: right;
-    margin: 2rem 6.5rem 2rem 4rem;
-    color: #9766CC;
-    opacity: 30%; }
-  .titulo-seccion-contact {
-    display: inline-block;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: center;
-    text-align: center;
-    margin: 3rem 5.5rem 0 68.5rem;
-    color: #9766CC;
-    opacity: 30%; }
-  /* Fin de Titulos Seccion */
-  /* Fin Titles & Texts */
-  /* Box modeling & Flexbox */
-  .inline-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 8rem;
-    width: 100vw; }
-    .inline-list li {
-      padding: 1rem 1rem;
-      margin: 4rem 2rem 8rem 0; }
-    .inline-list h5 {
-      padding: 1rem 1rem;
-      margin: 0.5rem 0 0.5rem;
-      font-size: 3rem; }
-  .hr-skills {
-    display: flex;
-    float: left;
-    width: 6.5rem;
-    border-top: 0.125rem solid #D977C7;
-    margin: 5rem 0 0; }
-  /* Grids */
-  .grid-solutions {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
-    grid-gap: 2.875rem;
-    align-items: stretch;
-    margin: 6.5rem 6.5rem 0rem;
-    padding: 0rem 0rem 6rem; }
-    .grid-solutions article {
-      display: flex;
-      flex-direction: column; }
-      .grid-solutions article .solution-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 19.0625rem;
-        height: auto;
-        padding: 0.3rem 0rem 2rem;
-        flex-grow: 1;
-        flex-direction: column;
-        box-sizing: border-box;
-        text-align: center; }
-        .grid-solutions article .solution-text h3 {
-          text-align: center;
-          font-family: omnes-cyrillic, sans-serif;
-          font-weight: 700;
-          font-size: 2.65rem;
-          line-height: 4.125rem;
-          font-style: normal; }
-        .grid-solutions article .solution-text p {
-          flex-grow: 1; }
-  /* Fin Grids */
-  /* Intro */
-  #sakura {
-    display: block;
-    float: right;
-    position: relative;
-    padding: 0 0 0 100rem;
-    height: 12.5rem; }
-  .intro-completo {
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-    margin: 1rem 0 0; }
-    .intro-completo .contenedor-intro-izq {
-      align-items: center;
-      justify-content: center;
-      display: inline-block;
-      position: relative;
-      flex-wrap: wrap;
-      width: 48.625rem;
-      padding: 1rem 2rem 0 6.5rem;
-      height: 26rem;
-      margin-right: 2rem;
-      box-sizing: border-box; }
-      .intro-completo .contenedor-intro-izq .intro {
-        font: normal 700 1.5rem "abril-display", serif;
-        font-size: 5.9375rem; }
-      .intro-completo .contenedor-intro-izq .pink {
-        color: #D977C7; }
-    .intro-completo .professions {
-      font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-      font-size: 3.125rem;
-      line-height: 5rem; }
-    .intro-completo .contenedor-intro-der {
-      display: flex;
-      float: right;
-      position: relative;
-      flex-wrap: wrap;
-      width: 63.0625rem;
-      height: 26rem;
-      margin-left: 6.3125rem;
-      margin-top: 1.75rem;
-      padding: 1rem 6.5rem 0rem 4rem;
-      box-sizing: border-box;
-      align-items: flex-start;
-      justify-content: flex-start; }
-      .intro-completo .contenedor-intro-der #titulo-bio {
-        font: normal 700 1.5rem "abril-display", serif;
-        font-size: 3.75rem; }
-      .intro-completo .contenedor-intro-der .texto-medio-bio {
-        font: normal 500 1.5rem "omnes-cyrillic", sans-serif;
-        font-size: 2.125rem;
-        line-height: 3.5rem;
-        color: #654D80; }
-  .align-welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3.75rem 0; }
-    .align-welcome .span-portfolio {
-      font: normal 400 4rem "abril-fatface", serif;
-      font-size: 7rem;
-      line-height: 6rem;
-      text-align: center;
-      opacity: 0.3; }
-  h4 {
+
+.titulo-seccion-solutions {
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 5.5rem;
+  float: right; }
+  .titulo-seccion-solutions h4 {
     font: normal 400 4rem "abril-fatface", serif;
-    font-size: 4rem; }
-  /* Fin Intro */
-  /* CV */
-  #cv {
+    color: #9766CC;
+    font-size: 6rem;
+    opacity: 0.3; }
+
+.titulo-seccion-method {
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 8rem 5.5rem 0 0;
+  float: right; }
+  .titulo-seccion-method h4 {
+    font: normal 400 4rem "abril-fatface", serif;
+    color: #9766CC;
+    font-size: 5rem;
+    opacity: 0.3; }
+
+/* Fin de Titulos Seccion */
+/* Fin Titles & Texts */
+/* Box modeling & Flexbox */
+.inline-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  width: 100vw; }
+  .inline-list li {
+    padding: 1rem 1rem;
+    margin: 4rem 2rem 8rem 0; }
+  .inline-list h5 {
+    padding: 1rem 1rem;
+    margin: 0.5rem 0 0.5rem;
+    font-size: 3rem; }
+
+.hr-skills {
+  display: flex;
+  float: left;
+  width: 6.5rem;
+  border-top: 0.125rem solid #D977C7;
+  margin: 5rem 0 0; }
+
+/* Grids */
+.grid-solutions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  grid-gap: 2.875rem;
+  align-items: stretch;
+  margin: 4.5rem 6.5rem 0rem;
+  padding: 0rem 0rem 6rem; }
+  .grid-solutions article {
     display: flex;
-    justify-content: center;
-    align-items: center; }
-  .box-img-left-cv {
-    width: 23.75rem;
-    height: fit-content;
-    padding: 0.5rem;
-    margin: 4.5rem 2rem;
-    position: relative;
-    float: left; }
-  .box-text-right-cv {
-    width: 42.1875rem;
-    min-width: 18.5rem;
-    height: fit-content;
-    padding: 0.5rem;
-    margin: 4.5rem 1rem;
-    position: relative;
-    float: right; }
-  /* Fin CV */
-  /* Footer */
-  .contenedor-footer {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 4rem;
-    width: 100vw;
-    height: 37rem;
-    padding: 6.5rem 5.5rem;
-    margin-top: 1rem; }
-    .contenedor-footer h1 {
-      font-size: 3.5rem;
-      margin: 1.5rem 1rem 0; }
-    .contenedor-footer p {
-      font-size: 1.75rem;
-      line-height: 3rem;
-      margin: 0.75rem 0 0.75rem 0; }
-    .contenedor-footer .email {
-      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-      font-size: 1.875rem;
-      opacity: 1.0;
-      text-align: center;
-      padding: 0 0rem;
-      color: #9766CC; }
-  #icons-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem; }
-    #icons-footer a {
-      padding: 1rem;
-      margin: 2rem 1rem;
-      color: #654D80; }
-  .footer-resumido {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
-    height: 3rem; }
-  /* Fin Footer */
-  /* Skills Section */
-  .inline-skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100vw; }
-    .inline-skills li {
-      padding: 1rem 0.5rem;
-      margin: 0.5rem 1rem 0.5rem; }
-  /* Cards*/
-  .contenedor-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 6.5rem 0; }
-  .skill-card div {
-    text-align: center;
-    background-color: #ffffff;
-    width: 25.9375rem;
-    height: 36.375rem;
-    border-radius: 0.625rem;
-    box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
-    padding: 2.5rem 1rem;
-    margin: 1rem;
-    box-sizing: border-box; }
-  /* Fin Cards*/
-  /* Sección About me */
-  .contenedor-about {
-    display: flex;
-    align-items: center; }
-    .contenedor-about .about-texto {
-      display: inline-block;
-      margin: 0.5rem 2rem 1rem 6.5rem;
-      width: 62rem;
-      text-align: left; }
-      .contenedor-about .about-texto p {
-        font-size: 1.65rem;
-        line-height: 2.5rem; }
-      .contenedor-about .about-texto .firma {
-        color: #D977C7;
-        font-family: pacifico, sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 4.375rem;
-        margin: 1rem 5.5rem 6rem 1rem; }
-    .contenedor-about .about-img {
-      float: right;
-      margin: 1rem 6.5rem 1rem 2rem; }
-  .love-title {
-    font: normal 700 1.5rem "abril-display", serif;
-    font-size: 2.5rem;
-    width: 18.74rem;
-    margin: 0 0 0 52.875rem; }
-  .hr-right-l {
-    display: flex;
-    float: left;
-    width: 48rem;
-    border-top: 0.125rem solid #D977C7;
-    margin-right: 3rem; }
-  .hr-right-r {
-    display: flex;
-    float: right;
-    width: 48rem;
-    border-top: 0.125rem solid #D977C7;
-    margin-left: 3rem; }
-  .inline-about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 120rem; }
-    .inline-about li {
-      padding: 1rem 1rem;
-      margin: 3rem 1rem 4rem; }
-  .hr-full {
-    display: flex;
-    width: 100vw;
-    border-top: 0.125rem solid #D977C7;
-    margin-bottom: 5rem; }
-  .contenedor-illustration {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30rem;
-    margin-left: 42rem; }
-  /* Fin seccion About Me */
-  /* Colores de solution cards */
-  .dark-purple {
-    color: #896DBF; }
-  .dark-pink {
-    color: #BA71CC; }
-  .medium-pink {
-    color: #D17CD8; }
-  .lighter-pink {
-    color: #E583DC; }
-  .lightest-pink {
-    color: #F288D2; }
-  /* Fin colores de solution cards */
-  /* Sección Method */
-  .hr-full-method {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    border-top: 0.125rem solid #D977C7;
-    margin: 7rem 0 1rem; }
-  .grid-method {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16.875rem, 1fr));
-    grid-gap: 1rem;
-    align-items: stretch;
-    margin: 3rem 6.5rem 0rem;
-    padding: 0rem 0rem 8.5rem; }
-    .grid-method article {
+    flex-direction: column; }
+    .grid-solutions article .solution-text {
       display: flex;
-      flex-direction: column; }
-    .grid-method .method-step {
-      display: flex;
-      text-align: center;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      width: 15.1625rem;
+      width: 19.0625rem;
       height: auto;
-      padding: 0.3rem 0rem 3rem;
+      padding: 0.3rem 0rem 2rem;
       flex-grow: 1;
       flex-direction: column;
-      box-sizing: border-box; }
-      .grid-method .method-step h3 {
+      box-sizing: border-box;
+      text-align: center; }
+      .grid-solutions article .solution-text h3 {
         text-align: center;
-        font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-        font-size: 2.1875rem;
-        line-height: 3.125rem; }
-      .grid-method .method-step p {
+        font-family: omnes-cyrillic, sans-serif;
+        font-weight: 700;
+        font-size: 2.65rem;
+        line-height: 4.125rem;
+        font-style: normal; }
+      .grid-solutions article .solution-text p {
         flex-grow: 1;
-        line-height: 2.75rem; }
-  /* Fin Sección Method */
-  /* Sección Contact me */
-  .contenedor-contact {
-    height: 70rem;
+        font-size: 1.55rem;
+        line-height: 2.5rem; }
+
+/* Fin Grids */
+/* Intro */
+#sakura {
+  display: block;
+  float: right;
+  position: relative;
+  padding: 0 0 0 100rem;
+  height: 12.5rem; }
+
+.intro-completo {
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  margin: 1rem 0 0; }
+  .intro-completo .contenedor-intro-izq {
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    width: 48.625rem;
+    padding: 1rem 2rem 0 6.5rem;
+    height: 26rem;
+    margin-right: 2rem;
+    box-sizing: border-box; }
+    .intro-completo .contenedor-intro-izq .intro {
+      font: normal 700 1.5rem "abril-display", serif;
+      font-size: 5.9375rem; }
+    .intro-completo .contenedor-intro-izq .pink {
+      color: #D977C7; }
+  .intro-completo .professions {
+    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+    font-size: 3.125rem;
+    line-height: 5rem; }
+  .intro-completo .contenedor-intro-der {
+    display: flex;
+    float: right;
+    position: relative;
+    flex-wrap: wrap;
+    width: 63.0625rem;
+    height: 26rem;
+    margin-left: 6.3125rem;
+    margin-top: 1.75rem;
+    padding: 1rem 6.5rem 0rem 4rem;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .intro-completo .contenedor-intro-der #titulo-bio {
+      font: normal 700 1.5rem "abril-display", serif;
+      font-size: 3.75rem; }
+    .intro-completo .contenedor-intro-der .texto-medio-bio {
+      font: normal 500 1.5rem "omnes-cyrillic", sans-serif;
+      font-size: 2.125rem;
+      line-height: 3.5rem;
+      color: #654D80; }
+
+.align-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.75rem 0; }
+  .align-welcome .span-portfolio {
+    font: normal 400 4rem "abril-fatface", serif;
+    font-size: 7rem;
+    line-height: 6rem;
+    text-align: center;
+    opacity: 0.3; }
+
+h4 {
+  font: normal 400 4rem "abril-fatface", serif;
+  font-size: 4rem; }
+
+/* Fin Intro */
+/* CV */
+#cv {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.box-img-left-cv {
+  width: 23.75rem;
+  height: fit-content;
+  padding: 0.5rem;
+  margin: 4.5rem 2rem;
+  position: relative;
+  float: left; }
+
+.box-text-right-cv {
+  width: 42.1875rem;
+  min-width: 18.5rem;
+  height: fit-content;
+  padding: 0.5rem;
+  margin: 4.5rem 1rem;
+  position: relative;
+  float: right; }
+
+/* Fin CV */
+/* Footer */
+.contenedor-footer {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 4rem;
+  width: 100vw;
+  height: 37rem;
+  padding: 6.5rem 5.5rem;
+  margin-top: 1rem; }
+  .contenedor-footer h1 {
+    font-size: 3.5rem;
+    margin: 1.5rem 1rem 0; }
+  .contenedor-footer p {
+    font-size: 1.75rem;
+    line-height: 3rem;
+    margin: 0.75rem 0 0.75rem 0; }
+  .contenedor-footer .email {
+    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+    font-size: 1.875rem;
+    opacity: 1.0;
+    text-align: center;
+    padding: 0 0rem;
+    color: #9766CC; }
+
+#icons-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem; }
+  #icons-footer a {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    color: #654D80; }
+
+.footer-resumido {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 3rem; }
+
+/* Fin Footer */
+/* Skills Section */
+.inline-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  list-style-type: disc; }
+  .inline-skills li {
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 1rem 0.5rem; }
+
+/* Cards*/
+.contenedor-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 6.5rem 0; }
+
+.skill-card div {
+  text-align: center;
+  background-color: #ffffff;
+  width: 25.9375rem;
+  height: 34rem;
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
+  padding: 2.5rem 1rem;
+  margin: 1rem;
+  box-sizing: border-box; }
+  .skill-card div p {
+    font-size: 1.55rem;
+    line-height: 2.5rem;
+    margin: 2rem; }
+
+/* Fin Cards*/
+/* Sección About me */
+.contenedor-about {
+  display: flex;
+  align-items: flex-start; }
+  .contenedor-about .about-texto {
+    display: inline-block;
+    margin: 0.5rem 2rem 1rem 7.5rem;
+    width: 70rem;
+    text-align: left; }
+    .contenedor-about .about-texto p {
+      font-size: 1.65rem;
+      line-height: 2.5rem; }
+    .contenedor-about .about-texto .firma {
+      color: #D977C7;
+      font-family: pacifico, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 4.375rem;
+      margin: 1rem 5.5rem 6rem 1rem; }
+  .contenedor-about .about-img {
+    float: right;
+    margin: 1rem 6.5rem 1rem 2rem; }
+
+.about-img img {
+  width: 90%; }
+
+.love-title {
+  font: normal 700 1.5rem "abril-display", serif;
+  font-size: 2.5rem;
+  width: 18.74rem;
+  margin: 0 0 0 52.875rem; }
+
+.hr-right-l {
+  display: flex;
+  float: left;
+  width: 48rem;
+  border-top: 0.125rem solid #D977C7;
+  margin-right: 3rem; }
+
+.hr-right-r {
+  display: flex;
+  float: right;
+  width: 48rem;
+  border-top: 0.125rem solid #D977C7;
+  margin-left: 3rem; }
+
+.inline-about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 120rem; }
+  .inline-about li {
+    padding: 1rem 0.5rem;
+    margin: 3rem 0.5rem 4rem;
+    font-size: 1.75rem; }
+
+.hr-full {
+  display: flex;
+  width: 100vw;
+  border-top: 0.125rem solid #D977C7;
+  margin-bottom: 5rem; }
+
+.contenedor-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  margin-left: 42rem; }
+
+/* Fin seccion About Me */
+/* Colores de solution cards */
+.dark-purple {
+  color: #896DBF; }
+
+.dark-pink {
+  color: #BA71CC; }
+
+.medium-pink {
+  color: #D17CD8; }
+
+.lighter-pink {
+  color: #E583DC; }
+
+.lightest-pink {
+  color: #F288D2; }
+
+/* Fin colores de solution cards */
+/* Sección Method */
+.hr-full-method {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  border-top: 0.125rem solid #D977C7;
+  margin: 7rem 0 1rem; }
+
+.grid-method {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15.875rem, 1fr));
+  grid-gap: 2rem;
+  align-items: stretch;
+  margin: 4.5rem 6.5rem 0rem;
+  padding: 0rem 0rem 8.5rem;
+  align-items: flex-start; }
+  .grid-method article {
+    display: flex;
+    flex-direction: column; }
+  .grid-method .method-step {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15.1625rem;
+    height: auto;
+    padding: 0.3rem 0rem 3rem;
+    flex-grow: 1;
+    flex-direction: column;
+    box-sizing: border-box; }
+    .grid-method .method-step h3 {
+      text-align: center;
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+      font-size: 2.1875rem;
+      line-height: 3.125rem; }
+    .grid-method .method-step p {
+      flex-grow: 1;
+      line-height: 2.75rem;
+      font-size: 1.55rem; }
+
+/* Fin Sección Method */
+/* Sección Contact me */
+.contenedor-contact {
+  height: 73rem;
+  width: 100vw; }
+  .contenedor-contact .titulo-seccion-contact {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    margin: 5.5rem 5.5rem 2rem 0;
+    color: #9766CC;
     width: 100vw; }
-    .contenedor-contact .contenedor-form {
+    .contenedor-contact .titulo-seccion-contact h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      font-size: 5.5rem;
+      opacity: 0.3; }
+  .contenedor-contact .contenedor-form {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: auto;
+    margin-left: 30rem; }
+    .contenedor-contact .contenedor-form .contenedor-form-intro {
       display: inline-block;
       justify-content: center;
       align-items: center;
-      width: 60rem;
-      height: auto;
-      margin-left: 33.53125rem; }
-      .contenedor-contact .contenedor-form .contenedor-form-intro {
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-        box-sizing: border-box; }
-      .contenedor-contact .contenedor-form .contenedor-name-email {
-        display: inline-block;
-        justify-content: space-around;
-        align-items: center;
-        text-align: left;
-        box-sizing: border-box;
-        margin: 2rem 0; }
-        .contenedor-contact .contenedor-form .contenedor-name-email .short-placeholder {
-          width: 28.6875rem;
-          height: 3.75rem;
-          font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
-          font-size: 1.5rem;
-          color: #999999; }
-        .contenedor-contact .contenedor-form .contenedor-name-email .text-area-size {
-          width: 56.9375rem;
-          height: 11rem;
-          font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
-          font-size: 1.5rem;
-          color: #999999; }
-        .contenedor-contact .contenedor-form .contenedor-name-email .button-style {
-          background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
-          margin: 0.625rem;
-          padding: 1.5rem 6rem;
-          font: title-omnes700;
-          text-align: center;
-          font-size: 1.625rem;
-          transition: 0.5s;
-          background-size: 200% auto;
-          color: white;
-          /* offset-x | offset-y | blur-radius | spread-radius | color */
-          box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
-          border-radius: 0.625rem;
-          display: block; }
-  /* 
+      text-align: left;
+      box-sizing: border-box; }
+      .contenedor-contact .contenedor-form .contenedor-form-intro .contact {
+        color: #9766CC;
+        font: normal 700 1.5rem "abril-display", serif;
+        font-size: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 0; }
+      .contenedor-contact .contenedor-form .contenedor-form-intro p {
+        font-size: 2rem;
+        line-height: 2.8rem; }
+    .contenedor-contact .contenedor-form .contenedor-name-email {
+      display: inline-block;
+      justify-content: space-around;
+      align-items: center;
+      text-align: left;
+      box-sizing: border-box;
+      margin: 2rem 0;
+      width: 60rem; }
+      .contenedor-contact .contenedor-form .contenedor-name-email .short-placeholder {
+        width: 28.6875rem;
+        height: 3.75rem;
+        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+        font-size: 1.5rem;
+        color: #999999; }
+      .contenedor-contact .contenedor-form .contenedor-name-email .text-area-size {
+        width: 56.9375rem;
+        height: 11rem;
+        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+        font-size: 1.5rem;
+        color: #999999; }
+      .contenedor-contact .contenedor-form .contenedor-name-email .button-style {
+        background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
+        margin: 0.625rem;
+        padding: 1.5rem 6rem;
+        font: title-omnes700;
+        text-align: center;
+        font-size: 1.625rem;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+        border-radius: 0.625rem;
+        display: block;
+        width: 20rem; }
+
+/* 
     ***************************** 
     ********** Motion ***********
     ***************************** 
     */
-  /* Typing */
-  .typing h2 {
-    border-right: 0.15em solid #D977C7;
-    font-family: omnes-cyrillic, sans-serif;
-    white-space: nowrap;
-    overflow: hidden; }
-  .typing h2:nth-child(1) {
-    width: 7.3em;
-    animation: type 2s steps(40, end);
-    animation-fill-mode: forwards; }
-  .typing h2:nth-child(2) {
-    width: 12.5em;
-    opacity: 0;
-    animation: type2 2s steps(40, end);
-    animation-delay: 2s;
-    animation-fill-mode: forwards; }
-  .typing h2:nth-child(3) {
-    width: 12em;
-    opacity: 0;
-    animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
-    animation-delay: 4s;
-    animation-fill-mode: forwards; }
-  @keyframes type {
-    0% {
-      width: 0; }
-    99.9% {
-      border-right: 0.15em solid #D977C7; }
-    100% {
-      border: none; } }
-  @keyframes type2 {
-    0% {
-      width: 0; }
-    1% {
-      opacity: 1; }
-    99.9% {
-      border-right: 0.15em solid #D977C7; }
-    100% {
-      opacity: 1;
-      border: none; } }
-  @keyframes type3 {
-    0% {
-      width: 0; }
-    1% {
-      opacity: 1; }
-    100% {
-      opacity: 1; } }
-  @keyframes blink {
-    50% {
-      border-color: transparent; } } }
+/* Typing */
+.typing h2 {
+  border-right: 0.15em solid #D977C7;
+  font-family: omnes-cyrillic, sans-serif;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.typing h2:nth-child(1) {
+  width: 7.3em;
+  animation: type 2s steps(40, end);
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(2) {
+  width: 12.5em;
+  opacity: 0;
+  animation: type2 2s steps(40, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(3) {
+  width: 12em;
+  opacity: 0;
+  animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
+  animation-delay: 4s;
+  animation-fill-mode: forwards; }
+
+@keyframes type {
+  0% {
+    width: 0; }
+  99.9% {
+    border-right: 0.15em solid #D977C7; }
+  100% {
+    border: none; } }
+
+@keyframes type2 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  99.9% {
+    border-right: 0.15em solid #D977C7; }
+  100% {
+    opacity: 1;
+    border: none; } }
+
+@keyframes type3 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
 
 /* Vars */
 /* Colors */
@@ -866,6 +947,7 @@ form h3 {
       font-size: 3.125rem;
       padding: 1.5rem 0 0; }
   .titulo-seccion-portfolio {
+    display: inline-block;
     position: relative;
     flex-wrap: wrap;
     align-items: center;
@@ -875,10 +957,10 @@ form h3 {
     float: right;
     margin: 5rem;
     color: #9766CC; }
-  .titulo-seccion-portfolio h4 {
-    font: normal 400 4rem "abril-fatface", serif;
-    font-size: 5rem;
-    opacity: 0.3; }
+    .titulo-seccion-portfolio h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      font-size: 4.5rem;
+      opacity: 0.3; }
   h5 {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
@@ -897,6 +979,9 @@ form h3 {
       padding: 1rem 1rem;
       margin: 0.5rem 0 0.5rem;
       font-size: 2.5rem; }
+  .texto-footer {
+    width: 100vw;
+    padding: 1.5rem 0.5rem; }
   .titulo-proyectos {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
@@ -910,7 +995,7 @@ form h3 {
     color: #D977C7;
     margin: 1rem 0 1.5rem; }
   .card-body p {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     line-height: 2.3rem;
     margin: 1rem 0; }
   p {
@@ -995,11 +1080,11 @@ form h3 {
     width: 100vw; }
   .contenedor-about {
     display: flex;
-    align-items: center; }
+    align-items: flex-start; }
     .contenedor-about .about-texto {
       display: inline-block;
       margin: 0.5rem 1.5rem 1rem 6.5rem;
-      width: 50rem;
+      width: 65rem;
       text-align: left; }
       .contenedor-about .about-texto p {
         font-size: 1.5rem;
@@ -1013,7 +1098,7 @@ form h3 {
         margin: 1rem 5.5rem 6rem 1rem; }
     .contenedor-about .about-img {
       float: right;
-      margin: 1rem 6rem 1rem 2rem; }
+      margin: 1rem 6rem 2rem 2rem; }
   .firma {
     color: #D977C7;
     font-family: pacifico, sans-serif;
@@ -1042,7 +1127,8 @@ form h3 {
     height: 6rem; }
     .inline-about li {
       padding: 1rem 0.5rem;
-      margin: 3rem 1rem 4rem; }
+      margin: 3rem 0.75rem 4rem;
+      font-size: 1.65rem; }
   .hr-full {
     display: flex;
     width: 100vw;
@@ -1078,16 +1164,21 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 3.5rem 2rem 19rem;
-    color: #9766CC;
-    opacity: 20%; }
+    margin: 5rem;
+    float: right; }
+    .titulo-seccion-solutions h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      color: #9766CC;
+      font-size: 4.5rem;
+      opacity: 0.3; }
   .grid-solutions {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr));
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
     align-items: stretch;
-    margin: 3rem 3rem 0rem;
-    padding-bottom: 6rem; }
+    margin: 4.5rem 6.5rem 0rem;
+    padding: 0rem 0rem 5.5rem;
+    align-items: flex-start; }
     .grid-solutions article {
       display: flex;
       flex-direction: column; }
@@ -1096,7 +1187,7 @@ form h3 {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        width: 15rem;
+        width: 16rem;
         height: auto;
         padding: 0.3rem 0rem 2rem;
         flex-grow: 1;
@@ -1108,6 +1199,9 @@ form h3 {
           font-size: 2.2rem;
           line-height: 4.125rem;
           text-align: center; }
+        .grid-solutions article .solution-text p {
+          flex-grow: 1;
+          line-height: 2.75rem; }
   /* Colores de solution cards */
   .dark-purple {
     color: #896DBF; }
@@ -1121,7 +1215,7 @@ form h3 {
     color: #F288D2; }
   /* Fin colores de solution cards */
   .bg-lillac-solutions {
-    height: 42rem; }
+    height: 45rem; }
   .titulo-seccion-method {
     display: inline-block;
     position: relative;
@@ -1130,18 +1224,19 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 3.5rem 2rem 4rem;
-    color: #9766CC;
-    opacity: 25%; }
+    margin: 8rem 5rem 0 0;
+    float: right; }
     .titulo-seccion-method h4 {
       font: normal 400 4rem "abril-fatface", serif;
-      font-size: 3.2rem; }
+      color: #9766CC;
+      font-size: 4rem;
+      opacity: 0.3; }
   .grid-method {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     align-items: stretch;
-    margin: 3rem 2rem;
+    margin: 4.5rem 6.5rem 0;
     padding: 0rem 0rem 5.5rem; }
     .grid-method .method-step {
       text-align: center;
@@ -1149,16 +1244,18 @@ form h3 {
       flex-wrap: wrap;
       width: 13rem;
       height: auto;
-      padding: 0.3rem 0rem 3rem;
+      padding: 0.3rem 0rem 2rem;
       flex-grow: 1;
       flex-direction: column;
       display: flex;
       box-sizing: border-box; }
       .grid-method .method-step h3 {
-        text-align: center;
         font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
         font-size: 1.8rem;
         line-height: 3.125rem; }
+      .grid-method .method-step p {
+        flex-grow: 1;
+        line-height: 2.75rem; }
   /* Fin sección Solutions */
   /* Sección Skills */
   .titulo-skills-largo {
@@ -1169,7 +1266,13 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 5.5rem 2rem 8rem; }
+    float: right;
+    margin: 7rem 5.5rem 1rem;
+    line-height: 5rem; }
+    .titulo-skills-largo h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      font-size: 4.5rem;
+      opacity: 0.3; }
   .contenedor-card {
     display: flex;
     justify-content: center;
@@ -1181,13 +1284,16 @@ form h3 {
   .skill-card div {
     text-align: center;
     background-color: #ffffff;
-    width: 25.9375rem;
-    height: 27.5rem;
+    width: 21rem;
+    height: 35rem;
     border-radius: 0.625rem;
     box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
     padding: 2.5rem 1rem;
     margin: 1rem;
     box-sizing: border-box; }
+    .skill-card div p {
+      margin: 1rem 1.5rem 2rem;
+      font-size: 1.4rem; }
     .skill-card div .titulos-listas {
       font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.9rem; }
@@ -1196,7 +1302,7 @@ form h3 {
     font-size: 2rem;
     line-height: 3rem; }
   .bg-lillac-skills {
-    height: 50rem; }
+    height: 63rem; }
   .titulo-seccion-skills {
     display: inline-block;
     position: relative;
@@ -1205,9 +1311,13 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 6.5rem 2rem 17.5rem;
+    margin: 5rem;
+    float: right; }
+  .titulo-seccion-skills h4 {
+    font: normal 400 4rem "abril-fatface", serif;
     color: #9766CC;
-    opacity: 20%; }
+    font-size: 4.5rem;
+    opacity: 0.3; }
   .inline-skills {
     display: flex;
     justify-content: center;
@@ -1216,8 +1326,10 @@ form h3 {
   /* Fin sección Skills */
   /* Sección Contact */
   .contenedor-contact {
-    height: 65rem;
+    height: 70rem;
     width: 100vw; }
+    .contenedor-contact .bg-lillac-2 {
+      height: 65rem; }
     .contenedor-contact .titulo-seccion-contact {
       display: inline-block;
       position: relative;
@@ -1226,31 +1338,45 @@ form h3 {
       box-sizing: border-box;
       justify-content: center;
       text-align: center;
-      margin: 3rem 5.5rem 0 45rem;
+      margin: 5.5rem 5.5rem 1.5rem 0;
       color: #9766CC;
-      opacity: 25%; }
+      width: 100vw; }
+      .contenedor-contact .titulo-seccion-contact h4 {
+        font: normal 400 4rem "abril-fatface", serif;
+        font-size: 5rem;
+        opacity: 0.3; }
     .contenedor-contact .contenedor-form {
       align-items: center;
       justify-content: center;
       display: inline-block;
       width: 50rem;
       height: auto;
-      margin: 1rem 0 0 20rem; }
-      .contenedor-contact .contenedor-form p {
-        font-size: 1.3rem;
-        line-height: 2rem;
-        margin-top: 0; }
-      .contenedor-contact .contenedor-form .contact {
-        font: normal 700 1.5rem "abril-display", serif;
-        font-size: 2.35rem;
-        margin-top: 1.5rem;
-        margin-bottom: 0; }
-      .contenedor-contact .contenedor-form .text-area-size {
-        width: 50rem;
-        height: 11rem;
-        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
-        font-size: 1.5rem;
-        color: #999999; }
+      margin: 1rem 0 0 25rem; }
+      .contenedor-contact .contenedor-form .contenedor-form-intro {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        box-sizing: border-box; }
+        .contenedor-contact .contenedor-form .contenedor-form-intro .contact {
+          font: normal 700 1.5rem "abril-display", serif;
+          font-size: 3.125rem;
+          margin-top: 1.5rem;
+          margin-bottom: 0; }
+        .contenedor-contact .contenedor-form .contenedor-form-intro p {
+          font-size: 1.7rem;
+          line-height: 2.5rem;
+          margin-top: 0; }
+      .contenedor-contact .contenedor-form .contenedor-name-email {
+        width: 50rem; }
+        .contenedor-contact .contenedor-form .contenedor-name-email .text-area-size {
+          width: 50rem;
+          height: 11rem;
+          font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+          font-size: 1.5rem;
+          color: #999999; }
+        .contenedor-contact .contenedor-form .contenedor-name-email .button-style {
+          width: 17rem; }
   /* Fin sección Contact */ }
 
 /* Vars */
@@ -1447,11 +1573,14 @@ form h3 {
   h4 {
     font: normal 400 4rem "abril-fatface", serif;
     font-size: 4rem; }
+  .texto-footer {
+    width: 100vw;
+    padding: 1.5rem 0.5rem; }
   /* Fin Intro y Nav */
   /* Proyectos */
   section h2 {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1.45rem;
+    font-size: 1.35rem;
     margin: 0.5rem 0; }
   .hr-skills {
     display: flex;
@@ -1471,9 +1600,10 @@ form h3 {
     line-height: 2rem; }
     .titulo-seccion-izq h1 {
       font: normal 700 1.5rem "abril-display", serif;
-      font-size: 3rem;
-      padding: 1.5rem 0 0; }
+      font-size: 2.75rem;
+      padding: 1rem 0 0; }
   .titulo-seccion-portfolio {
+    display: inline-block;
     position: relative;
     flex-wrap: wrap;
     align-items: center;
@@ -1483,10 +1613,10 @@ form h3 {
     float: right;
     margin: 5rem;
     color: #9766CC; }
-  .titulo-seccion-portfolio h4 {
-    font: normal 400 4rem "abril-fatface", serif;
-    font-size: 4rem;
-    opacity: 0.3; }
+    .titulo-seccion-portfolio h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      font-size: 4rem;
+      opacity: 0.3; }
   h5 {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
@@ -1506,16 +1636,16 @@ form h3 {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-style: normal;
-    font-size: 2.5rem; }
+    font-size: 2rem; }
   .subtitulo-proyectos,
   .subtitulo-footer {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1.45rem;
+    font-size: 1.5rem;
     opacity: 1.0;
     margin: 1rem 0 1.25rem; }
   .card-body p {
-    font-size: 1.5rem;
-    line-height: 2.75rem;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
     margin: 1rem 0; }
   p {
     color: #654D80;
@@ -1602,15 +1732,15 @@ form h3 {
     width: 100vw; }
   .contenedor-about {
     display: flex;
-    align-items: center; }
+    align-items: flex-start; }
     .contenedor-about .about-texto {
       display: inline-block;
       margin: 0.5rem 1.5rem 1rem 6.5rem;
-      width: 50rem;
+      width: 65rem;
       text-align: left; }
       .contenedor-about .about-texto p {
-        font-size: 1.4rem;
-        line-height: 2rem; }
+        font-size: 1.2rem;
+        line-height: 1.9rem; }
       .contenedor-about .about-texto .firma {
         color: #D977C7;
         font-family: pacifico, sans-serif;
@@ -1676,16 +1806,21 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 3.5rem 2rem 19rem;
-    color: #9766CC;
-    opacity: 20%; }
+    margin: 5rem;
+    float: right; }
+    .titulo-seccion-solutions h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      color: #9766CC;
+      font-size: 4rem;
+      opacity: 0.3; }
   .grid-solutions {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr));
     grid-gap: 1.5rem;
     align-items: stretch;
     margin: 3rem 3rem 0rem;
-    padding-bottom: 6rem; }
+    padding-bottom: 6rem;
+    align-items: flex-start; }
     .grid-solutions article {
       display: flex;
       flex-direction: column; }
@@ -1706,6 +1841,10 @@ form h3 {
           font-size: 2.2rem;
           line-height: 4.125rem;
           text-align: center; }
+        .grid-solutions article .solution-text p {
+          flex-grow: 1;
+          line-height: 2.3rem;
+          font-size: 1.3rem; }
   /* Colores de solution cards */
   .dark-purple {
     color: #896DBF; }
@@ -1728,19 +1867,21 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 3.5rem 2rem 4rem;
-    color: #9766CC;
-    opacity: 25%; }
+    margin: 8rem 5rem 0 0;
+    float: right; }
     .titulo-seccion-method h4 {
       font: normal 400 4rem "abril-fatface", serif;
-      font-size: 3.2rem; }
+      color: #9766CC;
+      font-size: 3.2rem;
+      opacity: 0.3; }
   .grid-method {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
     grid-gap: 1rem;
     align-items: stretch;
-    margin: 3rem 2rem;
-    padding: 0rem 0rem 5.5rem; }
+    margin: 3rem 3.5rem;
+    padding: 0rem 0rem 5.5rem;
+    align-items: flex-start; }
     .grid-method .method-step {
       text-align: center;
       align-items: center;
@@ -1757,6 +1898,10 @@ form h3 {
         font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
         font-size: 1.8rem;
         line-height: 3.125rem; }
+      .grid-method .method-step p {
+        flex-grow: 1;
+        line-height: 2.3rem;
+        font-size: 1.3rem; }
   /* Fin sección Solutions */
   /* Sección Skills */
   .titulo-skills-largo {
@@ -1767,7 +1912,13 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 5.5rem 2rem 8rem; }
+    float: right;
+    margin: 7rem 5.5rem 1rem;
+    line-height: 5rem; }
+    .titulo-skills-largo h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      font-size: 4rem;
+      opacity: 0.3; }
   .contenedor-card {
     display: flex;
     justify-content: center;
@@ -1779,13 +1930,17 @@ form h3 {
   .skill-card div {
     text-align: center;
     background-color: #ffffff;
-    width: 25.9375rem;
-    height: 27.5rem;
+    width: 20rem;
+    height: 33rem;
     border-radius: 0.625rem;
     box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
     padding: 2.5rem 1rem;
     margin: 1rem;
     box-sizing: border-box; }
+    .skill-card div p {
+      margin: 0 1rem 1rem;
+      font-size: 1.3rem;
+      line-height: 2.4rem; }
     .skill-card div .titulos-listas {
       font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.9rem; }
@@ -1794,7 +1949,7 @@ form h3 {
     font-size: 2rem;
     line-height: 3rem; }
   .bg-lillac-skills {
-    height: 50rem; }
+    height: 55rem; }
   .titulo-seccion-skills {
     display: inline-block;
     position: relative;
@@ -1803,18 +1958,25 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-end;
     text-align: right;
-    margin: 2rem 6.5rem 2rem 17.5rem;
+    margin: 7rem 5rem 0 0;
+    float: right;
+    opacity: 0.3; }
+  .titulo-seccion-method h4 {
+    font: normal 400 4rem "abril-fatface", serif;
     color: #9766CC;
-    opacity: 20%; }
+    font-size: 4rem;
+    opacity: 0.3; }
   .inline-skills {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6rem; }
+    .inline-skills li {
+      font-size: 1.3rem; }
   /* Fin sección Skills */
   /* Sección Contact */
   .contenedor-contact {
-    height: 65rem;
+    height: 68rem;
     width: 100vw; }
     .contenedor-contact .titulo-seccion-contact {
       display: inline-block;
@@ -1824,9 +1986,13 @@ form h3 {
       box-sizing: border-box;
       justify-content: center;
       text-align: center;
-      margin: 3rem 5.5rem 0 45rem;
+      margin: 5.5rem 5.5rem 1.5rem 0;
       color: #9766CC;
-      opacity: 25%; }
+      width: 100vw; }
+      .contenedor-contact .titulo-seccion-contact h4 {
+        font: normal 400 4rem "abril-fatface", serif;
+        font-size: 4.5rem;
+        opacity: 0.3; }
     .contenedor-contact .contenedor-form {
       align-items: center;
       justify-content: center;
@@ -1834,21 +2000,32 @@ form h3 {
       width: 50rem;
       height: auto;
       margin: 1rem 0 0 20rem; }
-      .contenedor-contact .contenedor-form p {
-        font-size: 1.3rem;
-        line-height: 2rem;
-        margin-top: 0; }
-      .contenedor-contact .contenedor-form .contact {
-        font: normal 700 1.5rem "abril-display", serif;
-        font-size: 2.35rem;
-        margin-top: 1.5rem;
-        margin-bottom: 0; }
-      .contenedor-contact .contenedor-form .text-area-size {
-        width: 50rem;
-        height: 11rem;
-        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
-        font-size: 1.5rem;
-        color: #999999; }
+      .contenedor-contact .contenedor-form .contenedor-form-intro {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        box-sizing: border-box;
+        width: 50rem; }
+        .contenedor-contact .contenedor-form .contenedor-form-intro p {
+          font-size: 1.7rem;
+          line-height: 2.5rem;
+          margin-top: 0; }
+        .contenedor-contact .contenedor-form .contenedor-form-intro .contact {
+          font: normal 700 1.5rem "abril-display", serif;
+          font-size: 2.75rem;
+          margin-top: 1.5rem;
+          margin-bottom: 0; }
+      .contenedor-contact .contenedor-form .contenedor-name-email {
+        width: 50rem; }
+        .contenedor-contact .contenedor-form .contenedor-name-email .text-area-size {
+          width: 50rem;
+          height: 11rem;
+          font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+          font-size: 1.5rem;
+          color: #999999; }
+        .contenedor-contact .contenedor-form .contenedor-name-email .button-style {
+          width: 17rem; }
   /* Fin sección Contact */ }
 
 /* Vars */
@@ -2077,7 +2254,7 @@ form h3 {
     line-height: 2rem; }
     .titulo-seccion-izq h1 {
       font: normal 700 1.5rem "abril-display", serif;
-      font-size: 2.3rem;
+      font-size: 2.5rem;
       padding: 0.5rem 0 0; }
   .hr-skills {
     display: flex;
@@ -2102,22 +2279,25 @@ form h3 {
   .titulo-proyectos {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1.65rem; }
+    font-size: 1.5rem; }
   .titulo-seccion-portfolio {
     display: none; }
   .subtitulo-proyectos {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     margin: 1rem 0 1.25rem; }
   .subtitulo-footer {
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.5rem;
     opacity: 1.0; }
+  .texto-footer {
+    width: 100vw;
+    padding: 1.5rem 0.5rem; }
   .card-body {
     padding: 0.25rem; }
   .card-body p {
-    font-size: 1.25rem;
-    line-height: 1.85rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
     margin: 1rem 0; }
   p {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
@@ -2222,7 +2402,7 @@ form h3 {
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     grid-gap: 1rem;
     align-items: stretch;
-    margin: 3rem 2rem 0rem;
+    margin: 2rem 3rem 0rem;
     padding: 0rem 0rem 3rem; }
     .grid-solutions article {
       display: flex;
@@ -2353,13 +2533,17 @@ form h3 {
   .skill-card div {
     text-align: center;
     background-color: #ffffff;
-    width: 80vw;
+    width: 50vw;
     height: 31rem;
     border-radius: 0.625rem;
     box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
     padding: 2.5rem 1rem;
     margin: 1rem;
     box-sizing: border-box; }
+    .skill-card div p {
+      margin-top: 1rem;
+      line-height: 2.2rem;
+      font-size: 1.4rem; }
   .contenedor-card {
     display: flex;
     justify-content: center;
@@ -2368,97 +2552,99 @@ form h3 {
     padding: 0 0 2rem 0; }
     .contenedor-card .titulos-listas {
       font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-      font-size: 1.9rem; }
-    .contenedor-card p {
-      line-height: 2.5rem;
-      margin-top: 0;
+      font-size: 2.1rem; }
+  #iconos-tools li {
+    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+    font-size: 2rem;
+    line-height: 3rem; } }
+
+.bg-lillac-skills {
+  height: 150rem; }
+
+.titulo-skills-largo,
+.titulo-seccion-skills {
+  display: none; }
+
+.inline-skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100vw; }
+  .inline-skills li {
+    margin: 0.25rem 1rem 0.25rem 5rem;
+    font-size: 1.3rem; }
+
+/* Fin sección Skills */
+/* Sección Contact me */
+.contenedor-contact .bg-lillac2 {
+  height: 55rem;
+  width: 100vw; }
+
+.titulo-seccion-contact {
+  display: none; }
+
+.contenedor-form {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: auto;
+  margin-left: 2rem; }
+  .contenedor-form .contenedor-form-intro {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box; }
+    .contenedor-form .contenedor-form-intro .contact {
+      color: #9766CC;
+      font-family: abril-display, serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.75rem;
+      margin-top: 2rem;
+      margin-bottom: 0; }
+    .contenedor-form .contenedor-form-intro p {
+      margin: 0 0 1rem 0;
       font-size: 1.2rem; }
-    .contenedor-card #iconos-tools li {
-      font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-      font-size: 2rem;
-      line-height: 3rem; }
-  .bg-lillac-skills {
-    height: 150rem; }
-  .titulo-skills-largo,
-  .titulo-seccion-skills {
-    display: none; }
-  .inline-skills {
-    display: flex;
+  .contenedor-form .contenedor-name-email {
+    display: block;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-    width: 100vw; }
-    .inline-skills li {
-      padding: 1rem 1rem;
-      margin: 0.5rem 1rem 0.5rem; }
-  /* Fin sección Skills */
-  /* Sección Contact me */
-  .contenedor-contact .bg-lillac2 {
-    height: 60rem;
-    width: 100vw; }
-  .titulo-seccion-contact {
-    display: none; }
-  .contenedor-form {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;
-    height: auto;
-    margin-left: 2rem; }
-    .contenedor-form .contenedor-form-intro {
-      display: inline-block;
-      justify-content: center;
-      align-items: center;
-      text-align: left;
-      box-sizing: border-box; }
-      .contenedor-form .contenedor-form-intro .contact {
-        color: #9766CC;
-        font-family: abril-display, serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 1.75rem;
-        margin-top: 2rem;
-        margin-bottom: 0; }
-      .contenedor-form .contenedor-form-intro p {
-        margin: 0 0 1rem 0;
-        font-size: 1.2rem; }
-    .contenedor-form .contenedor-name-email {
+    text-align: left;
+    box-sizing: border-box;
+    margin: 2rem 0;
+    width: 83vw; }
+    .contenedor-form .contenedor-name-email .short-placeholder {
+      width: 83vw;
+      height: 3.75rem;
+      font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+      font-size: 1.5rem;
+      color: #999999; }
+    .contenedor-form .contenedor-name-email .text-area-size {
+      width: 83vw;
+      height: 11rem;
+      font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+      font-size: 1.5rem;
+      color: #999999; }
+    .contenedor-form .contenedor-name-email .button-style {
+      background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
+      margin: 0.625rem;
+      padding: 1.5rem 1.75rem;
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+      text-align: center;
+      font-size: 1.5rem;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      /* offset-x | offset-y | blur-radius | spread-radius | color */
+      box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+      border-radius: 0.625rem;
       display: block;
-      justify-content: space-around;
-      align-items: center;
-      text-align: left;
-      box-sizing: border-box;
-      margin: 2rem 0;
-      width: 83vw; }
-      .contenedor-form .contenedor-name-email .short-placeholder {
-        width: 83vw;
-        height: 3.75rem;
-        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
-        font-size: 1.5rem;
-        color: #999999; }
-      .contenedor-form .contenedor-name-email .text-area-size {
-        width: 83vw;
-        height: 11rem;
-        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
-        font-size: 1.5rem;
-        color: #999999; }
-      .contenedor-form .contenedor-name-email .button-style {
-        background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
-        margin: 0.625rem;
-        padding: 1.5rem 1.75rem;
-        font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-        text-align: center;
-        font-size: 1.5rem;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: white;
-        /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
-        border-radius: 0.625rem;
-        display: block;
-        width: 60%; }
-  /* Fin sección Contact */ }
+      width: 60%; }
 
+/* Fin sección Contact */
 /* Vars */
 /* Colors */
 /* Typography */
@@ -2666,8 +2852,8 @@ form h3 {
   /* Proyectos */
   section h2 {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1rem;
-    margin: 0.5rem 0; }
+    font-size: 1.25rem;
+    margin: 0.25rem 0; }
   .texto-grande {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
@@ -2685,7 +2871,7 @@ form h3 {
     line-height: 2rem; }
     .titulo-seccion-izq h1 {
       font: normal 700 1.5rem "abril-display", serif;
-      font-size: 1.75rem;
+      font-size: 2.5rem;
       padding: 0.5rem 0 0; }
   .hr-skills {
     display: flex;
@@ -2768,7 +2954,7 @@ form h3 {
     padding: 1.5rem 0;
     margin-bottom: 1rem; }
     .contenedor-footer p {
-      line-height: 2rem;
+      line-height: 1.75rem;
       margin: 0 0 1rem 0;
       font-size: 1rem;
       width: 100vw;
@@ -2806,6 +2992,9 @@ form h3 {
     text-align: center;
     width: 100vw;
     height: 3rem; }
+  .texto-footer {
+    width: 100vw;
+    padding: 1.5rem 0.5rem; }
   /* Fin Footer */
   /* Sección Solutions */
   .hr-full-method {
@@ -2817,9 +3006,9 @@ form h3 {
   .grid-solutions {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     align-items: stretch;
-    margin: 3rem 2rem 0rem;
+    margin: 2rem 2rem 0rem;
     padding: 0rem 0rem 3rem; }
     .grid-solutions article {
       display: flex;
@@ -2833,7 +3022,7 @@ form h3 {
         line-height: 4rem; }
       .grid-solutions article .solution-text p {
         flex-grow: 1;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         line-height: 2rem;
         text-align: center; }
   .titulo-seccion-method {
@@ -2880,7 +3069,7 @@ form h3 {
           line-height: 3rem; }
         .grid-method article .method-step p {
           flex-grow: 1;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           line-height: 2rem; }
   /* Fin Sección Solutions */
   /* Sección About me */
@@ -2940,12 +3129,16 @@ form h3 {
     text-align: center;
     background-color: #ffffff;
     width: 80vw;
-    height: 31rem;
+    height: 33rem;
     border-radius: 0.625rem;
     box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
     padding: 2.5rem 1rem;
     margin: 1rem;
     box-sizing: border-box; }
+    .skill-card div p {
+      line-height: 2.5rem;
+      margin: 0 0.5rem 1.5rem;
+      font-size: 1.4rem; }
   .contenedor-card {
     display: flex;
     justify-content: center;
@@ -2971,12 +3164,12 @@ form h3 {
   .inline-skills {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: 100vw; }
     .inline-skills li {
-      padding: 1rem 1rem;
-      margin: 0.5rem 1rem 0.5rem; }
+      margin: 0.5rem 1rem 0.5rem 4rem;
+      font-size: 1.3rem; }
   /* Fin sección Skills */
   /* Sección Contact me */
   .contenedor-contact .bg-lillac2 {

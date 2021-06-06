@@ -105,7 +105,7 @@
     .titulo-proyectos {
         color: $purple;
         font: $title-omnes700;
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .titulos-listas {
@@ -116,15 +116,15 @@
     .subtitulo-proyectos,
     .subtitulo-footer {
         font: $title-omnes700;
-        font-size: 2.25rem;
+        font-size: 2.2rem;
         color: $pink;
         margin: 1rem 0 1.5rem;
     }
 
     .card-body {
         p {
-        font-size: 1.8rem;
-        line-height: 3rem;
+        font-size: 1.5rem;
+        line-height: 2.8rem;
         margin: 1rem 0;
         }
     }
@@ -153,14 +153,6 @@
         font: $section-title-font;
         font-size: 1.8125rem;
         text-decoration: none;
-    }
-
-    .contact {
-        color: $purple;
-        font: $title-abrildisplay;
-        font-size: 2.75rem;
-        margin-top: 2rem;
-        margin-bottom: 0;
     }
 
     .align-center {
@@ -197,52 +189,64 @@
 
     .titulo-skills-largo {
         @include flexbox;
-        margin: 2rem 6.5rem 2rem 23.5rem;
-        color: $purple;
-        opacity: 30%;
+        float: right;
+        margin: 7rem 5.5rem 1rem;
+        line-height: 5rem;
+        h4 {
+            font: $big-title-font;
+            font-size: 6rem;
+            opacity: 0.3;
+            }
     }
 
     .titulo-seccion-skills {
         @include flexbox;
-        margin: 2rem 6.5rem 2rem 38.5rem;
-        color: $purple;
-        opacity: 30%;
+        margin: 5.5rem;
+        float: right;
+        h4 {
+            font: $big-title-font;
+            color: $purple;
+            font-size: 6rem;
+            opacity: 0.3;
+            }
+        }
     }
 
     .titulo-seccion-portfolio {
         @include flexbox;
-        margin: 5rem;
+        margin: 5.5rem;
         float: right;
         color: $purple;
-    }
-
-    .titulo-seccion-portfolio {
         h4 {
-        font: $big-title-font;
-        font-size: 6rem;
-        opacity: 0.3;
-        }
+            font: $big-title-font;
+            font-size: 6rem;
+            opacity: 0.3;
+            }
     }
 
     .titulo-seccion-solutions {
         @include flexbox;
-        margin: 2rem 3rem 2rem 35rem;
-        color: $purple;
-        opacity: 30%;
-    }
+        margin: 5.5rem;
+        float: right;
+        h4 {
+            font: $big-title-font;
+            color: $purple;
+            font-size: 6rem;
+            opacity: 0.3;
+            }
+        }
+
 
     .titulo-seccion-method {
         @include flexbox;
-        margin: 2rem 6.5rem 2rem 4rem;
-        color: $purple;
-        opacity: 30%;
-    }
-
-    .titulo-seccion-contact {
-        @include flexbox ($text-align: center, $justify-content: center);
-        margin: 3rem 5.5rem 0 68.5rem;
-        color: $purple;
-        opacity: 30%;
+        margin: 8rem 5.5rem 0 0;
+        float: right;
+        h4 {
+            font: $big-title-font;
+            color: $purple;
+            font-size: 5rem;
+            opacity: 0.3;
+            }
     }
 
     /* Fin de Titulos Seccion */
@@ -283,7 +287,7 @@
         grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
         grid-gap: 2.875rem;
         align-items: stretch;
-        margin: 6.5rem 6.5rem 0rem;
+        margin: 4.5rem 6.5rem 0rem;
         padding: 0rem 0rem 6rem;
 
         article {
@@ -312,6 +316,8 @@
 
                 p {
                     flex-grow: 1;
+                    font-size: 1.55rem;
+                    line-height: 2.5rem;
                 }
             }
         }
@@ -493,6 +499,7 @@
             @include flexcenter;
             flex-direction: row;
             width: 100vw;
+            list-style-type: disc;
 
             li {
                 padding: 1rem 0.5rem;
@@ -503,7 +510,7 @@
         /* Cards*/
         .contenedor-card {
             @include flexcenter;
-            padding: 0 0 6.5rem 0;
+            padding: 2rem 0 6.5rem 0;
         }
 
         .skill-card {
@@ -511,12 +518,17 @@
                 text-align: center;
                 background-color: #ffffff;
                 width: 25.9375rem;
-                height: 36.375rem;
+                height: 34rem;
                 border-radius: 0.625rem;
                 box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
                 padding: 2.5rem 1rem;
                 margin: 1rem;
                 box-sizing: border-box;
+                p {
+                    font-size: 1.55rem;
+                    line-height: 2.5rem;
+                    margin: 2rem;
+                }
             }
         }
 
@@ -526,12 +538,12 @@
 
         .contenedor-about {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
 
             .about-texto {
                 display: inline-block;
-                margin: 0.5rem 2rem 1rem 6.5rem;
-                width: 62rem;
+                margin: 0.5rem 2rem 1rem 7.5rem;
+                width: 70rem;
                 text-align: left;
                 p {
                     font-size: 1.65rem;
@@ -550,6 +562,12 @@
             .about-img {
                 float: right;
                 margin: 1rem 6.5rem 1rem 2rem;
+            }
+        }
+
+        .about-img {
+            img {
+                width: 90%;
             }
         }
 
@@ -583,8 +601,9 @@
             width: 120rem;
 
             li {
-                padding: 1rem 1rem;
-                margin: 3rem 1rem 4rem;
+                padding: 1rem 0.5rem;
+                margin: 3rem 0.5rem 4rem;
+                font-size: 1.75rem;
             }
         }
 
@@ -641,11 +660,12 @@
 
         .grid-method {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(16.875rem, 1fr));
-            grid-gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(15.875rem, 1fr));
+            grid-gap: 2rem;
             align-items: stretch;
-            margin: 3rem 6.5rem 0rem;
+            margin: 4.5rem 6.5rem 0rem;
             padding: 0rem 0rem 8.5rem;
+            align-items: flex-start;
 
             article {
                 display: flex;
@@ -674,6 +694,7 @@
                 p {
                     flex-grow: 1;
                     line-height: 2.75rem;
+                    font-size: 1.55rem;
                 }
             }
         }
@@ -683,19 +704,42 @@
         /* Sección Contact me */
 
         .contenedor-contact {
-            height: 70rem;
+            height: 73rem;
             width: 100vw;
+
+            .titulo-seccion-contact {
+                @include flexbox ($justify-content: center, $text-align: center);
+                margin: 5.5rem 5.5rem 2rem 0;
+                color: $purple;
+                width: 100vw;
+                h4 {
+                    font: $big-title-font;
+                    font-size: 5.5rem;
+                    opacity: 0.3;
+                    }
+            }
 
             .contenedor-form {
                 @include flexcenter ($display: inline-block);
                 width: 60rem;
                 height: auto;
-                margin-left: 33.53125rem;
+                margin-left: 30rem;
 
                 .contenedor-form-intro {
                     @include flexcenter ($display: inline-block);
                     text-align: left;
                     box-sizing: border-box;
+                    .contact {
+                        color: $purple;
+                        font: $section-title-font;
+                        font-size: 3.5rem;
+                        margin-top: 2rem;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        font-size: 2rem;
+                        line-height: 2.8rem;
+                    }
                 }
 
                 .contenedor-name-email {
@@ -705,6 +749,7 @@
                     text-align: left;
                     box-sizing: border-box;
                     margin: 2rem 0;
+                    width: 60rem;
 
                     .short-placeholder {
                         width: 28.6875rem;
@@ -736,6 +781,7 @@
                         box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
                         border-radius: 0.625rem;
                         display: block;
+                        width: 20rem;
                     }
 
                 }
@@ -832,4 +878,3 @@
                 border-color: transparent;
             }
         }
-    }

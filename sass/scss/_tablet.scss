@@ -198,10 +198,9 @@
             @include flexbox ($text-align: left, $justify-content: flex-start);
             margin: 2.4rem 2rem 1rem 0.45rem;
             line-height: 2rem;
-    
             h1 {
                 font: $section-title-font;
-                font-size: 2.3rem;
+                font-size: 2.5rem;
                 padding: 0.5rem 0 0;
             }
         }
@@ -235,7 +234,7 @@
         .titulo-proyectos {
             color: $purple;
             font: $title-omnes700;
-            font-size: 1.65rem;
+            font-size: 1.5rem;
         }
     
         .titulo-seccion-portfolio {
@@ -244,7 +243,7 @@
     
         .subtitulo-proyectos {
             font: $title-omnes700;
-            font-size: 1.45rem;
+            font-size: 1.3rem;
             margin: 1rem 0 1.25rem;
         }
 
@@ -254,6 +253,10 @@
             opacity: 1.0;
         }
     
+        .texto-footer {
+            width: 100vw;
+            padding: 1.5rem 0.5rem;
+        } 
 
         .card-body {
             padding: 0.25rem;
@@ -261,8 +264,8 @@
 
         .card-body {
             p {
-            font-size: 1.25rem;
-            line-height: 1.85rem;
+            font-size: 1.1rem;
+            line-height: 1.6rem;
             margin: 1rem 0;
             }
         }
@@ -403,7 +406,7 @@
             grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
             grid-gap: 1rem;
             align-items: stretch;
-            margin: 3rem 2rem 0rem;
+            margin: 2rem 3rem 0rem;
             padding: 0rem 0rem 3rem;
     
             article {
@@ -590,13 +593,18 @@
             div {
                 text-align: center;
                 background-color: #ffffff;
-                width: 80vw;
+                width: 50vw;
                 height: 31rem;
                 border-radius: 0.625rem;
                 box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
                 padding: 2.5rem 1rem;
                 margin: 1rem;
                 box-sizing: border-box;
+                p {
+                    margin-top: 1rem;
+                    line-height: 2.2rem;
+                    font-size: 1.4rem;
+                }
             }
         }
     
@@ -607,14 +615,9 @@
     
             .titulos-listas {
                 font: $title-omnes700;
-                font-size: 1.9rem;
+                font-size: 2.1rem;
             }
-    
-            p {
-                line-height: 2.5rem;
-                margin-top: 0;
-                font-size: 1.2rem;
-            }
+        }
     
             #iconos-tools {
                 li {
@@ -635,13 +638,12 @@
         }
     
         .inline-skills {
-            @include flexcenter ($justify: space-around);
+            @include flexcenter ($justify: space-around, $align: flex-start);
             flex-direction: column;
             width: 100vw;
-    
             li {
-                padding: 1rem 1rem;
-                margin: 0.5rem 1rem 0.5rem;
+                margin: 0.25rem 1rem 0.25rem 5rem;
+                font-size: 1.3rem;
             }
         }
     
@@ -650,7 +652,7 @@
         /* Sección Contact me */
     
         .contenedor-contact .bg-lillac2 {
-            height: 60rem;
+            height: 55rem;
             width: 100vw;
         }
     
@@ -734,4 +736,3 @@
             }
         }
     /* Fin sección Contact */
-    }
