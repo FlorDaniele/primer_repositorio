@@ -62,467 +62,470 @@
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-        /* Intro y Nav */
+    /* Intro y Nav */
 
-        .nav-logo-mobile {
-            font: $section-title-font;
-            font-size: 2rem;
-            text-decoration: none;
-            }
+    .nav-logo-mobile {
+        font: $section-title-font;
+        font-size: 2rem;
+        text-decoration: none;
+    }
 
-        .btn-primary {
-            font-size: 1.2rem !important;
-        }
-    
-        #sakura {
+    .btn-primary {
+        font-size: 1.2rem !important;
+    }
+
+    #sakura {
+        display: block;
+        float: right;
+        position: relative;
+        padding: 0 0 0 12.5rem;
+        height: 7rem;
+        width: auto;
+    }
+
+    .intro-completo {
+        @include flexcenter ($display: block);
+        position: relative;
+        height: 34.5rem;
+        width: 100%;
+
+        .contenedor-intro-izq {
+            @include centrado;
             display: block;
-            float: right;
-            position: relative;
-            padding: 0 0 0 12.5rem;
-            height: 7rem;
-            width: auto;
-        }
-    
-        .intro-completo {
-            @include flexcenter ($display: block);
-            position: relative;
-            height: 34.5rem;
+            position: absolute;
+            top: 7.625rem;
+            left: 0;
+            flex-wrap: wrap;
+            padding: 1.5rem 13rem;
+            margin: 0;
+            height: 15rem;
             width: 100%;
-    
-            .contenedor-intro-izq {
-                @include centrado;
-                display: block;
-                position: absolute;
-                top: 7.625rem;
-                left: 0;
-                flex-wrap: wrap;
-                padding: 1.5rem 13rem;
-                margin: 0;
-                height: 15rem;
-                width: 100%;
-                box-sizing: border-box;
-    
-                .intro {
-                    font: $section-title-font;
-                    font-size: 2.8125rem;
-                    margin-bottom: 1rem;
-    
-                    .pink {
-                        color: $pink;
-                    }
-                }
-    
-                .professions {
-                    font: $title-omnes600;
-                    font-size: 1.5rem;
-                    line-height: 2.34375rem;
+            box-sizing: border-box;
+
+            .intro {
+                font: $section-title-font;
+                font-size: 2.8125rem;
+                margin-bottom: 1rem;
+
+                .pink {
+                    color: $pink;
                 }
             }
-    
-            .contenedor-intro-der {
-                @include centrado;
-                display: block;
-                flex-wrap: wrap;
-                position: absolute;
-                top: 21.25rem;
-                left: 0;
-                height: fit-content;
-                width: 100%;
-                padding: 2rem 11rem 2rem 11rem;
-                margin: 0 2rem;
-                box-sizing: border-box;
-    
-                #titulo-bio {
-                    font: $section-title-font;
-                    font-size: 1.75rem;
-                    margin-bottom: 0.5rem;
-                }
-    
-                .texto-medio-bio {
-                    font: $title-omnes600;
-                    font-size: 1.2rem;
-                    line-height: 1.625rem;
-                }
+
+            .professions {
+                font: $title-omnes600;
+                font-size: 1.5rem;
+                line-height: 2.34375rem;
             }
         }
-    
-        .align-welcome {
-            @include flexcenter;
-            padding: 0;
-            margin: 3rem 2rem;
-    
-            .span-portfolio {
-                font-size: 3.125rem;
-                line-height: 4rem;
-                text-align: center;
-                margin: 1.5rem 0 2rem;
-                opacity: 0.3;
+
+        .contenedor-intro-der {
+            @include centrado;
+            display: block;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 21.25rem;
+            left: 0;
+            height: fit-content;
+            width: 100%;
+            padding: 2rem 11rem 2rem 11rem;
+            margin: 0 2rem;
+            box-sizing: border-box;
+
+            #titulo-bio {
+                font: $section-title-font;
+                font-size: 1.75rem;
+                margin-bottom: 0.5rem;
             }
-        }
-    
-        h4 {
-            font: $big-title-font;
-            font-size: 2.1875rem;
-        }
-    
-        /* Nav bar */
-    
-        ul {
-            li {
+
+            .texto-medio-bio {
                 font: $title-omnes600;
                 font-size: 1.3rem;
-                line-height: 2.5rem;
+                line-height: 1.625rem;
             }
         }
-    
-        /* Fin Intro y Nav */
-    
-        /* Titulos sección Proyectos */
-    
-        section {
-            h2 {
-                font: $title-omnes600;
-                font-size: 1rem;
-                margin: 0.5rem 0;
-            }
+    }
+
+    .align-welcome {
+        @include flexcenter;
+        padding: 0;
+        margin: 3rem 2rem;
+
+        .span-portfolio {
+            font-size: 3.125rem;
+            line-height: 4rem;
+            text-align: center;
+            margin: 1.5rem 0 2rem;
+            opacity: 0.3;
         }
-    
+    }
+
+    h4 {
+        font: $big-title-font;
+        font-size: 2.1875rem;
+    }
+
+    /* Nav bar */
+
+    ul {
+        li {
+            font: $title-omnes600;
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    /* Fin Intro y Nav */
+
+    /* Titulos sección Proyectos */
+
+    section {
+        h2 {
+            font: $title-omnes600;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+    }
+
+    .texto-grande {
+        color: $purple;
+        font: $title-omnes700;
+        font-size: 0.75rem;
+        line-height: 1.0875rem;
+    }
+
+    .titulo-seccion-izq {
+        @include flexbox ($text-align: left, $justify-content: flex-start);
+        margin: 2.4rem 2rem 1rem 0.45rem;
+        line-height: 2rem;
+
+        h1 {
+            font: $section-title-font;
+            font-size: 2.5rem;
+            padding: 0.5rem 0 0;
+        }
+    }
+
+    .hr-skills {
+        display: flex;
+        float: left;
+        width: 3rem;
+        border-top: 0.125rem solid $pink;
+        margin: 3rem 0 0;
+    }
+
+    h5 {
+        color: $purple;
+        font: $title-omnes700;
+        font-size: 1.2rem;
+    }
+
+    .inline-list {
+        @include flexcenter;
+        height: 4rem;
+        width: 100vw;
+
+        h5 {
+            font-size: 2rem;
+            padding: 1rem 0.5rem;
+            margin: 3rem 0 2rem;
+        }
+    }
+
+    .titulo-proyectos {
+        color: $purple;
+        font: $title-omnes700;
+        font-size: 1.5rem;
+    }
+
+    .titulo-seccion-portfolio {
+        display: none;
+    }
+
+    .subtitulo-proyectos {
+        font: $title-omnes700;
+        font-size: 1.3rem;
+        margin: 1rem 0 1.25rem;
+    }
+
+    .subtitulo-footer {
+        font: $title-omnes700;
+        font-size: 1.5rem;
+        opacity: 1.0;
+    }
+
+    .texto-footer {
+        width: 100vw;
+        padding: 1.5rem 0.5rem;
+    }
+
+    .card-body {
+        padding: 0.25rem;
+    }
+
+    .card-body {
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            margin: 1rem 0;
+        }
+    }
+
+
+    p {
+        font: $paragraph-font;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    .styled-link {
+        color: $pink;
+        font: $title-omnes700;
+        font-size: 1.25rem;
+        padding: 0 1rem;
+        text-decoration: none;
+    }
+
+    /* Fin Proyectos */
+
+    /* CV */
+
+    #cv {
+        @include flexcenter;
+        flex-direction: row;
+        margin-bottom: 1rem;
+
+        .box-img-left-cv {
+            width: 10.625rem;
+            height: fit-content;
+            padding: 0.5rem;
+            margin: 1.5rem 1rem 2rem;
+            position: relative;
+            float: left;
+        }
+
+        .box-text-right-cv {
+            @include centrado;
+            height: fit-content;
+            width: 18rem;
+            margin: 2rem 1rem 2rem;
+            text-align: center;
+            position: relative;
+            float: right;
+        }
+
         .texto-grande {
             color: $purple;
             font: $title-omnes700;
-            font-size: 0.75rem;
-            line-height: 1.0875rem;
-        }
-    
-        .titulo-seccion-izq {
-            @include flexbox ($text-align: left, $justify-content: flex-start);
-            margin: 2.4rem 2rem 1rem 0.45rem;
-            line-height: 2rem;
-            h1 {
-                font: $section-title-font;
-                font-size: 2.5rem;
-                padding: 0.5rem 0 0;
-            }
-        }
-    
-        .hr-skills {
-            display: flex;
-            float: left;
-            width: 3rem;
-            border-top: 0.125rem solid $pink;
-            margin: 3rem 0 0;
-        }
-    
-        h5 {
-            color: $purple;
-            font: $title-omnes700;
-            font-size: 1.2rem;
-        }
-    
-        .inline-list {
-            @include flexcenter;
-            height: 1rem;
-            width: 100vw;
-    
-            h5 {
-                font-size: 1.5rem;
-                padding: 1rem 0.5rem;
-                margin: 1rem 0 1rem;
-            }
-        }
-    
-        .titulo-proyectos {
-            color: $purple;
-            font: $title-omnes700;
             font-size: 1.5rem;
+            line-height: 2.25rem;
         }
-    
-        .titulo-seccion-portfolio {
-            display: none;
+    }
+
+    /* Fin CV */
+
+    /* Footer */
+
+    .contenedor-footer {
+        @include centrado;
+        display: inline-block;
+        text-align: left;
+        line-height: 3rem;
+        height: 21.5rem;
+        width: 100vw;
+        padding: 1.5rem 0 0 2rem;
+        margin-bottom: 1rem;
+
+        p {
+            line-height: 2rem;
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            width: 100vw;
+            padding: 0 1.5rem;
+            flex-wrap: wrap;
         }
-    
-        .subtitulo-proyectos {
-            font: $title-omnes700;
-            font-size: 1.3rem;
-            margin: 1rem 0 1.25rem;
+
+        h1 {
+            font-size: 2.3rem;
+            margin: 1.5rem 1.5rem 0;
         }
 
         .subtitulo-footer {
             font: $title-omnes700;
-            font-size: 1.5rem;
             opacity: 1.0;
-        }
-    
-        .texto-footer {
-            width: 100vw;
-            padding: 1.5rem 0.5rem;
-        } 
-
-        .card-body {
-            padding: 0.25rem;
+            margin: 0.75rem 1.5rem;
         }
 
-        .card-body {
-            p {
-            font-size: 1.1rem;
-            line-height: 1.6rem;
-            margin: 1rem 0;
-            }
-        }
-
-        
-        p {
-            font: $paragraph-font;
-            font-size: 1rem;
-            line-height: 1.75rem;
-        }
-    
-        .styled-link {
-            color: $pink;
+        .email {
             font: $title-omnes700;
             font-size: 1.25rem;
-            padding: 0 1rem;
-            text-decoration: none;
-        }
-    
-        /* Fin Proyectos */
-    
-        /* CV */
-    
-        #cv {
-            @include flexcenter;
-            flex-direction: row;
-            margin-bottom: 1rem;
-    
-            .box-img-left-cv {
-                width: 10.625rem;
-                height: fit-content;
-                padding: 0.5rem;
-                margin: 1.5rem 1rem 2rem;
-                position: relative;
-                float: left;
-            }
-    
-            .box-text-right-cv {
-                @include centrado;
-                height: fit-content;
-                width: 18rem;
-                margin: 2rem 1rem 2rem;
-                text-align: center;
-                position: relative;
-                float: right;
-            }
-    
-            .texto-grande {
-                color: $purple;
-                font: $title-omnes700;
-                font-size: 1.5rem;
-                line-height: 2.25rem;
-            }
-        }
-    
-        /* Fin CV */
-    
-        /* Footer */
-    
-        .contenedor-footer {
-            @include centrado;
-            display: inline-block;
+            opacity: 1.0;
             text-align: left;
-            line-height: 3rem;
-            height: 21.5rem;
-            width: 100vw;
-            padding: 1.5rem 0 0 2rem;
-            margin-bottom: 1rem;
-    
-            p {
-                line-height: 2rem;
-                margin: 0.5rem 0;
-                font-size: 1.2rem;
-                width: 100vw;
-                padding: 0 1.5rem;
-                flex-wrap: wrap;
-            }
-    
-            h1 {
-                font-size: 2.3rem;
-                margin: 1.5rem 1.5rem 0;
-            }
-    
-            .subtitulo-footer {
-                font: $title-omnes700;
-                opacity: 1.0;
-                margin: 0.75rem 1.5rem;
-            }
-    
-            .email {
-                font: $title-omnes700;
-                font-size: 1.25rem;
-                opacity: 1.0;
-                text-align: left;
-                padding-right: 1.5rem;
-                margin-bottom: 2rem;
-                color: $purple;
-            }
+            padding-right: 1.5rem;
+            margin-bottom: 2rem;
+            color: $purple;
         }
-    
-        #icons-footer {
-            @include flexcenter;
-            float: left;
-            padding-left: 0rem;
-    
-            a {
-                padding: 1rem;
-                margin: 2rem 1rem;
-                color: $darkest-purple;
-            }
-        }
+    }
 
-        .footer-resumido {
-            @include flexcenter ($display: inline-block);
-            text-align: center;
-            width: 100vw;
-            height: 2rem;
+    #icons-footer {
+        @include flexcenter;
+        float: left;
+        padding-left: 0rem;
+
+        a {
+            padding: 1rem;
+            margin: 2rem 1rem;
+            color: $darkest-purple;
         }
-    
-        /* Fin Footer */
-    
-        /* Sección Solutions */
-    
-        .hr-full-method {
-            display: none;
-        }
-    
-        .bg-lillac-solutions {
-            width: 100vw;
-        }
-    
-        .titulo-seccion-solutions {
-            display: none;
-        }
-    
-        .grid-solutions {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-            grid-gap: 1rem;
-            align-items: stretch;
-            margin: 2rem 3rem 0rem;
-            padding: 0rem 0rem 3rem;
-    
-            article {
-                @include flexcenter;
-                flex-direction: column;
-    
-                .solution-text {
-                    h3 {
-                        font: $title-omnes700;
-                        text-align: center;
-                        font-size: 2.5rem;
-                        line-height: 4rem;
-                    }
-    
-                    p {
-                        flex-grow: 1;
-                        font-size: 1.2rem;
-                        line-height: 2rem;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-    
-        .titulo-seccion-method {
-            display: none;
-        }
-    
-        /* Colores de solution cards */
-    
-        .dark-purple {
-            color: $dark-purple;
-        }
-    
-        .dark-pink {
-            color: $dark-pink;
-        }
-    
-        .medium-pink {
-            color: $medium-pink;
-        }
-    
-        .lighter-pink {
-            color: $lighter-pink;
-        }
-    
-        .lightest-pink {
-            color: $lightest-pink;
-        }
-    
-        /* Fin colores de solution cards */
-    
-    
-        .grid-method {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-            grid-gap: 1rem;
-            align-items: stretch;
-            margin: 3rem 2rem 0rem;
-            padding: 0rem 0rem 4rem;
-    
-            article {
-                @include flexcenter;
-                flex-direction: column;
-    
-                .method-step {
-                    text-align: center;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    width: 15.1625rem;
-                    height: auto;
-                    padding: 0.3rem 0rem 1rem;
-                    flex-grow: 1;
-                    flex-direction: column;
-                    display: flex;
-                    box-sizing: border-box;
-    
-                    h3 {
-                        text-align: center;
-                        font: $title-omnes700;
-                        font-size: 2rem;
-                        line-height: 3rem;
-                    }
-    
-                    p {
-                        flex-grow: 1;
-                        font-size: 1.2rem;
-                        line-height: 2rem;
-                    }
-                }
-            }
-        }
-    
-        /* Fin Sección Solutions */
-    
-        /* Sección About me */
-    
-        .bg-gradient-hero-about {
-            background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
-            height: 95rem;
-            width: 100vw;
-        }
-    
-        .contenedor-about {
+    }
+
+    .footer-resumido {
+        @include flexcenter ($display: inline-block);
+        text-align: center;
+        width: 100vw;
+        height: 2rem;
+    }
+
+    /* Fin Footer */
+
+    /* Sección Solutions */
+
+    .hr-full-method {
+        display: none;
+    }
+
+    .bg-lillac-solutions {
+        width: 100vw;
+    }
+
+    .titulo-seccion-solutions {
+        display: none;
+    }
+
+    .grid-solutions {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-gap: 1rem;
+        align-items: stretch;
+        margin: 2rem 3rem 0rem;
+        padding: 0rem 0rem 3rem;
+
+        article {
             @include flexcenter;
             flex-direction: column;
-    
-            .about-texto {
-                display: inline-block;
-                margin: 0.5rem 0rem 1rem;
-                width: 85vw;
-                text-align: left;
+
+            .solution-text {
+                h3 {
+                    font: $title-omnes700;
+                    text-align: center;
+                    font-size: 2.5rem;
+                    line-height: 4rem;
+                }
+
                 p {
-                    font-size: 1.3rem;
-                    line-height: 2.3rem;
-                }      
+                    flex-grow: 1;
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .titulo-seccion-method {
+        display: none;
+    }
+
+    /* Colores de solution cards */
+
+    .dark-purple {
+        color: $dark-purple;
+    }
+
+    .dark-pink {
+        color: $dark-pink;
+    }
+
+    .medium-pink {
+        color: $medium-pink;
+    }
+
+    .lighter-pink {
+        color: $lighter-pink;
+    }
+
+    .lightest-pink {
+        color: $lightest-pink;
+    }
+
+    /* Fin colores de solution cards */
+
+
+    .grid-method {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-gap: 1rem;
+        align-items: stretch;
+        margin: 3rem 2rem 0rem;
+        padding: 0rem 0rem 4rem;
+
+        article {
+            @include flexcenter;
+            flex-direction: column;
+
+            .method-step {
+                text-align: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 15.1625rem;
+                height: auto;
+                padding: 0.3rem 0rem 1rem;
+                flex-grow: 1;
+                flex-direction: column;
+                display: flex;
+                box-sizing: border-box;
+
+                h3 {
+                    text-align: center;
+                    font: $title-omnes700;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+
+                p {
+                    flex-grow: 1;
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+
+    /* Fin Sección Solutions */
+
+    /* Sección About me */
+
+    .bg-gradient-hero-about {
+        background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
+        height: 95rem;
+        width: 100vw;
+    }
+
+    .contenedor-about {
+        @include flexcenter;
+        flex-direction: column;
+
+        .about-texto {
+            display: inline-block;
+            margin: 0.5rem 0rem 1rem;
+            width: 85vw;
+            text-align: left;
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
+
             .firma {
                 color: $pink;
                 font-family: pacifico, sans-serif;
@@ -530,50 +533,51 @@
                 font-style: normal;
                 font-size: 3.5rem;
                 margin: 0.75rem 0 4rem;
-                }
-            }
-            .about-img {
-                width: 65%;
-                float: none;
-                margin: 1rem 0;
-            }
-        }
-    
-        .love-title {
-            font: $section-title-font;
-            font-size: 2.5rem;
-            display: flex;
-            justify-content: center;
-            width: 100vw;
-            margin-top: 2rem;
-        }
-    
-        .hr-right-l,
-        .hr-right-r,
-        .hr-full {
-            display: none;
-        }
-    
-        .inline-about {
-            @include flexcenter ($justify: space-around);
-            flex-direction: column;
-            width: 100vw;
-    
-            li {
-                padding: 1rem 1rem;
-                margin: 0.5rem 1rem 0.5rem;
             }
         }
 
-        section {
-            h2 {
-                font: $title-omnes600;
-                font-size: 1.35rem;
-                margin: 0.5rem 0;
-            }
+        .about-img {
+            width: 65%;
+            float: none;
+            margin: 1rem 0;
         }
-    
-        .contenedor-illustration {         
+    }
+
+    .love-title {
+        font: $section-title-font;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 2rem;
+    }
+
+    .hr-right-l,
+    .hr-right-r,
+    .hr-full {
+        display: none;
+    }
+
+    .inline-about {
+        @include flexcenter ($justify: space-around);
+        flex-direction: column;
+        width: 100vw;
+
+        li {
+            padding: 1rem 1rem;
+            margin: 0.5rem 1rem 0.5rem;
+        }
+    }
+
+    section {
+        h2 {
+            font: $title-omnes600;
+            font-size: 1.35rem;
+            margin: 0.3rem 0;
+        }
+    }
+
+    .contenedor-illustration {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -581,158 +585,163 @@
         width: 25rem;
         margin-left: 12rem;
     }
-        /* Fin sección About Me */
-    
-        /* Sección Skills */
-    
-        .titulo-skills-largo h4 {
-            display: none;
-        }
-    
-        .skill-card {
-            div {
-                text-align: center;
-                background-color: #ffffff;
-                width: 50vw;
-                height: 31rem;
-                border-radius: 0.625rem;
-                box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
-                padding: 2.5rem 1rem;
-                margin: 1rem;
-                box-sizing: border-box;
-                p {
-                    margin-top: 1rem;
-                    line-height: 2.2rem;
-                    font-size: 1.4rem;
-                }
+
+    /* Fin sección About Me */
+
+    /* Sección Skills */
+
+    .titulo-skills-largo h4 {
+        display: none;
+    }
+
+    .skill-card {
+        div {
+            text-align: center;
+            background-color: #ffffff;
+            width: 50vw;
+            height: 35rem;
+            border-radius: 0.625rem;
+            box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
+            padding: 2.5rem 1rem;
+            margin: 1rem;
+            box-sizing: border-box;
+
+            p {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                line-height: 3rem;
+                font-size: 1.5rem;
             }
         }
-    
-        .contenedor-card {
-            @include flexcenter;
-            flex-direction: column;
-            padding: 0 0 2rem 0;
-    
-            .titulos-listas {
-                font: $title-omnes700;
-                font-size: 2.1rem;
-            }
+    }
+
+    .contenedor-card {
+        @include flexcenter;
+        flex-direction: column;
+        padding: 0 0 2rem 0;
+
+        .titulos-listas {
+            font: $title-omnes700;
+            font-size: 2.1rem;
         }
-    
-            #iconos-tools {
-                li {
-                    font: $title-omnes600;
-                    font-size: 2rem;
-                    line-height: 3rem;
-                }
-            }
+    }
+
+    #iconos-tools {
+        li {
+            font: $title-omnes600;
+            font-size: 2rem;
+            line-height: 3rem;
         }
-    
-        .bg-lillac-skills {
-            height: 150rem;
+    }
+
+    .bg-lillac-skills {
+        height: 160rem;
+    }
+
+    .titulo-skills-largo,
+    .titulo-seccion-skills {
+        display: none;
+    }
+
+    .inline-skills {
+        @include flexcenter ($justify: space-around, $align: flex-start);
+        flex-direction: column;
+        width: 100vw;
+        list-style-type: disc;
+
+        li {
+            margin: 0.5rem 1rem 0.5rem 5rem;
+            font-size: 1.3rem;
         }
-    
-        .titulo-skills-largo,
-        .titulo-seccion-skills {
-            display: none;
-        }
-    
-        .inline-skills {
-            @include flexcenter ($justify: space-around, $align: flex-start);
-            flex-direction: column;
-            width: 100vw;
-            li {
-                margin: 0.25rem 1rem 0.25rem 5rem;
-                font-size: 1.3rem;
-            }
-        }
-    
-        /* Fin sección Skills */
-    
-        /* Sección Contact me */
-    
-        .contenedor-contact .bg-lillac2 {
-            height: 55rem;
-            width: 100vw;
-        }
-    
-        .titulo-seccion-contact {
-            display: none;
-        }
-    
-        .contenedor-form {
+    }
+
+    /* Fin sección Skills */
+
+    /* Sección Contact me */
+
+    .contenedor-contact, .bg-lillac-contact {
+        height: 56rem;
+        width: 100vw;
+    }
+
+    .titulo-seccion-contact {
+        display: none;
+    }
+
+    .contenedor-form {
+        display: inline-block;
+        @include centrado;
+        width: 80vw;
+        height: auto;
+        margin-left: 4rem;
+
+        .contenedor-form-intro {
             display: inline-block;
-            @include centrado;
-            width: 80vw;
-            height: auto;
-            margin-left: 2rem;
-    
-            .contenedor-form-intro {
-                display: inline-block;
-                justify-content: center;
-                align-items: center;
-                text-align: left;
-                box-sizing: border-box;
-    
-                .contact {
-                    color: #9766CC;
-                    font-family: abril-display, serif;
-                    font-weight: 700;
-                    font-style: normal;
-                    font-size: 1.75rem;
-                    margin-top: 2rem;
-                    margin-bottom: 0;
-                }
-    
-                p {
-                    margin: 0 0 1rem 0;
-                    font-size: 1.2rem;
-                }
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            box-sizing: border-box;
+
+            .contact {
+                color: #9766CC;
+                font-family: abril-display, serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 2.5rem;
+                margin-top: 2rem;
+                margin-bottom: 0;
             }
-    
-            .contenedor-name-email {
-                display: block;
-                justify-content: space-around;
-                align-items: center;
-                text-align: left;
-                box-sizing: border-box;
-                margin: 2rem 0;
-                width: 83vw;
-    
-                .short-placeholder {
-                    width: 83vw;
-                    ;
-                    height: 3.75rem;
-                    font: $title-omnes400;
-                    font-size: 1.5rem;
-                    color: #999999;
-                }
-    
-                .text-area-size {
-                    width: 83vw;
-                    ;
-                    height: 11rem;
-                    font: $title-omnes400;
-                    font-size: 1.5rem;
-                    color: #999999;
-                }
-    
-                .button-style {
-                    background-image: linear-gradient(to right, $purple 0%, $pink 51%, $purple 100%);
-                    margin: 0.625rem;
-                    padding: 1.5rem 1.75rem;
-                    font: $title-omnes700;
-                    text-align: center;
-                    font-size: 1.5rem;
-                    transition: 0.5s;
-                    background-size: 200% auto;
-                    color: white;
-                    /* offset-x | offset-y | blur-radius | spread-radius | color */
-                    box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
-                    border-radius: 0.625rem;
-                    display: block;
-                    width: 60%;
-                }
+
+            p {
+                margin: 0 0 1rem 0;
+                font-size: 1.5rem;
+                line-height: 2.3rem;
             }
         }
+
+        .contenedor-name-email {
+            display: block;
+            justify-content: space-around;
+            align-items: center;
+            text-align: left;
+            box-sizing: border-box;
+            margin: 2rem 0;
+            width: 83vw;
+
+            .short-placeholder {
+                width: 83vw;
+                height: 3.75rem;
+                font: $title-omnes400;
+                font-size: 1.5rem;
+                color: #999999;
+            }
+
+            .text-area-size {
+                width: 83vw;
+                height: 11rem;
+                font: $title-omnes400;
+                font-size: 1.5rem;
+                color: #999999;
+            }
+
+            .button-style {
+                background-image: linear-gradient(to right, $purple 0%, $pink 51%, $purple 100%);
+                margin: 0.625rem;
+                padding: 1.5rem 1.75rem;
+                font: $title-omnes700;
+                text-align: center;
+                font-size: 1.5rem;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;
+                /* offset-x | offset-y | blur-radius | spread-radius | color */
+                box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+                border-radius: 0.625rem;
+                display: block;
+                width: 40%;
+            }
+        }
+    }
+
     /* Fin sección Contact */
+}

@@ -125,7 +125,8 @@ form h3 {
 
 .bg-lillac2,
 .bg-lillac-solutions,
-.bg-lillac-skills {
+.bg-lillac-skills,
+.bg-lillac-contact {
   background-image: linear-gradient(#f2f2f2, #EEE8FA); }
 
 /* Fin backgrounds */
@@ -167,9 +168,68 @@ form h3 {
   font-weight: bold; }
 
 /* 
-************************** Large screens *****************************
-                    Wireframes en 1920 x 1080px 
-*/
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+/* Typing */
+.typing h2 {
+  border-right: 0.15em solid #D977C7;
+  font-family: omnes-cyrillic, sans-serif;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.typing h2:nth-child(1) {
+  width: 7.3em;
+  animation: type 2s steps(40, end);
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(2) {
+  width: 12.5em;
+  opacity: 0;
+  animation: type2 2s steps(40, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(3) {
+  width: 12em;
+  opacity: 0;
+  animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
+  animation-delay: 4s;
+  animation-fill-mode: forwards; }
+
+@keyframes type {
+  0% {
+    width: 0; }
+  99.9% {
+    border-right: 0.15em solid #D977C7; }
+  100% {
+    border: none; } }
+
+@keyframes type2 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  99.9% {
+    border-right: 0.15em solid #D977C7; }
+  100% {
+    opacity: 1;
+    border: none; } }
+
+@keyframes type3 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
+/* *************** Large screens *************** */
 @media only screen and (min-width: 1920px) {
   /* Titles and Texts */
   h1 {
@@ -280,558 +340,461 @@ form h3 {
       font: normal 400 4rem "abril-fatface", serif;
       color: #9766CC;
       font-size: 6rem;
-      opacity: 0.3; } }
-
-.titulo-seccion-portfolio {
-  display: inline-block;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: flex-end;
-  text-align: right;
-  margin: 5.5rem;
-  float: right;
-  color: #9766CC; }
-  .titulo-seccion-portfolio h4 {
-    font: normal 400 4rem "abril-fatface", serif;
-    font-size: 6rem;
-    opacity: 0.3; }
-
-.titulo-seccion-solutions {
-  display: inline-block;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: flex-end;
-  text-align: right;
-  margin: 5.5rem;
-  float: right; }
-  .titulo-seccion-solutions h4 {
-    font: normal 400 4rem "abril-fatface", serif;
-    color: #9766CC;
-    font-size: 6rem;
-    opacity: 0.3; }
-
-.titulo-seccion-method {
-  display: inline-block;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: flex-end;
-  text-align: right;
-  margin: 8rem 5.5rem 0 0;
-  float: right; }
-  .titulo-seccion-method h4 {
-    font: normal 400 4rem "abril-fatface", serif;
-    color: #9766CC;
-    font-size: 5rem;
-    opacity: 0.3; }
-
-/* Fin de Titulos Seccion */
-/* Fin Titles & Texts */
-/* Box modeling & Flexbox */
-.inline-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 8rem;
-  width: 100vw; }
-  .inline-list li {
-    padding: 1rem 1rem;
-    margin: 4rem 2rem 8rem 0; }
-  .inline-list h5 {
-    padding: 1rem 1rem;
-    margin: 0.5rem 0 0.5rem;
-    font-size: 3rem; }
-
-.hr-skills {
-  display: flex;
-  float: left;
-  width: 6.5rem;
-  border-top: 0.125rem solid #D977C7;
-  margin: 5rem 0 0; }
-
-/* Grids */
-.grid-solutions {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
-  grid-gap: 2.875rem;
-  align-items: stretch;
-  margin: 4.5rem 6.5rem 0rem;
-  padding: 0rem 0rem 6rem; }
-  .grid-solutions article {
+      opacity: 0.3; }
+  .titulo-seccion-portfolio {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 5.5rem;
+    float: right;
+    color: #9766CC; }
+    .titulo-seccion-portfolio h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      font-size: 6rem;
+      opacity: 0.3; }
+  .titulo-seccion-solutions {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 5.5rem;
+    float: right; }
+    .titulo-seccion-solutions h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      color: #9766CC;
+      font-size: 6rem;
+      opacity: 0.3; }
+  .titulo-seccion-method {
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 8rem 5.5rem 0 0;
+    float: right; }
+    .titulo-seccion-method h4 {
+      font: normal 400 4rem "abril-fatface", serif;
+      color: #9766CC;
+      font-size: 5rem;
+      opacity: 0.3; }
+  /* Fin de Titulos Seccion */
+  /* Fin Titles & Texts */
+  /* Box modeling & Flexbox */
+  .inline-list {
     display: flex;
-    flex-direction: column; }
-    .grid-solutions article .solution-text {
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 100vw; }
+    .inline-list li {
+      padding: 1rem 1rem;
+      margin: 4rem 2rem 8rem 0; }
+    .inline-list h5 {
+      padding: 1rem 1rem;
+      margin: 0.5rem 0 0.5rem;
+      font-size: 3rem; }
+  .hr-skills {
+    display: flex;
+    float: left;
+    width: 6.5rem;
+    border-top: 0.125rem solid #D977C7;
+    margin: 5rem 0 0; }
+  /* Grids */
+  .grid-solutions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    grid-gap: 2.875rem;
+    align-items: stretch;
+    margin: 4.5rem 6.5rem 0rem;
+    padding: 0rem 0rem 6rem; }
+    .grid-solutions article {
       display: flex;
+      flex-direction: column; }
+      .grid-solutions article .solution-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 19.0625rem;
+        height: auto;
+        padding: 0.3rem 0rem 2rem;
+        flex-grow: 1;
+        flex-direction: column;
+        box-sizing: border-box;
+        text-align: center; }
+        .grid-solutions article .solution-text h3 {
+          text-align: center;
+          font-family: omnes-cyrillic, sans-serif;
+          font-weight: 700;
+          font-size: 2.65rem;
+          line-height: 4.125rem;
+          font-style: normal; }
+        .grid-solutions article .solution-text p {
+          flex-grow: 1;
+          font-size: 1.55rem;
+          line-height: 2.5rem; }
+  /* Fin Grids */
+  /* Intro */
+  #sakura {
+    display: block;
+    float: right;
+    position: relative;
+    padding: 0 0 0 100rem;
+    height: 11rem; }
+  .intro-completo {
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    margin: 1rem 0 0; }
+    .intro-completo .contenedor-intro-izq {
+      align-items: center;
       justify-content: center;
+      display: inline-block;
+      position: relative;
+      flex-wrap: wrap;
+      width: 48.625rem;
+      padding: 1rem 2rem 0 6.5rem;
+      height: 26rem;
+      margin-right: 2rem;
+      box-sizing: border-box; }
+      .intro-completo .contenedor-intro-izq .intro {
+        font: normal 700 1.5rem "abril-display", serif;
+        font-size: 5.9375rem; }
+      .intro-completo .contenedor-intro-izq .pink {
+        color: #D977C7; }
+    .intro-completo .professions {
+      font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
+      font-size: 3.125rem;
+      line-height: 5rem; }
+    .intro-completo .contenedor-intro-der {
+      display: flex;
+      float: right;
+      position: relative;
+      flex-wrap: wrap;
+      width: 63.0625rem;
+      height: 26rem;
+      margin-left: 6.3125rem;
+      margin-top: 1.75rem;
+      padding: 1rem 6.5rem 0rem 4rem;
+      box-sizing: border-box;
+      align-items: flex-start;
+      justify-content: flex-start; }
+      .intro-completo .contenedor-intro-der #titulo-bio {
+        font: normal 700 1.5rem "abril-display", serif;
+        font-size: 3.75rem; }
+      .intro-completo .contenedor-intro-der .texto-medio-bio {
+        font: normal 500 1.5rem "omnes-cyrillic", sans-serif;
+        font-size: 2.125rem;
+        line-height: 3.5rem;
+        color: #654D80; }
+  .align-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.75rem 0; }
+    .align-welcome .span-portfolio {
+      font: normal 400 4rem "abril-fatface", serif;
+      font-size: 7rem;
+      line-height: 6rem;
+      text-align: center;
+      opacity: 0.3; }
+  h4 {
+    font: normal 400 4rem "abril-fatface", serif;
+    font-size: 4rem; }
+  /* Fin Intro */
+  /* CV */
+  #cv {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .box-img-left-cv {
+    width: 23.75rem;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 4.5rem 2rem;
+    position: relative;
+    float: left; }
+  .box-text-right-cv {
+    width: 42.1875rem;
+    min-width: 18.5rem;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 4.5rem 1rem;
+    position: relative;
+    float: right; }
+  /* Fin CV */
+  /* Footer */
+  .contenedor-footer {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 4rem;
+    width: 100vw;
+    height: 37rem;
+    padding: 6.5rem 5.5rem;
+    margin-top: 1rem; }
+    .contenedor-footer h1 {
+      font-size: 3.5rem;
+      margin: 1.5rem 1rem 0; }
+    .contenedor-footer p {
+      font-size: 1.75rem;
+      line-height: 3rem;
+      margin: 0.75rem 0 0.75rem 0; }
+    .contenedor-footer .email {
+      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+      font-size: 1.875rem;
+      opacity: 1.0;
+      text-align: center;
+      padding: 0 0rem;
+      color: #9766CC; }
+  #icons-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; }
+    #icons-footer a {
+      padding: 1rem;
+      margin: 2rem 1rem;
+      color: #654D80; }
+  .footer-resumido {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 3rem; }
+  /* Fin Footer */
+  /* Skills Section */
+  .inline-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    list-style-type: disc; }
+    .inline-skills li {
+      padding: 1rem 0.5rem;
+      margin: 0.5rem 1rem 0.5rem; }
+  /* Cards*/
+  .contenedor-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 6.5rem 0; }
+  .skill-card div {
+    text-align: center;
+    background-color: #ffffff;
+    width: 25.9375rem;
+    height: 34rem;
+    border-radius: 0.625rem;
+    box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
+    padding: 2.5rem 1rem;
+    margin: 1rem;
+    box-sizing: border-box; }
+    .skill-card div p {
+      font-size: 1.55rem;
+      line-height: 2.5rem;
+      margin: 2rem; }
+  /* Fin Cards*/
+  /* Sección About me */
+  .contenedor-about {
+    display: flex;
+    align-items: flex-start; }
+    .contenedor-about .about-texto {
+      display: inline-block;
+      margin: 0.5rem 2rem 1rem 7.5rem;
+      width: 70rem;
+      text-align: left; }
+      .contenedor-about .about-texto p {
+        font-size: 1.65rem;
+        line-height: 2.5rem; }
+      .contenedor-about .about-texto .firma {
+        color: #D977C7;
+        font-family: pacifico, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 4.375rem;
+        margin: 1rem 5.5rem 6rem 1rem; }
+    .contenedor-about .about-img {
+      float: right;
+      margin: 1rem 6.5rem 1rem 2rem; }
+  .about-img img {
+    width: 90%; }
+  .love-title {
+    font: normal 700 1.5rem "abril-display", serif;
+    font-size: 2.5rem;
+    width: 18.74rem;
+    margin: 0 0 0 52.875rem; }
+  .hr-right-l {
+    display: flex;
+    float: left;
+    width: 48rem;
+    border-top: 0.125rem solid #D977C7;
+    margin-right: 3rem; }
+  .hr-right-r {
+    display: flex;
+    float: right;
+    width: 48rem;
+    border-top: 0.125rem solid #D977C7;
+    margin-left: 3rem; }
+  .inline-about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120rem; }
+    .inline-about li {
+      padding: 1rem 0.5rem;
+      margin: 3rem 0.5rem 4rem;
+      font-size: 1.75rem; }
+  .hr-full {
+    display: flex;
+    width: 100vw;
+    border-top: 0.125rem solid #D977C7;
+    margin-bottom: 5rem; }
+  .contenedor-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    margin-left: 42rem; }
+  /* Fin seccion About Me */
+  /* Colores de solution cards */
+  .dark-purple {
+    color: #896DBF; }
+  .dark-pink {
+    color: #BA71CC; }
+  .medium-pink {
+    color: #D17CD8; }
+  .lighter-pink {
+    color: #E583DC; }
+  .lightest-pink {
+    color: #F288D2; }
+  /* Fin colores de solution cards */
+  /* Sección Method */
+  .hr-full-method {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    border-top: 0.125rem solid #D977C7;
+    margin: 7rem 0 1rem; }
+  .grid-method {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15.875rem, 1fr));
+    grid-gap: 2rem;
+    align-items: stretch;
+    margin: 4.5rem 6.5rem 0rem;
+    padding: 0rem 0rem 8.5rem;
+    align-items: flex-start; }
+    .grid-method article {
+      display: flex;
+      flex-direction: column; }
+    .grid-method .method-step {
+      display: flex;
+      text-align: center;
       align-items: center;
       flex-wrap: wrap;
-      width: 19.0625rem;
+      width: 15.1625rem;
       height: auto;
-      padding: 0.3rem 0rem 2rem;
+      padding: 0.3rem 0rem 3rem;
       flex-grow: 1;
       flex-direction: column;
-      box-sizing: border-box;
-      text-align: center; }
-      .grid-solutions article .solution-text h3 {
+      box-sizing: border-box; }
+      .grid-method .method-step h3 {
         text-align: center;
-        font-family: omnes-cyrillic, sans-serif;
-        font-weight: 700;
-        font-size: 2.65rem;
-        line-height: 4.125rem;
-        font-style: normal; }
-      .grid-solutions article .solution-text p {
+        font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+        font-size: 2.1875rem;
+        line-height: 3.125rem; }
+      .grid-method .method-step p {
         flex-grow: 1;
-        font-size: 1.55rem;
-        line-height: 2.5rem; }
-
-/* Fin Grids */
-/* Intro */
-#sakura {
-  display: block;
-  float: right;
-  position: relative;
-  padding: 0 0 0 100rem;
-  height: 12.5rem; }
-
-.intro-completo {
-  align-items: center;
-  justify-content: center;
-  display: inline-block;
-  margin: 1rem 0 0; }
-  .intro-completo .contenedor-intro-izq {
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-    position: relative;
-    flex-wrap: wrap;
-    width: 48.625rem;
-    padding: 1rem 2rem 0 6.5rem;
-    height: 26rem;
-    margin-right: 2rem;
-    box-sizing: border-box; }
-    .intro-completo .contenedor-intro-izq .intro {
-      font: normal 700 1.5rem "abril-display", serif;
-      font-size: 5.9375rem; }
-    .intro-completo .contenedor-intro-izq .pink {
-      color: #D977C7; }
-  .intro-completo .professions {
-    font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 3.125rem;
-    line-height: 5rem; }
-  .intro-completo .contenedor-intro-der {
-    display: flex;
-    float: right;
-    position: relative;
-    flex-wrap: wrap;
-    width: 63.0625rem;
-    height: 26rem;
-    margin-left: 6.3125rem;
-    margin-top: 1.75rem;
-    padding: 1rem 6.5rem 0rem 4rem;
-    box-sizing: border-box;
-    align-items: flex-start;
-    justify-content: flex-start; }
-    .intro-completo .contenedor-intro-der #titulo-bio {
-      font: normal 700 1.5rem "abril-display", serif;
-      font-size: 3.75rem; }
-    .intro-completo .contenedor-intro-der .texto-medio-bio {
-      font: normal 500 1.5rem "omnes-cyrillic", sans-serif;
-      font-size: 2.125rem;
-      line-height: 3.5rem;
-      color: #654D80; }
-
-.align-welcome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3.75rem 0; }
-  .align-welcome .span-portfolio {
-    font: normal 400 4rem "abril-fatface", serif;
-    font-size: 7rem;
-    line-height: 6rem;
-    text-align: center;
-    opacity: 0.3; }
-
-h4 {
-  font: normal 400 4rem "abril-fatface", serif;
-  font-size: 4rem; }
-
-/* Fin Intro */
-/* CV */
-#cv {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.box-img-left-cv {
-  width: 23.75rem;
-  height: fit-content;
-  padding: 0.5rem;
-  margin: 4.5rem 2rem;
-  position: relative;
-  float: left; }
-
-.box-text-right-cv {
-  width: 42.1875rem;
-  min-width: 18.5rem;
-  height: fit-content;
-  padding: 0.5rem;
-  margin: 4.5rem 1rem;
-  position: relative;
-  float: right; }
-
-/* Fin CV */
-/* Footer */
-.contenedor-footer {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  line-height: 4rem;
-  width: 100vw;
-  height: 37rem;
-  padding: 6.5rem 5.5rem;
-  margin-top: 1rem; }
-  .contenedor-footer h1 {
-    font-size: 3.5rem;
-    margin: 1.5rem 1rem 0; }
-  .contenedor-footer p {
-    font-size: 1.75rem;
-    line-height: 3rem;
-    margin: 0.75rem 0 0.75rem 0; }
-  .contenedor-footer .email {
-    font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-    font-size: 1.875rem;
-    opacity: 1.0;
-    text-align: center;
-    padding: 0 0rem;
-    color: #9766CC; }
-
-#icons-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem; }
-  #icons-footer a {
-    padding: 1rem;
-    margin: 2rem 1rem;
-    color: #654D80; }
-
-.footer-resumido {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100vw;
-  height: 3rem; }
-
-/* Fin Footer */
-/* Skills Section */
-.inline-skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100vw;
-  list-style-type: disc; }
-  .inline-skills li {
-    padding: 1rem 0.5rem;
-    margin: 0.5rem 1rem 0.5rem; }
-
-/* Cards*/
-.contenedor-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0 6.5rem 0; }
-
-.skill-card div {
-  text-align: center;
-  background-color: #ffffff;
-  width: 25.9375rem;
-  height: 34rem;
-  border-radius: 0.625rem;
-  box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
-  padding: 2.5rem 1rem;
-  margin: 1rem;
-  box-sizing: border-box; }
-  .skill-card div p {
-    font-size: 1.55rem;
-    line-height: 2.5rem;
-    margin: 2rem; }
-
-/* Fin Cards*/
-/* Sección About me */
-.contenedor-about {
-  display: flex;
-  align-items: flex-start; }
-  .contenedor-about .about-texto {
-    display: inline-block;
-    margin: 0.5rem 2rem 1rem 7.5rem;
-    width: 70rem;
-    text-align: left; }
-    .contenedor-about .about-texto p {
-      font-size: 1.65rem;
-      line-height: 2.5rem; }
-    .contenedor-about .about-texto .firma {
-      color: #D977C7;
-      font-family: pacifico, sans-serif;
-      font-weight: 300;
-      font-style: normal;
-      font-size: 4.375rem;
-      margin: 1rem 5.5rem 6rem 1rem; }
-  .contenedor-about .about-img {
-    float: right;
-    margin: 1rem 6.5rem 1rem 2rem; }
-
-.about-img img {
-  width: 90%; }
-
-.love-title {
-  font: normal 700 1.5rem "abril-display", serif;
-  font-size: 2.5rem;
-  width: 18.74rem;
-  margin: 0 0 0 52.875rem; }
-
-.hr-right-l {
-  display: flex;
-  float: left;
-  width: 48rem;
-  border-top: 0.125rem solid #D977C7;
-  margin-right: 3rem; }
-
-.hr-right-r {
-  display: flex;
-  float: right;
-  width: 48rem;
-  border-top: 0.125rem solid #D977C7;
-  margin-left: 3rem; }
-
-.inline-about {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 120rem; }
-  .inline-about li {
-    padding: 1rem 0.5rem;
-    margin: 3rem 0.5rem 4rem;
-    font-size: 1.75rem; }
-
-.hr-full {
-  display: flex;
-  width: 100vw;
-  border-top: 0.125rem solid #D977C7;
-  margin-bottom: 5rem; }
-
-.contenedor-illustration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30rem;
-  margin-left: 42rem; }
-
-/* Fin seccion About Me */
-/* Colores de solution cards */
-.dark-purple {
-  color: #896DBF; }
-
-.dark-pink {
-  color: #BA71CC; }
-
-.medium-pink {
-  color: #D17CD8; }
-
-.lighter-pink {
-  color: #E583DC; }
-
-.lightest-pink {
-  color: #F288D2; }
-
-/* Fin colores de solution cards */
-/* Sección Method */
-.hr-full-method {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  border-top: 0.125rem solid #D977C7;
-  margin: 7rem 0 1rem; }
-
-.grid-method {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15.875rem, 1fr));
-  grid-gap: 2rem;
-  align-items: stretch;
-  margin: 4.5rem 6.5rem 0rem;
-  padding: 0rem 0rem 8.5rem;
-  align-items: flex-start; }
-  .grid-method article {
-    display: flex;
-    flex-direction: column; }
-  .grid-method .method-step {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 15.1625rem;
-    height: auto;
-    padding: 0.3rem 0rem 3rem;
-    flex-grow: 1;
-    flex-direction: column;
-    box-sizing: border-box; }
-    .grid-method .method-step h3 {
-      text-align: center;
-      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-      font-size: 2.1875rem;
-      line-height: 3.125rem; }
-    .grid-method .method-step p {
-      flex-grow: 1;
-      line-height: 2.75rem;
-      font-size: 1.55rem; }
-
-/* Fin Sección Method */
-/* Sección Contact me */
-.contenedor-contact {
-  height: 73rem;
-  width: 100vw; }
-  .contenedor-contact .titulo-seccion-contact {
-    display: inline-block;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: center;
-    text-align: center;
-    margin: 5.5rem 5.5rem 2rem 0;
-    color: #9766CC;
+        line-height: 2.75rem;
+        font-size: 1.55rem; }
+  /* Fin Sección Method */
+  /* Sección Contact me */
+  .contenedor-contact {
+    height: 73rem;
     width: 100vw; }
-    .contenedor-contact .titulo-seccion-contact h4 {
-      font: normal 400 4rem "abril-fatface", serif;
-      font-size: 5.5rem;
-      opacity: 0.3; }
-  .contenedor-contact .contenedor-form {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    width: 60rem;
-    height: auto;
-    margin-left: 30rem; }
-    .contenedor-contact .contenedor-form .contenedor-form-intro {
+    .contenedor-contact .titulo-seccion-contact {
+      display: inline-block;
+      position: relative;
+      flex-wrap: wrap;
+      align-items: center;
+      box-sizing: border-box;
+      justify-content: center;
+      text-align: center;
+      margin: 5.5rem 5.5rem 2rem 0;
+      color: #9766CC;
+      width: 100vw; }
+      .contenedor-contact .titulo-seccion-contact h4 {
+        font: normal 400 4rem "abril-fatface", serif;
+        font-size: 5.5rem;
+        opacity: 0.3; }
+    .contenedor-contact .contenedor-form {
       display: inline-block;
       justify-content: center;
       align-items: center;
-      text-align: left;
-      box-sizing: border-box; }
-      .contenedor-contact .contenedor-form .contenedor-form-intro .contact {
-        color: #9766CC;
-        font: normal 700 1.5rem "abril-display", serif;
-        font-size: 3.5rem;
-        margin-top: 2rem;
-        margin-bottom: 0; }
-      .contenedor-contact .contenedor-form .contenedor-form-intro p {
-        font-size: 2rem;
-        line-height: 2.8rem; }
-    .contenedor-contact .contenedor-form .contenedor-name-email {
-      display: inline-block;
-      justify-content: space-around;
-      align-items: center;
-      text-align: left;
-      box-sizing: border-box;
-      margin: 2rem 0;
-      width: 60rem; }
-      .contenedor-contact .contenedor-form .contenedor-name-email .short-placeholder {
-        width: 28.6875rem;
-        height: 3.75rem;
-        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
-        font-size: 1.5rem;
-        color: #999999; }
-      .contenedor-contact .contenedor-form .contenedor-name-email .text-area-size {
-        width: 56.9375rem;
-        height: 11rem;
-        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
-        font-size: 1.5rem;
-        color: #999999; }
-      .contenedor-contact .contenedor-form .contenedor-name-email .button-style {
-        background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
-        margin: 0.625rem;
-        padding: 1.5rem 6rem;
-        font: title-omnes700;
-        text-align: center;
-        font-size: 1.625rem;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: white;
-        /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
-        border-radius: 0.625rem;
-        display: block;
-        width: 20rem; }
-
-/* 
-    ***************************** 
-    ********** Motion ***********
-    ***************************** 
-    */
-/* Typing */
-.typing h2 {
-  border-right: 0.15em solid #D977C7;
-  font-family: omnes-cyrillic, sans-serif;
-  white-space: nowrap;
-  overflow: hidden; }
-
-.typing h2:nth-child(1) {
-  width: 7.3em;
-  animation: type 2s steps(40, end);
-  animation-fill-mode: forwards; }
-
-.typing h2:nth-child(2) {
-  width: 12.5em;
-  opacity: 0;
-  animation: type2 2s steps(40, end);
-  animation-delay: 2s;
-  animation-fill-mode: forwards; }
-
-.typing h2:nth-child(3) {
-  width: 12em;
-  opacity: 0;
-  animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
-  animation-delay: 4s;
-  animation-fill-mode: forwards; }
-
-@keyframes type {
-  0% {
-    width: 0; }
-  99.9% {
-    border-right: 0.15em solid #D977C7; }
-  100% {
-    border: none; } }
-
-@keyframes type2 {
-  0% {
-    width: 0; }
-  1% {
-    opacity: 1; }
-  99.9% {
-    border-right: 0.15em solid #D977C7; }
-  100% {
-    opacity: 1;
-    border: none; } }
-
-@keyframes type3 {
-  0% {
-    width: 0; }
-  1% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes blink {
-  50% {
-    border-color: transparent; } }
+      width: 60rem;
+      height: auto;
+      margin-left: 30rem; }
+      .contenedor-contact .contenedor-form .contenedor-form-intro {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        box-sizing: border-box; }
+        .contenedor-contact .contenedor-form .contenedor-form-intro .contact {
+          color: #9766CC;
+          font: normal 700 1.5rem "abril-display", serif;
+          font-size: 3.5rem;
+          margin-top: 2rem;
+          margin-bottom: 0; }
+        .contenedor-contact .contenedor-form .contenedor-form-intro p {
+          font-size: 2rem;
+          line-height: 2.8rem; }
+      .contenedor-contact .contenedor-form .contenedor-name-email {
+        display: inline-block;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 2rem 0;
+        width: 60rem; }
+        .contenedor-contact .contenedor-form .contenedor-name-email .short-placeholder {
+          width: 28.6875rem;
+          height: 3.75rem;
+          font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+          font-size: 1.5rem;
+          color: #999999; }
+        .contenedor-contact .contenedor-form .contenedor-name-email .text-area-size {
+          width: 56.9375rem;
+          height: 11rem;
+          font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+          font-size: 1.5rem;
+          color: #999999; }
+        .contenedor-contact .contenedor-form .contenedor-name-email .button-style {
+          background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
+          margin: 0.625rem;
+          padding: 1.5rem 6rem;
+          font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+          text-align: center;
+          font-size: 1.625rem;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;
+          /* offset-x | offset-y | blur-radius | spread-radius | color */
+          box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+          border-radius: 0.625rem;
+          display: block;
+          width: 20rem; } }
 
 /* Vars */
 /* Colors */
@@ -855,7 +818,7 @@ h4 {
     float: right;
     position: relative;
     padding: 0.25rem 0 0 90rem;
-    height: 10.5rem; }
+    height: 9rem; }
   .intro-completo {
     align-items: center;
     justify-content: center;
@@ -910,7 +873,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.5rem 0; }
+    padding: 5.5rem 0; }
     .align-welcome .span-portfolio {
       font: normal 400 4rem "abril-fatface", serif;
       font-size: 5.3125rem;
@@ -925,7 +888,7 @@ h4 {
   section h2 {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.6rem;
-    margin: 0.5rem 0; }
+    margin: 0.1rem 0; }
   .hr-skills {
     display: flex;
     float: left;
@@ -1293,7 +1256,8 @@ h4 {
     box-sizing: border-box; }
     .skill-card div p {
       margin: 1rem 1.5rem 2rem;
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      line-height: 2.5rem; }
     .skill-card div .titulos-listas {
       font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
       font-size: 1.9rem; }
@@ -1322,7 +1286,14 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6rem; }
+    height: 6rem;
+    flex-direction: row;
+    width: 100vw;
+    list-style-type: disc; }
+    .inline-skills li {
+      font-size: 1.35rem;
+      padding: 1rem 0.5rem;
+      margin: 0.5rem 1rem 0.5rem; }
   /* Fin sección Skills */
   /* Sección Contact */
   .contenedor-contact {
@@ -1368,14 +1339,39 @@ h4 {
           line-height: 2.5rem;
           margin-top: 0; }
       .contenedor-contact .contenedor-form .contenedor-name-email {
-        width: 50rem; }
+        display: inline-block;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        box-sizing: border-box;
+        width: 50rem;
+        margin: 2rem 0; }
         .contenedor-contact .contenedor-form .contenedor-name-email .text-area-size {
           width: 50rem;
           height: 11rem;
           font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
           font-size: 1.5rem;
           color: #999999; }
+        .contenedor-contact .contenedor-form .contenedor-name-email .short-placeholder {
+          width: 28.6875rem;
+          height: 3.75rem;
+          font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+          font-size: 1.5rem;
+          color: #999999; }
         .contenedor-contact .contenedor-form .contenedor-name-email .button-style {
+          background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
+          margin: 0.625rem;
+          padding: 1.5rem 6rem;
+          font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+          text-align: center;
+          font-size: 1.625rem;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;
+          /* offset-x | offset-y | blur-radius | spread-radius | color */
+          box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+          border-radius: 0.625rem;
+          display: block;
           width: 17rem; }
   /* Fin sección Contact */ }
 
@@ -1454,7 +1450,8 @@ form h3 {
 
 .bg-lillac2,
 .bg-lillac-solutions,
-.bg-lillac-skills {
+.bg-lillac-skills,
+.bg-lillac-contact {
   background-image: linear-gradient(#f2f2f2, #EEE8FA); }
 
 /* Fin backgrounds */
@@ -1496,10 +1493,72 @@ form h3 {
   font-weight: bold; }
 
 /* 
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+/* Typing */
+.typing h2 {
+  border-right: 0.15em solid #D977C7;
+  font-family: omnes-cyrillic, sans-serif;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.typing h2:nth-child(1) {
+  width: 7.3em;
+  animation: type 2s steps(40, end);
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(2) {
+  width: 12.5em;
+  opacity: 0;
+  animation: type2 2s steps(40, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(3) {
+  width: 12em;
+  opacity: 0;
+  animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
+  animation-delay: 4s;
+  animation-fill-mode: forwards; }
+
+@keyframes type {
+  0% {
+    width: 0; }
+  99.9% {
+    border-right: 0.15em solid #D977C7; }
+  100% {
+    border: none; } }
+
+@keyframes type2 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  99.9% {
+    border-right: 0.15em solid #D977C7; }
+  100% {
+    opacity: 1;
+    border: none; } }
+
+@keyframes type3 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
+/* 
 ************************** Notebook *****************************
                     Wireframes en 1366 x 768px 
 */
-@media only screen and (min-width: 1200px) and (max-device-width: 1599px) {
+@media only screen and (min-width: 1025px) and (max-device-width: 1599px) {
   /* Intro y Nav */
   .nav-item a {
     font-size: 1.25rem; }
@@ -1540,16 +1599,17 @@ form h3 {
       font-size: 2.3rem;
       line-height: 4.0625rem; }
     .intro-completo .contenedor-intro-der {
-      display: inline-block;
+      display: flex;
+      float: right;
       position: relative;
       flex-wrap: wrap;
       width: 44.8125rem;
       height: 19.125rem;
-      padding: 0rem 5.5rem 0rem 1rem;
+      padding: 1.8rem 5.5rem 0rem 1rem;
       margin-left: 1.0625rem;
-      justify-content: center;
+      box-sizing: border-box;
       align-items: flex-start;
-      box-sizing: border-box; }
+      justify-content: flex-start; }
       .intro-completo .contenedor-intro-der #titulo-bio {
         font: normal 700 1.5rem "abril-display", serif;
         font-size: 3.125rem; }
@@ -1596,7 +1656,7 @@ form h3 {
     box-sizing: border-box;
     justify-content: flex-start;
     text-align: left;
-    margin: 4.4rem 2rem 1.5rem 1.5rem;
+    margin: 4rem 2rem 1.5rem 1.5rem;
     line-height: 2rem; }
     .titulo-seccion-izq h1 {
       font: normal 700 1.5rem "abril-display", serif;
@@ -1626,12 +1686,12 @@ form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
+    height: 3.5rem;
     width: 100vw; }
     .inline-list h5 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       padding: 1rem 1rem;
-      margin: 2rem 0 2rem; }
+      margin: 3rem 0 2rem; }
   .titulo-proyectos {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
@@ -1728,7 +1788,7 @@ form h3 {
   /* Sección About me */
   .bg-gradient-hero-about {
     background-image: linear-gradient(rgba(250, 208, 196, 0.33), rgba(255, 209, 255, 0.33));
-    height: 65rem;
+    height: 48rem;
     width: 100vw; }
   .contenedor-about {
     display: flex;
@@ -1913,7 +1973,7 @@ form h3 {
     justify-content: flex-end;
     text-align: right;
     float: right;
-    margin: 7rem 5.5rem 1rem;
+    margin: 6.5rem 5.5rem 1rem;
     line-height: 5rem; }
     .titulo-skills-largo h4 {
       font: normal 400 4rem "abril-fatface", serif;
@@ -1924,14 +1984,15 @@ form h3 {
     justify-content: center;
     align-items: center;
     padding: 0 0 5rem 0;
-    margin: 0 2rem; }
+    margin: 0 2rem;
+    width: 95.5vw; }
     .contenedor-card p {
       margin-top: 0; }
   .skill-card div {
     text-align: center;
     background-color: #ffffff;
     width: 20rem;
-    height: 33rem;
+    height: 32rem;
     border-radius: 0.625rem;
     box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
     padding: 2.5rem 1rem;
@@ -1970,9 +2031,14 @@ form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6rem; }
+    height: 6rem;
+    flex-direction: row;
+    width: 100vw;
+    list-style-type: disc; }
     .inline-skills li {
-      font-size: 1.3rem; }
+      font-size: 1.2rem;
+      padding: 1rem 0.5rem;
+      margin: 0.5rem 1rem 0.5rem; }
   /* Fin sección Skills */
   /* Sección Contact */
   .contenedor-contact {
@@ -2017,14 +2083,39 @@ form h3 {
           margin-top: 1.5rem;
           margin-bottom: 0; }
       .contenedor-contact .contenedor-form .contenedor-name-email {
-        width: 50rem; }
+        display: inline-block;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        box-sizing: border-box;
+        width: 47rem;
+        margin: 2rem 0; }
         .contenedor-contact .contenedor-form .contenedor-name-email .text-area-size {
-          width: 50rem;
+          width: 47rem;
           height: 11rem;
           font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
           font-size: 1.5rem;
           color: #999999; }
+        .contenedor-contact .contenedor-form .contenedor-name-email .short-placeholder {
+          width: 28.6875rem;
+          height: 3.75rem;
+          font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+          font-size: 1.5rem;
+          color: #999999; }
         .contenedor-contact .contenedor-form .contenedor-name-email .button-style {
+          background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
+          margin: 0.625rem;
+          padding: 1.5rem 6rem;
+          font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+          text-align: center;
+          font-size: 1.625rem;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;
+          /* offset-x | offset-y | blur-radius | spread-radius | color */
+          box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+          border-radius: 0.625rem;
+          display: block;
           width: 17rem; }
   /* Fin sección Contact */ }
 
@@ -2103,7 +2194,8 @@ form h3 {
 
 .bg-lillac2,
 .bg-lillac-solutions,
-.bg-lillac-skills {
+.bg-lillac-skills,
+.bg-lillac-contact {
   background-image: linear-gradient(#f2f2f2, #EEE8FA); }
 
 /* Fin backgrounds */
@@ -2143,6 +2235,68 @@ form h3 {
   color: #9766CC;
   text-decoration: underline;
   font-weight: bold; }
+
+/* 
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+/* Typing */
+.typing h2 {
+  border-right: 0.15em solid #D977C7;
+  font-family: omnes-cyrillic, sans-serif;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.typing h2:nth-child(1) {
+  width: 7.3em;
+  animation: type 2s steps(40, end);
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(2) {
+  width: 12.5em;
+  opacity: 0;
+  animation: type2 2s steps(40, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(3) {
+  width: 12em;
+  opacity: 0;
+  animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
+  animation-delay: 4s;
+  animation-fill-mode: forwards; }
+
+@keyframes type {
+  0% {
+    width: 0; }
+  99.9% {
+    border-right: 0.15em solid #D977C7; }
+  100% {
+    border: none; } }
+
+@keyframes type2 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  99.9% {
+    border-right: 0.15em solid #D977C7; }
+  100% {
+    opacity: 1;
+    border: none; } }
+
+@keyframes type3 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
 
 /* Tablet */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -2209,7 +2363,7 @@ form h3 {
         margin-bottom: 0.5rem; }
       .intro-completo .contenedor-intro-der .texto-medio-bio {
         font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         line-height: 1.625rem; }
   .align-welcome {
     display: flex;
@@ -2270,12 +2424,12 @@ form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1rem;
+    height: 4rem;
     width: 100vw; }
     .inline-list h5 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       padding: 1rem 0.5rem;
-      margin: 1rem 0 1rem; }
+      margin: 3rem 0 2rem; }
   .titulo-proyectos {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
@@ -2296,7 +2450,7 @@ form h3 {
   .card-body {
     padding: 0.25rem; }
   .card-body p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6rem;
     margin: 1rem 0; }
   p {
@@ -2482,7 +2636,7 @@ form h3 {
       width: 85vw;
       text-align: left; }
       .contenedor-about .about-texto p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         line-height: 2.3rem; }
       .contenedor-about .about-texto .firma {
         color: #D977C7;
@@ -2518,7 +2672,7 @@ form h3 {
   section h2 {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 1.35rem;
-    margin: 0.5rem 0; }
+    margin: 0.3rem 0; }
   .contenedor-illustration {
     display: flex;
     justify-content: center;
@@ -2534,7 +2688,7 @@ form h3 {
     text-align: center;
     background-color: #ffffff;
     width: 50vw;
-    height: 31rem;
+    height: 35rem;
     border-radius: 0.625rem;
     box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
     padding: 2.5rem 1rem;
@@ -2542,8 +2696,9 @@ form h3 {
     box-sizing: border-box; }
     .skill-card div p {
       margin-top: 1rem;
-      line-height: 2.2rem;
-      font-size: 1.4rem; }
+      margin-bottom: 1rem;
+      line-height: 3rem;
+      font-size: 1.5rem; }
   .contenedor-card {
     display: flex;
     justify-content: center;
@@ -2556,95 +2711,91 @@ form h3 {
   #iconos-tools li {
     font: normal 600 1.5rem "omnes-cyrillic", sans-serif;
     font-size: 2rem;
-    line-height: 3rem; } }
-
-.bg-lillac-skills {
-  height: 150rem; }
-
-.titulo-skills-largo,
-.titulo-seccion-skills {
-  display: none; }
-
-.inline-skills {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 100vw; }
-  .inline-skills li {
-    margin: 0.25rem 1rem 0.25rem 5rem;
-    font-size: 1.3rem; }
-
-/* Fin sección Skills */
-/* Sección Contact me */
-.contenedor-contact .bg-lillac2 {
-  height: 55rem;
-  width: 100vw; }
-
-.titulo-seccion-contact {
-  display: none; }
-
-.contenedor-form {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  width: 80vw;
-  height: auto;
-  margin-left: 2rem; }
-  .contenedor-form .contenedor-form-intro {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    box-sizing: border-box; }
-    .contenedor-form .contenedor-form-intro .contact {
-      color: #9766CC;
-      font-family: abril-display, serif;
-      font-weight: 700;
-      font-style: normal;
-      font-size: 1.75rem;
-      margin-top: 2rem;
-      margin-bottom: 0; }
-    .contenedor-form .contenedor-form-intro p {
-      margin: 0 0 1rem 0;
-      font-size: 1.2rem; }
-  .contenedor-form .contenedor-name-email {
-    display: block;
+    line-height: 3rem; }
+  .bg-lillac-skills {
+    height: 160rem; }
+  .titulo-skills-largo,
+  .titulo-seccion-skills {
+    display: none; }
+  .inline-skills {
+    display: flex;
     justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    list-style-type: disc; }
+    .inline-skills li {
+      margin: 0.5rem 1rem 0.5rem 5rem;
+      font-size: 1.3rem; }
+  /* Fin sección Skills */
+  /* Sección Contact me */
+  .contenedor-contact, .bg-lillac-contact {
+    height: 56rem;
+    width: 100vw; }
+  .titulo-seccion-contact {
+    display: none; }
+  .contenedor-form {
+    display: inline-block;
     align-items: center;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 2rem 0;
-    width: 83vw; }
-    .contenedor-form .contenedor-name-email .short-placeholder {
-      width: 83vw;
-      height: 3.75rem;
-      font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
-      font-size: 1.5rem;
-      color: #999999; }
-    .contenedor-form .contenedor-name-email .text-area-size {
-      width: 83vw;
-      height: 11rem;
-      font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
-      font-size: 1.5rem;
-      color: #999999; }
-    .contenedor-form .contenedor-name-email .button-style {
-      background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
-      margin: 0.625rem;
-      padding: 1.5rem 1.75rem;
-      font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
-      text-align: center;
-      font-size: 1.5rem;
-      transition: 0.5s;
-      background-size: 200% auto;
-      color: white;
-      /* offset-x | offset-y | blur-radius | spread-radius | color */
-      box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
-      border-radius: 0.625rem;
+    justify-content: center;
+    width: 80vw;
+    height: auto;
+    margin-left: 4rem; }
+    .contenedor-form .contenedor-form-intro {
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      box-sizing: border-box; }
+      .contenedor-form .contenedor-form-intro .contact {
+        color: #9766CC;
+        font-family: abril-display, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 0; }
+      .contenedor-form .contenedor-form-intro p {
+        margin: 0 0 1rem 0;
+        font-size: 1.5rem;
+        line-height: 2.3rem; }
+    .contenedor-form .contenedor-name-email {
       display: block;
-      width: 60%; }
+      justify-content: space-around;
+      align-items: center;
+      text-align: left;
+      box-sizing: border-box;
+      margin: 2rem 0;
+      width: 83vw; }
+      .contenedor-form .contenedor-name-email .short-placeholder {
+        width: 83vw;
+        height: 3.75rem;
+        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+        font-size: 1.5rem;
+        color: #999999; }
+      .contenedor-form .contenedor-name-email .text-area-size {
+        width: 83vw;
+        height: 11rem;
+        font: normal 400 1.5rem "omnes-cyrillic", sans-serif;
+        font-size: 1.5rem;
+        color: #999999; }
+      .contenedor-form .contenedor-name-email .button-style {
+        background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
+        margin: 0.625rem;
+        padding: 1.5rem 1.75rem;
+        font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+        border-radius: 0.625rem;
+        display: block;
+        width: 40%; }
+  /* Fin sección Contact */ }
 
-/* Fin sección Contact */
 /* Vars */
 /* Colors */
 /* Typography */
@@ -2720,7 +2871,8 @@ form h3 {
 
 .bg-lillac2,
 .bg-lillac-solutions,
-.bg-lillac-skills {
+.bg-lillac-skills,
+.bg-lillac-contact {
   background-image: linear-gradient(#f2f2f2, #EEE8FA); }
 
 /* Fin backgrounds */
@@ -2760,6 +2912,68 @@ form h3 {
   color: #9766CC;
   text-decoration: underline;
   font-weight: bold; }
+
+/* 
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+/* Typing */
+.typing h2 {
+  border-right: 0.15em solid #D977C7;
+  font-family: omnes-cyrillic, sans-serif;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.typing h2:nth-child(1) {
+  width: 7.3em;
+  animation: type 2s steps(40, end);
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(2) {
+  width: 12.5em;
+  opacity: 0;
+  animation: type2 2s steps(40, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards; }
+
+.typing h2:nth-child(3) {
+  width: 12em;
+  opacity: 0;
+  animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
+  animation-delay: 4s;
+  animation-fill-mode: forwards; }
+
+@keyframes type {
+  0% {
+    width: 0; }
+  99.9% {
+    border-right: 0.15em solid #D977C7; }
+  100% {
+    border: none; } }
+
+@keyframes type2 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  99.9% {
+    border-right: 0.15em solid #D977C7; }
+  100% {
+    opacity: 1;
+    border: none; } }
+
+@keyframes type3 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
 
 /* Mobile -> Wireframes en 390 x 844 (iPhone 12 pro) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -2889,9 +3103,9 @@ form h3 {
     align-items: center;
     height: 5rem; }
     .inline-list h5 {
-      font-size: 1.3rem;
+      font-size: 2rem;
       padding: 1rem 0.5rem;
-      margin: 2rem 1rem 2rem 0; }
+      margin: 2rem 1rem; }
   .titulo-proyectos {
     color: #9766CC;
     font: normal 700 1.5rem "omnes-cyrillic", sans-serif;
@@ -3089,7 +3303,7 @@ form h3 {
       text-align: left; }
       .contenedor-about .about-texto p {
         font-size: 1.2rem;
-        line-height: 2.3rem; }
+        line-height: 2.1rem; }
       .contenedor-about .about-texto .firma {
         color: #D977C7;
         font-family: pacifico, sans-serif;
@@ -3121,6 +3335,12 @@ form h3 {
       padding: 1rem 1rem;
       margin: 0.35rem 1rem 0.35rem;
       font-size: 1.5rem; }
+  .contenedor-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+    width: 85vw; }
   /* Fin sección About Me */
   /* Sección Skills */
   .titulo-skills-largo h4 {
@@ -3166,7 +3386,8 @@ form h3 {
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    width: 100vw; }
+    width: 100vw;
+    list-style-type: disc; }
     .inline-skills li {
       margin: 0.5rem 1rem 0.5rem 4rem;
       font-size: 1.3rem; }
@@ -3195,19 +3416,20 @@ form h3 {
         font-family: abril-display, serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 1.75rem;
+        font-size: 2.5rem;
         margin-top: 2rem;
         margin-bottom: 0; }
       .contenedor-form .contenedor-form-intro p {
         margin: 0 0 1rem 0;
-        font-size: 1.2rem; }
+        font-size: 1.3rem;
+        line-height: 2rem; }
     .contenedor-form .contenedor-name-email {
       display: block;
       justify-content: space-around;
       align-items: center;
       text-align: left;
       box-sizing: border-box;
-      margin: 2rem 0;
+      margin: 2rem 0 3rem 0;
       width: 83vw; }
       .contenedor-form .contenedor-name-email .short-placeholder {
         width: 83vw;

@@ -141,7 +141,8 @@ form {
 
     .bg-lillac2,
     .bg-lillac-solutions,
-    .bg-lillac-skills {
+    .bg-lillac-skills,
+    .bg-lillac-contact {
         background-image: linear-gradient(#f2f2f2, #EEE8FA);
     }
 
@@ -191,4 +192,95 @@ form {
             text-decoration: underline;
             font-weight: bold;
         }
+
+        /* 
+    ***************************** 
+    ********** Motion ***********
+    ***************************** 
+    */
+
+/* Typing */
+
+.typing h2 {
+    border-right: .15em solid $pink;
+    font-family: omnes-cyrillic, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing h2:nth-child(1) {
+    width: 7.3em;
+    animation: type 2s steps(40, end);
+    animation-fill-mode: forwards;
+}
+
+.typing h2:nth-child(2) {
+    width: 12.5em;
+    opacity: 0;
+    animation: type2 2s steps(40, end);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.typing h2:nth-child(3) {
+    width: 12em;
+    opacity: 0;
+    animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: .15em solid $pink;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99.9% {
+        border-right: .15em solid $pink;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
     

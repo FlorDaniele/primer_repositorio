@@ -55,14 +55,9 @@
 }
 
 /* Fin Mixin */
-
 @import "generales";
 
-/* 
-************************** Large screens *****************************
-                    Wireframes en 1920 x 1080px 
-*/
-
+/* *************** Large screens *************** */
 @media only screen and (min-width: 1920px) {
 
     /* Titles and Texts */
@@ -123,9 +118,9 @@
 
     .card-body {
         p {
-        font-size: 1.5rem;
-        line-height: 2.8rem;
-        margin: 1rem 0;
+            font-size: 1.5rem;
+            line-height: 2.8rem;
+            margin: 1rem 0;
         }
     }
 
@@ -180,6 +175,7 @@
         @include flexbox ($text-align: left, $justify-content: flex-start);
         margin: 3rem 1rem 1rem;
         line-height: 5rem;
+
         h1 {
             font: $section-title-font;
             font-size: 3.5rem;
@@ -192,23 +188,24 @@
         float: right;
         margin: 7rem 5.5rem 1rem;
         line-height: 5rem;
+
         h4 {
             font: $big-title-font;
             font-size: 6rem;
             opacity: 0.3;
-            }
+        }
     }
 
     .titulo-seccion-skills {
         @include flexbox;
         margin: 5.5rem;
         float: right;
+
         h4 {
             font: $big-title-font;
             color: $purple;
             font-size: 6rem;
             opacity: 0.3;
-            }
         }
     }
 
@@ -217,36 +214,38 @@
         margin: 5.5rem;
         float: right;
         color: $purple;
+
         h4 {
             font: $big-title-font;
             font-size: 6rem;
             opacity: 0.3;
-            }
+        }
     }
 
     .titulo-seccion-solutions {
         @include flexbox;
         margin: 5.5rem;
         float: right;
+
         h4 {
             font: $big-title-font;
             color: $purple;
             font-size: 6rem;
             opacity: 0.3;
-            }
         }
-
+    }
 
     .titulo-seccion-method {
         @include flexbox;
         margin: 8rem 5.5rem 0 0;
         float: right;
+
         h4 {
             font: $big-title-font;
             color: $purple;
             font-size: 5rem;
             opacity: 0.3;
-            }
+        }
     }
 
     /* Fin de Titulos Seccion */
@@ -332,7 +331,7 @@
         float: right;
         position: relative;
         padding: 0 0 0 100rem;
-        height: 12.5rem;
+        height: 11rem;
     }
 
     .intro-completo {
@@ -360,6 +359,7 @@
                 color: $pink;
             }
         }
+
         .professions {
             font: $title-omnes600;
             font-size: 3.125rem;
@@ -394,487 +394,404 @@
         }
     }
 
-        .align-welcome {
-            @include flexcenter;
-            padding: 3.75rem 0;
+    .align-welcome {
+        @include flexcenter;
+        padding: 3.75rem 0;
 
-            .span-portfolio {
-                font: $big-title-font;
-                font-size: 7rem;
-                line-height: 6rem;
-                text-align: center;
-                opacity: 0.3;
-            }
-        }
-    
-        h4 {
+        .span-portfolio {
             font: $big-title-font;
-            font-size: 4rem;
-        }
-
-        /* Fin Intro */
-
-        /* CV */
-
-        #cv {
-            @include flexcenter;
-        }
-
-        .box-img-left-cv {
-            width: 23.75rem;
-            height: fit-content;
-            padding: 0.5rem;
-            margin: 4.5rem 2rem;
-            position: relative;
-            float: left;
-        }
-
-        .box-text-right-cv {
-            width: 42.1875rem;
-            min-width: 18.5rem;
-            height: fit-content;
-            padding: 0.5rem;
-            margin: 4.5rem 1rem;
-            position: relative;
-            float: right;
-        }
-
-        /* Fin CV */
-
-        /* Footer */
-
-        .contenedor-footer {
-            @include flexcenter ($display: inline-block);
+            font-size: 7rem;
+            line-height: 6rem;
             text-align: center;
-            line-height: 4rem;
-            width: 100vw;
-            height: 37rem;
-            padding: 6.5rem 5.5rem;
-            margin-top: 1rem;
+            opacity: 0.3;
+        }
+    }
 
-            h1 {
-                font-size: 3.5rem;
-                margin: 1.5rem 1rem 0;
-            }
-    
+    h4 {
+        font: $big-title-font;
+        font-size: 4rem;
+    }
+
+    /* Fin Intro */
+
+    /* CV */
+
+    #cv {
+        @include flexcenter;
+    }
+
+    .box-img-left-cv {
+        width: 23.75rem;
+        height: fit-content;
+        padding: 0.5rem;
+        margin: 4.5rem 2rem;
+        position: relative;
+        float: left;
+    }
+
+    .box-text-right-cv {
+        width: 42.1875rem;
+        min-width: 18.5rem;
+        height: fit-content;
+        padding: 0.5rem;
+        margin: 4.5rem 1rem;
+        position: relative;
+        float: right;
+    }
+
+    /* Fin CV */
+
+    /* Footer */
+
+    .contenedor-footer {
+        @include flexcenter ($display: inline-block);
+        text-align: center;
+        line-height: 4rem;
+        width: 100vw;
+        height: 37rem;
+        padding: 6.5rem 5.5rem;
+        margin-top: 1rem;
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 1.5rem 1rem 0;
+        }
+
+        p {
+            font-size: 1.75rem;
+            line-height: 3rem;
+            margin: 0.75rem 0 0.75rem 0;
+        }
+
+        .email {
+            font: $title-omnes700;
+            font-size: 1.875rem;
+            opacity: 1.0;
+            text-align: center;
+            padding: 0 0rem;
+            color: $purple;
+        }
+    }
+
+    #icons-footer {
+        @include flexcenter;
+        margin-top: 2rem;
+
+        a {
+            padding: 1rem;
+            margin: 2rem 1rem;
+            color: $darkest-purple;
+        }
+    }
+
+    .footer-resumido {
+        @include flexcenter ($display: inline-block);
+        text-align: center;
+        width: 100vw;
+        height: 3rem;
+    }
+
+    /* Fin Footer */
+
+    /* Skills Section */
+
+    .inline-skills {
+        @include flexcenter;
+        flex-direction: row;
+        width: 100vw;
+        list-style-type: disc;
+
+        li {
+            padding: 1rem 0.5rem;
+            margin: 0.5rem 1rem 0.5rem;
+        }
+    }
+
+    /* Cards*/
+    .contenedor-card {
+        @include flexcenter;
+        padding: 2rem 0 6.5rem 0;
+    }
+
+    .skill-card {
+        div {
+            text-align: center;
+            background-color: #ffffff;
+            width: 25.9375rem;
+            height: 34rem;
+            border-radius: 0.625rem;
+            box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
+            padding: 2.5rem 1rem;
+            margin: 1rem;
+            box-sizing: border-box;
+
             p {
-                font-size: 1.75rem;
-                line-height: 3rem;
-                margin: 0.75rem 0 0.75rem 0;
-            }
-
-            .email {
-                font: $title-omnes700;
-                font-size: 1.875rem;
-                opacity: 1.0;
-                text-align: center;
-                padding: 0 0rem;
-                color: $purple;
+                font-size: 1.55rem;
+                line-height: 2.5rem;
+                margin: 2rem;
             }
         }
+    }
 
-        #icons-footer {
-            @include flexcenter;
-            margin-top: 2rem;
+    /* Fin Cards*/
 
-            a {
-                padding: 1rem;
-                margin: 2rem 1rem;
-                color: $darkest-purple;
-            }
-        }
+    /* Sección About me */
 
-        .footer-resumido {
-            @include flexcenter ($display: inline-block);
-            text-align: center;
-            width: 100vw;
-            height: 3rem;
-        }
+    .contenedor-about {
+        display: flex;
+        align-items: flex-start;
 
-        /* Fin Footer */
+        .about-texto {
+            display: inline-block;
+            margin: 0.5rem 2rem 1rem 7.5rem;
+            width: 70rem;
+            text-align: left;
 
-        /* Skills Section */
-
-        .inline-skills {
-            @include flexcenter;
-            flex-direction: row;
-            width: 100vw;
-            list-style-type: disc;
-
-            li {
-                padding: 1rem 0.5rem;
-                margin: 0.5rem 1rem 0.5rem;
-            }
-        }
-
-        /* Cards*/
-        .contenedor-card {
-            @include flexcenter;
-            padding: 2rem 0 6.5rem 0;
-        }
-
-        .skill-card {
-            div {
-                text-align: center;
-                background-color: #ffffff;
-                width: 25.9375rem;
-                height: 34rem;
-                border-radius: 0.625rem;
-                box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
-                padding: 2.5rem 1rem;
-                margin: 1rem;
-                box-sizing: border-box;
-                p {
-                    font-size: 1.55rem;
-                    line-height: 2.5rem;
-                    margin: 2rem;
-                }
-            }
-        }
-
-        /* Fin Cards*/
-
-        /* Sección About me */
-
-        .contenedor-about {
-            display: flex;
-            align-items: flex-start;
-
-            .about-texto {
-                display: inline-block;
-                margin: 0.5rem 2rem 1rem 7.5rem;
-                width: 70rem;
-                text-align: left;
-                p {
-                    font-size: 1.65rem;
-                    line-height: 2.5rem;
-                }
-                .firma {
-                        color: $pink;
-                        font-family: pacifico, sans-serif;
-                        font-weight: 300;
-                        font-style: normal;
-                        font-size: 4.375rem;
-                        margin: 1rem 5.5rem 6rem 1rem;
-                }
+            p {
+                font-size: 1.65rem;
+                line-height: 2.5rem;
             }
 
-            .about-img {
-                float: right;
-                margin: 1rem 6.5rem 1rem 2rem;
+            .firma {
+                color: $pink;
+                font-family: pacifico, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 4.375rem;
+                margin: 1rem 5.5rem 6rem 1rem;
             }
         }
 
         .about-img {
-            img {
-                width: 90%;
-            }
-        }
-
-        .love-title {
-            font: $section-title-font;
-            font-size: 2.5rem;
-            width: 18.74rem;
-            margin: 0 0 0 52.875rem;
-        }
-
-        .hr-right-l {
-            display: flex;
-            float: left;
-            width: 48rem;
-            border-top: 0.125rem solid #D977C7;
-            margin-right: 3rem;
-        }
-
-        .hr-right-r {
-            display: flex;
             float: right;
-            width: 48rem;
-            border-top: 0.125rem solid #D977C7;
-            margin-left: 3rem;
+            margin: 1rem 6.5rem 1rem 2rem;
         }
+    }
 
-        .inline-about {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 120rem;
-
-            li {
-                padding: 1rem 0.5rem;
-                margin: 3rem 0.5rem 4rem;
-                font-size: 1.75rem;
-            }
+    .about-img {
+        img {
+            width: 90%;
         }
+    }
 
-        .hr-full {
-            display: flex;
-            width: 100vw;
-            border-top: 0.125rem solid #D977C7;
-            margin-bottom: 5rem;
+    .love-title {
+        font: $section-title-font;
+        font-size: 2.5rem;
+        width: 18.74rem;
+        margin: 0 0 0 52.875rem;
+    }
+
+    .hr-right-l {
+        display: flex;
+        float: left;
+        width: 48rem;
+        border-top: 0.125rem solid #D977C7;
+        margin-right: 3rem;
+    }
+
+    .hr-right-r {
+        display: flex;
+        float: right;
+        width: 48rem;
+        border-top: 0.125rem solid #D977C7;
+        margin-left: 3rem;
+    }
+
+    .inline-about {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 120rem;
+
+        li {
+            padding: 1rem 0.5rem;
+            margin: 3rem 0.5rem 4rem;
+            font-size: 1.75rem;
         }
+    }
 
-        .contenedor-illustration {         
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 30rem;
-            margin-left: 42rem;
-        }
+    .hr-full {
+        display: flex;
+        width: 100vw;
+        border-top: 0.125rem solid #D977C7;
+        margin-bottom: 5rem;
+    }
 
-        /* Fin seccion About Me */
+    .contenedor-illustration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        margin-left: 42rem;
+    }
 
-        /* Colores de solution cards */
+    /* Fin seccion About Me */
 
-        .dark-purple {
-            color: $dark-purple;
-        }
+    /* Colores de solution cards */
 
-        .dark-pink {
-            color: $dark-pink;
-        }
+    .dark-purple {
+        color: $dark-purple;
+    }
 
-        .medium-pink {
-            color: $medium-pink;
-        }
+    .dark-pink {
+        color: $dark-pink;
+    }
 
-        .lighter-pink {
-            color: $lighter-pink;
-        }
+    .medium-pink {
+        color: $medium-pink;
+    }
 
-        .lightest-pink {
-            color: $lightest-pink;
-        }
+    .lighter-pink {
+        color: $lighter-pink;
+    }
 
-        /* Fin colores de solution cards */
+    .lightest-pink {
+        color: $lightest-pink;
+    }
 
-        /* Sección Method */
+    /* Fin colores de solution cards */
 
-        .hr-full-method {
+    /* Sección Method */
+
+    .hr-full-method {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        border-top: 0.125rem solid $pink;
+        margin: 7rem 0 1rem;
+    }
+
+    .grid-method {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15.875rem, 1fr));
+        grid-gap: 2rem;
+        align-items: stretch;
+        margin: 4.5rem 6.5rem 0rem;
+        padding: 0rem 0rem 8.5rem;
+        align-items: flex-start;
+
+        article {
             display: flex;
             flex-direction: column;
-            width: 100vw;
-            border-top: 0.125rem solid $pink;
-            margin: 7rem 0 1rem;
         }
 
-        .grid-method {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(15.875rem, 1fr));
-            grid-gap: 2rem;
-            align-items: stretch;
-            margin: 4.5rem 6.5rem 0rem;
-            padding: 0rem 0rem 8.5rem;
-            align-items: flex-start;
+        .method-step {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 15.1625rem;
+            height: auto;
+            padding: 0.3rem 0rem 3rem;
+            flex-grow: 1;
+            flex-direction: column;
+            box-sizing: border-box;
 
-            article {
-                display: flex;
-                flex-direction: column;
+            h3 {
+                text-align: center;
+                font: $title-omnes700;
+                font-size: 2.1875rem;
+                line-height: 3.125rem;
             }
 
-            .method-step {
-                display: flex;
-                text-align: center;
-                align-items: center;
-                flex-wrap: wrap;
-                width: 15.1625rem;
-                height: auto;
-                padding: 0.3rem 0rem 3rem;
+            p {
                 flex-grow: 1;
-                flex-direction: column;
+                line-height: 2.75rem;
+                font-size: 1.55rem;
+            }
+        }
+    }
+
+    /* Fin Sección Method */
+
+    /* Sección Contact me */
+
+    .contenedor-contact {
+        height: 73rem;
+        width: 100vw;
+
+        .titulo-seccion-contact {
+            @include flexbox ($justify-content: center, $text-align: center);
+            margin: 5.5rem 5.5rem 2rem 0;
+            color: $purple;
+            width: 100vw;
+
+            h4 {
+                font: $big-title-font;
+                font-size: 5.5rem;
+                opacity: 0.3;
+            }
+        }
+
+        .contenedor-form {
+            @include flexcenter ($display: inline-block);
+            width: 60rem;
+            height: auto;
+            margin-left: 30rem;
+
+            .contenedor-form-intro {
+                @include flexcenter ($display: inline-block);
+                text-align: left;
                 box-sizing: border-box;
 
-                h3 {
-                    text-align: center;
-                    font: $title-omnes700;
-                    font-size: 2.1875rem;
-                    line-height: 3.125rem;
+                .contact {
+                    color: $purple;
+                    font: $section-title-font;
+                    font-size: 3.5rem;
+                    margin-top: 2rem;
+                    margin-bottom: 0;
                 }
 
                 p {
-                    flex-grow: 1;
-                    line-height: 2.75rem;
-                    font-size: 1.55rem;
+                    font-size: 2rem;
+                    line-height: 2.8rem;
                 }
             }
-        }
 
-        /* Fin Sección Method */
-
-        /* Sección Contact me */
-
-        .contenedor-contact {
-            height: 73rem;
-            width: 100vw;
-
-            .titulo-seccion-contact {
-                @include flexbox ($justify-content: center, $text-align: center);
-                margin: 5.5rem 5.5rem 2rem 0;
-                color: $purple;
-                width: 100vw;
-                h4 {
-                    font: $big-title-font;
-                    font-size: 5.5rem;
-                    opacity: 0.3;
-                    }
-            }
-
-            .contenedor-form {
-                @include flexcenter ($display: inline-block);
+            .contenedor-name-email {
+                display: inline-block;
+                justify-content: space-around;
+                align-items: center;
+                text-align: left;
+                box-sizing: border-box;
+                margin: 2rem 0;
                 width: 60rem;
-                height: auto;
-                margin-left: 30rem;
 
-                .contenedor-form-intro {
-                    @include flexcenter ($display: inline-block);
-                    text-align: left;
-                    box-sizing: border-box;
-                    .contact {
-                        color: $purple;
-                        font: $section-title-font;
-                        font-size: 3.5rem;
-                        margin-top: 2rem;
-                        margin-bottom: 0;
-                    }
-                    p {
-                        font-size: 2rem;
-                        line-height: 2.8rem;
-                    }
+                .short-placeholder {
+                    width: 28.6875rem;
+                    height: 3.75rem;
+                    font: $title-omnes400;
+                    font-size: 1.5rem;
+                    color: #999999;
                 }
 
-                .contenedor-name-email {
-                    display: inline-block;
-                    justify-content: space-around;
-                    align-items: center;
-                    text-align: left;
-                    box-sizing: border-box;
-                    margin: 2rem 0;
-                    width: 60rem;
+                .text-area-size {
+                    width: 56.9375rem;
+                    height: 11rem;
+                    font: $title-omnes400;
+                    font-size: 1.5rem;
+                    color: #999999;
+                }
 
-                    .short-placeholder {
-                        width: 28.6875rem;
-                        height: 3.75rem;
-                        font: $title-omnes400;
-                        font-size: 1.5rem;
-                        color: #999999;
-                    }
-
-                    .text-area-size {
-                        width: 56.9375rem;
-                        height: 11rem;
-                        font: $title-omnes400;
-                        font-size: 1.5rem;
-                        color: #999999;
-                    }
-
-                    .button-style {
-                        background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
-                        margin: 0.625rem;
-                        padding: 1.5rem 6rem;
-                        font: title-omnes700;
-                        text-align: center;
-                        font-size: 1.625rem;
-                        transition: 0.5s;
-                        background-size: 200% auto;
-                        color: white;
-                        /* offset-x | offset-y | blur-radius | spread-radius | color */
-                        box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
-                        border-radius: 0.625rem;
-                        display: block;
-                        width: 20rem;
-                    }
-
+                .button-style {
+                    background-image: linear-gradient(to right, #9766CC 0%, #D977C7 51%, #9766CC 100%);
+                    margin: 0.625rem;
+                    padding: 1.5rem 6rem;
+                    font: $title-omnes700;
+                    text-align: center;
+                    font-size: 1.625rem;
+                    transition: 0.5s;
+                    background-size: 200% auto;
+                    color: white;
+                    /* offset-x | offset-y | blur-radius | spread-radius | color */
+                    box-shadow: 0 0.5rem 1rem 0.2rem rgba(101, 77, 128, 0.2);
+                    border-radius: 0.625rem;
+                    display: block;
+                    width: 20rem;
                 }
 
             }
+
         }
-
-        /* 
-    ***************************** 
-    ********** Motion ***********
-    ***************************** 
-    */
-
-        /* Typing */
-
-        .typing h2 {
-            border-right: .15em solid $pink;
-            font-family: omnes-cyrillic, sans-serif;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        .typing h2:nth-child(1) {
-            width: 7.3em;
-            animation: type 2s steps(40, end);
-            animation-fill-mode: forwards;
-        }
-
-        .typing h2:nth-child(2) {
-            width: 12.5em;
-            opacity: 0;
-            animation: type2 2s steps(40, end);
-            animation-delay: 2s;
-            animation-fill-mode: forwards;
-        }
-
-        .typing h2:nth-child(3) {
-            width: 12em;
-            opacity: 0;
-            animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
-            animation-delay: 4s;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes type {
-            0% {
-                width: 0;
-            }
-
-            99.9% {
-                border-right: .15em solid $pink;
-            }
-
-            100% {
-                border: none;
-            }
-        }
-
-        @keyframes type2 {
-            0% {
-                width: 0;
-            }
-
-            1% {
-                opacity: 1;
-            }
-
-            99.9% {
-                border-right: .15em solid $pink;
-            }
-
-            100% {
-                opacity: 1;
-                border: none;
-            }
-        }
-
-        @keyframes type3 {
-            0% {
-                width: 0;
-            }
-
-            1% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes blink {
-            50% {
-                border-color: transparent;
-            }
-        }
+    }
+}
