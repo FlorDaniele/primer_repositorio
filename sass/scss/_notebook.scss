@@ -60,9 +60,10 @@
 
 /* 
 ************************** Notebook *****************************
+                    Wireframes en 1366 x 768px 
 */
 
-@media only screen and (min-width: 1401) and (max-width : 1599px) {
+@media only screen and (min-width: 1025px) and (max-width : 1599px) {
 
     /* Intro y Nav */
 
@@ -123,7 +124,7 @@
             float: right;
             position: relative;
             flex-wrap: wrap;
-            width: 40rem;
+            width: 42rem;
             height: 19.125rem;
             padding: 1.8rem 5.5rem 0rem 1rem;
             margin-left: 1.0625rem;
@@ -361,6 +362,12 @@
         width: 100vw;
     }
 
+    .link-in-paragraph {
+        color: $darkest-purple;
+        text-decoration: underline;
+        font-weight: bold
+    }
+    
     .contenedor-about {
         display: flex;
         align-items: flex-start;
@@ -419,8 +426,8 @@
         width: 100vw;
         height: 6rem;
         li {
-            padding: 1rem 0.5rem;
-            margin: 3rem 1rem 4rem;
+            padding: 1rem 0;
+            margin: 3.5rem 0.5rem 4rem;
             font-size: 1.3rem;
         }
     }
@@ -613,7 +620,7 @@
             text-align: center;
             background-color: #ffffff;
             width: 20rem;
-            height: 35rem;
+            height: 34rem;
             border-radius: 0.625rem;
             box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
             padding: 2.5rem 1rem;
@@ -766,5 +773,4 @@
         }
         /* Fin sección Contact */
         }
-
-
+    
