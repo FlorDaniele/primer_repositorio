@@ -59,10 +59,10 @@
 @import "generales";
 
 /* 
-************************** Notebook *****************************
+************************** Small Notebook *****************************
 */
 
-@media only screen and (min-width: 1401) and (max-width : 1599px) {
+@media only screen and (min-width: 1025px) and (max-width : 1400px) {
 
     /* Intro y Nav */
 
@@ -419,9 +419,8 @@
         width: 100vw;
         height: 6rem;
         li {
-            padding: 1rem 0.5rem;
-            margin: 3rem 1rem 4rem;
-            font-size: 1.3rem;
+            margin: 3rem 0.5rem 4rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -445,7 +444,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 2rem;
-        width: 25rem;
+        width: 20rem;
         margin-left: 33rem;
     }
 
@@ -536,7 +535,7 @@
 
     .titulo-seccion-method {
         @include flexbox;
-        margin: 8rem 5rem 0 0;
+        margin: 7rem 5rem 0 0;
         float: right;
         h4 {
             font: $big-title-font;
@@ -548,7 +547,7 @@
 
     .grid-method {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
         grid-gap: 1rem;
         align-items: stretch;
         margin: 3rem 3.5rem;
@@ -613,7 +612,7 @@
             text-align: center;
             background-color: #ffffff;
             width: 20rem;
-            height: 35rem;
+            height: 34rem;
             border-radius: 0.625rem;
             box-shadow: 0rem 0.3125rem 1.5625rem 0.3125rem rgba(162, 122, 204, 0.15);
             padding: 2.5rem 1rem;
@@ -766,5 +765,5 @@
         }
         /* Fin sección Contact */
         }
-
-
+    
+    
